@@ -2,3 +2,4 @@ sun
 moon
 mars
 saturn
+jupiter
