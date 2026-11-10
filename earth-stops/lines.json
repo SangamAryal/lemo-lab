@@ -1,0 +1,123 @@
+[
+ {
+  "id": "l01",
+  "text": "If Earth stopped spinning, you wouldn't.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l02",
+  "text": "Right now, you're moving. Near the equator, about sixteen hundred kilometres an hour.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%",
+  "asr": "Right now, you're moving. Near the equator, about 1600 kilometers an hour."
+ },
+ {
+  "id": "l03",
+  "text": "You don't feel it, because everything moves with you.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l04",
+  "text": "So if the planet stopped in one second, all of that would keep going.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l05",
+  "text": "You, your house, the trees. Anything not stuck to solid rock gets thrown east.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l06",
+  "text": "The air keeps going too. A wind faster than any tornado, across most of the planet.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l07",
+  "text": "And the oceans keep going, crashing over the land.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l08",
+  "text": "Now say Earth survived that. What would a still planet be like?",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l09",
+  "text": "One sunrise a year. Six months of daylight, then six months of night.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l10",
+  "text": "The day side bakes. The night side freezes.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l11",
+  "text": "Then the oceans move. Spinning makes Earth bulge at the middle, and the water piles up there.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l12",
+  "text": "Without it, the water drains to the poles, leaving one huge continent around the middle.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l13",
+  "text": "Earth's magnetic shield could weaken too, letting in more of the Sun's radiation.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l14",
+  "text": "The good news: nothing can stop Earth that fast.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l15",
+  "text": "The weird news: it's already slowing down. Every century, our day gets about two thousandths of a second longer.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "l16",
+  "text": "And what's braking it? The Moon. The same Moon that's slowly leaving us.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%",
+  "asr": "And what's breaking it? The Moon. The same Moon that's slowly leaving us."
+ },
+ {
+  "id": "l17",
+  "text": "So don't worry. You've got billions of years before you need to hold on.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ }
+]

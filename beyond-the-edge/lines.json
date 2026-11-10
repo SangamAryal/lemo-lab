@@ -1,0 +1,117 @@
+[
+ {
+  "id": "01",
+  "who": "narrator",
+  "text": "The oldest light we can detect left a glowing cloud of gas 13.8 billion years ago.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%",
+  "say": "The oldest light we can detect left a glowing cloud of gas thirteen point eight billion years ago."
+ },
+ {
+  "id": "02",
+  "who": "narrator",
+  "text": "But that gas is now 46 billion light-years away.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%",
+  "say": "But that gas is now forty-six billion light-years away."
+ },
+ {
+  "id": "03",
+  "who": "narrator",
+  "text": "How? Space kept stretching while the light was on its way to us.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "04",
+  "who": "narrator",
+  "text": "That's the edge of the observable universe: a bubble 93 billion light-years wide, with us in the middle.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%",
+  "say": "That's the edge of the observable universe: a bubble ninety-three billion light-years wide, with us in the middle."
+ },
+ {
+  "id": "05",
+  "who": "narrator",
+  "text": "Not because we're special. Anyone, anywhere, is in the middle of their own bubble.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "06",
+  "who": "narrator",
+  "text": "But it's not a wall. It's just how far light has had time to travel.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "07",
+  "who": "narrator",
+  "text": "Past it, space keeps going. More galaxies. More stars. Maybe far more than everything inside our bubble.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "08",
+  "who": "narrator",
+  "text": "And we'll never see most of them.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "09",
+  "who": "narrator",
+  "text": "Some are moving away so fast that the light they send today will never reach us. Not in a billion years. Not ever.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "10",
+  "who": "narrator",
+  "text": "So does the universe go on forever? Nobody knows.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "11",
+  "who": "narrator",
+  "text": "It might be infinite.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "12",
+  "who": "narrator",
+  "text": "Or it might curve back on itself like Earth's surface: finite, but with no edge to fall off.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "13",
+  "who": "narrator",
+  "text": "Either way, every star you've ever seen is inside one bubble.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "14",
+  "who": "narrator",
+  "text": "And that bubble might be a tiny speck of the whole thing.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ }
+]

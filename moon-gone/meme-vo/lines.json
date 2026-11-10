@@ -1,0 +1,58 @@
+[
+ {
+  "id": "bye",
+  "text": "Bye bye!",
+  "voice": "en-US-AndrewNeural",
+  "lang": "en-us",
+  "rate": "+25%",
+  "pitch": "+40Hz"
+ },
+ {
+  "id": "ohno",
+  "text": "Oh no, oh no, oh no no no.",
+  "voice": "en-US-GuyNeural",
+  "lang": "en-us",
+  "rate": "+55%",
+  "pitch": "+0Hz"
+ },
+ {
+  "id": "oof",
+  "text": "Oof.",
+  "voice": "en-US-GuyNeural",
+  "lang": "en-us",
+  "rate": "-10%",
+  "pitch": "-6Hz"
+ },
+ {
+  "id": "bruh",
+  "text": "Bruh.",
+  "voice": "en-US-GuyNeural",
+  "lang": "en-us",
+  "rate": "-30%",
+  "pitch": "-20Hz"
+ },
+ {
+  "id": "damage",
+  "text": "Emotional damage!",
+  "voice": "en-US-RogerNeural",
+  "lang": "en-us",
+  "rate": "+10%",
+  "pitch": "+6Hz"
+ },
+ {
+  "id": "nah",
+  "text": "Nah.",
+  "voice": "en-US-GuyNeural",
+  "lang": "en-us",
+  "rate": "-15%",
+  "pitch": "-10Hz"
+ },
+ {
+  "id": "sheesh",
+  "text": "Sheeeeesh!",
+  "voice": "en-US-BrianNeural",
+  "lang": "en-us",
+  "rate": "-10%",
+  "pitch": "+4Hz"
+ }
+]

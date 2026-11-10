@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:02,210
+The Sun is terrible at its job.
+
+2
+00:00:02,210 --> 00:00:08,540
+Its core is fifteen million degrees. And one cubic metre of it makes about as much heat as a compost heap.
+
+3
+00:00:08,540 --> 00:00:13,320
+You make more heat than that. Per cubic metre, you are out-performing a star.
+
+4
+00:00:13,320 --> 00:00:16,530
+So how does a compost heap light up the whole solar system?
+
+5
+00:00:16,790 --> 00:00:23,210
+Fusion. But fusion is hard. Protons are all positive, so they shove each other away.
+
+6
+00:00:23,210 --> 00:00:29,710
+The only way through is to cheat. Quantum tunnelling. Physics for: walking through the wall anyway.
+
+7
+00:00:29,710 --> 00:00:34,120
+It's so unlikely, the average proton waits about nine billion years for its turn.
+
+8
+00:00:34,120 --> 00:00:39,900
+But the Sun has so many protons, it still pulls this off about a hundred trillion trillion trillion times a second.
+
+9
+00:00:39,900 --> 00:00:45,840
+And that slowness is the secret. If fusion were easy, the Sun would have burned out before life ever began.
+
+10
+00:00:45,840 --> 00:00:49,290
+So the Sun isn't lazy. It's pacing itself.

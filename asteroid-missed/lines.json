@@ -1,0 +1,127 @@
+[
+ {
+  "id": "l01",
+  "text": "You're alive because a rock landed in exactly the wrong spot.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l02",
+  "text": "66 million years ago, an asteroid about 10 kilometres wide hit what is now Mexico.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%",
+  "say": "Sixty-six million years ago, an asteroid about ten kilometres wide hit what is now Mexico.",
+  "asr": "Sixty-six million years ago, an asteroid about ten kilometres wide hit what is now Mexico."
+ },
+ {
+  "id": "l03",
+  "text": "But here's the problem. On a classroom globe, that rock would be a grain of sand. How does a grain of sand kill the dinosaurs?",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l04",
+  "text": "The answer was under the sea. The seabed was packed with sulfur and oil-rich rock, and the impact threw it into the sky.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l05",
+  "text": "Soot and sulfur blocked the Sun for months. One study found only about 13 percent of Earth's surface would have been that deadly.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%",
+  "say": "Soot and sulfur blocked the Sun for months. One study found only about thirteen percent of Earth's surface would have been that deadly.",
+  "asr": "Soot and sulfur blocked the Sun for months. One study found only about thirteen percent of Earth's surface would have been that deadly."
+ },
+ {
+  "id": "l06",
+  "text": "It didn't just hit Earth. It hit one of the worst places it could.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l07",
+  "text": "Now imagine you're alive in that darkness. No sunlight. Plants are dying. What do you eat?",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l08",
+  "text": "Big animals starved first. Almost nothing on land bigger than a large dog made it.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l09",
+  "text": "The survivors were small. They hid in burrows and lived on seeds, insects and rotting plants.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l10",
+  "text": "And one of those small survivors was our ancestor.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l11",
+  "text": "So what if the asteroid had missed?",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l12",
+  "text": "Mammals had already lived beside dinosaurs for over 100 million years, and most never got bigger than a badger. Every big job on land was taken.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%",
+  "say": "Mammals had already lived beside dinosaurs for over a hundred million years, and most never got bigger than a badger. Every big job on land was taken.",
+  "asr": "Mammals had already lived beside dinosaurs for over a hundred million years, and most never got bigger than a badger. Every big job on land was taken."
+ },
+ {
+  "id": "l13",
+  "text": "When the dinosaurs vanished, those jobs opened up. Within a million years, mammals were growing much bigger.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l14",
+  "text": "No asteroid, and that door may never open. No apes. No cities. No you.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l15",
+  "text": "One last thing. Everyone says the dinosaurs died out. But did they?",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l16",
+  "text": "A few small feathered ones made it through the dark.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l17",
+  "text": "So look outside. That pigeon on your window is a dinosaur. And it survived the same rock that made you possible.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ }
+]

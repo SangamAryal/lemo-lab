@@ -1,0 +1,118 @@
+[
+ {
+  "id": "l01",
+  "text": "Earth is leaning over. And if it ever stood up straight, you'd run out of food.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l02",
+  "text": "First, a puzzle. Why is summer hot? Most people say Earth gets closer to the Sun.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l03",
+  "text": "But Earth is closest to the Sun in January, in the middle of northern winter.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l04",
+  "text": "The real answer is the lean. Earth is tilted 23 degrees. So for half the year, your half of the planet leans into the sunlight, and for the other half, it leans away.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%",
+  "say": "The real answer is the lean. Earth is tilted twenty-three degrees. So for half the year, your half of the planet leans into the sunlight, and for the other half, it leans away.",
+  "asr": "The real answer is the lean. Earth is tilted twenty-three degrees. So for half the year, your half of the planet leans into the sunlight, and for the other half, it leans away."
+ },
+ {
+  "id": "l05",
+  "text": "So let's stand Earth up straight.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l06",
+  "text": "Now every day is the same. 12 hours of light, 12 hours of dark, everywhere, forever. No summer. No winter.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%",
+  "say": "Now every day is the same. Twelve hours of light, twelve hours of dark, everywhere, forever. No summer. No winter.",
+  "asr": "Now every day is the same. Twelve hours of light, twelve hours of dark, everywhere, forever. No summer. No winter."
+ },
+ {
+  "id": "l07",
+  "text": "Sounds peaceful. But here's the problem. Seasons are how Earth moves its rain around.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l08",
+  "text": "Every summer, hot land pulls wet ocean air across Asia. That's the monsoon, and it waters the food of over a billion people. With no summer, it never comes.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l09",
+  "text": "The poles never get a summer either. So their ice only grows.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l10",
+  "text": "And living things lose something too. Their calendar.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l11",
+  "text": "Wheat and apple trees wait for a cold winter before they make food. Birds wait for longer days before they fly. Now that signal never arrives.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l12",
+  "text": "We'd likely be left farming a few narrow strips of land where the weather is just right.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l13",
+  "text": "So where did this lucky lean come from? Scientists think it was an accident.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l14",
+  "text": "Four and a half billion years ago, a world the size of Mars crashed into the young Earth and knocked it sideways.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l15",
+  "text": "The wreckage became the Moon. And the Moon's gravity has held our tilt steady ever since.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ },
+ {
+  "id": "l16",
+  "text": "So the next time you feel the first warm day of spring, remember. You're feeling a crash from four billion years ago.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+6%"
+ }
+]

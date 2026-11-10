@@ -1,0 +1,17 @@
+[
+{"id":"01","who":"sun","text":"I'm taking a day off. Here's my replacement.","voice":"en-US-BrianNeural","rate":"-4%"},
+{"id":"02","who":"siriusb","text":"Hi! I'm a white dwarf.","voice":"en-US-AnaNeural","rate":"+8%","pitch":"+3Hz"},
+{"id":"03","who":"earth","text":"Wait, you're the same size as me?","voice":"en-US-AndrewMultilingualNeural","rate":"+6%"},
+{"id":"04","who":"earth","text":"You pull like the Sun, but you're so dim. I'm freezing.","voice":"en-US-AndrewMultilingualNeural","rate":"+6%"},
+{"id":"05","who":"proxima","text":"Hey! I'm Proxima, the closest star to you.","voice":"en-US-JennyNeural","rate":"+8%"},
+{"id":"06","who":"earth","text":"You're way too light. I can't stay in orbit!","voice":"en-US-AndrewMultilingualNeural","rate":"+8%"},
+{"id":"07","who":"proxima","text":"Byeee!","voice":"en-US-JennyNeural","rate":"-10%","pitch":"+4Hz"},
+{"id":"08","who":"siriusa","text":"Sirius A. Twenty-five times brighter.","voice":"en-US-EricNeural","rate":"+6%"},
+{"id":"09","who":"earth","text":"Bro, my oceans are boiling. Next!","voice":"en-US-AndrewMultilingualNeural","rate":"+8%"},
+{"id":"10","who":"betelgeuse","text":"Hello... small one.","voice":"en-US-GuyNeural","rate":"-12%","pitch":"-18Hz"},
+{"id":"11","who":"earth","text":"You reach past Mars. I'm literally inside you.","voice":"en-US-AndrewMultilingualNeural","rate":"+6%"},
+{"id":"12","who":"earth","text":"Also, aren't you going to explode?","voice":"en-US-AndrewMultilingualNeural","rate":"+6%"},
+{"id":"13","who":"betelgeuse","text":"Someday. No cap.","voice":"en-US-GuyNeural","rate":"-8%","pitch":"-18Hz"},
+{"id":"14","who":"sun","text":"So, you still want me, or nah?","voice":"en-US-BrianNeural","rate":"-4%"},
+{"id":"15","who":"earth","text":"Never take a day off again.","voice":"en-US-AndrewMultilingualNeural","rate":"+4%"}
+]

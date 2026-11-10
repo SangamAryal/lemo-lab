@@ -1,0 +1,121 @@
+[
+ {
+  "id": "m01",
+  "text": "The Moon is gone.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m02",
+  "text": "You look up tonight, and it's just not there. No warning. Bro really said, \"I'm out.\"",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m03",
+  "text": "So what happens to us? Are we cooked?",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m04",
+  "text": "First, the oceans take an L.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m05",
+  "text": "The Moon's gravity tugs on Earth's water. That's what makes the tides rise and fall.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m06",
+  "text": "The Sun pulls too, so tides wouldn't vanish. But they'd shrink to less than half their size.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m07",
+  "text": "Weaker tides mean weaker currents along the coast. And those currents stir up the food sea life depends on.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m08",
+  "text": "Tide pools take a hit too. The crabs and snails living there could lose places to feed and breed.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m09",
+  "text": "Then there are animals that set their clocks by the Moon.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m10",
+  "text": "Many corals use moonlight to pick one big night to spawn. Thousands release their eggs at the same time.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m11",
+  "text": "No Moon, no signal. Their timing could fall apart.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m12",
+  "text": "And the nights? Way darker. A full Moon is around a hundred times brighter than starlight.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m13",
+  "text": "But the biggest job the Moon has? It keeps Earth's tilt steady.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m14",
+  "text": "That tilt gives us our seasons. Without the Moon, it could wobble a lot more over millions of years.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m15",
+  "text": "So the seasons could slowly swing to extremes. Earth's climate, on shuffle. Not a vibe.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m16",
+  "text": "Don't panic, though. Earth won't fly off into space, and it won't stop spinning.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "m17",
+  "text": "So maybe stop taking the Moon for granted. Bro's been carrying Earth this whole time.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ }
+]

@@ -1,0 +1,181 @@
+[
+{
+"id": "01",
+"who": "sun",
+"text": "I need a break. Somebody cover for me.",
+"voice": "en-US-BrianNeural",
+"rate": "-4%"
+},
+{
+"id": "02",
+"who": "earth",
+"text": "Okay. The swap is instant. Every planet stays put, moving at the same speed.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "03",
+"who": "proxima",
+"text": "Hey! I'm Proxima, the closest star to you.",
+"voice": "en-US-JennyNeural",
+"rate": "+8%"
+},
+{
+"id": "04",
+"who": "earth",
+"text": "You're only an eighth of the Sun's mass. That's not enough to hold any of us.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "05",
+"who": "mars",
+"text": "Wait. Why am I drifting?",
+"voice": "en-US-ChristopherNeural",
+"rate": "+4%"
+},
+{
+"id": "06",
+"who": "jupiter",
+"text": "We're all drifting!",
+"voice": "en-US-GuyNeural",
+"rate": "+10%",
+"pitch": "-10Hz"
+},
+{
+"id": "07",
+"who": "earth",
+"text": "Every planet flies off into deep space. No orbit means no year and no seasons.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "08",
+"who": "earth",
+"text": "From the ground, you're just a dim red dot, and you keep shrinking.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "09",
+"who": "earth",
+"text": "Within a week, Earth drops below freezing. Within a year, it's about minus seventy.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "10",
+"who": "earth",
+"text": "The only warm spots left are near volcanoes and deep underground.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "11",
+"who": "siriusa",
+"text": "Sirius A. Two times the Sun's mass. Twenty-five times brighter.",
+"voice": "en-US-EricNeural",
+"rate": "+6%"
+},
+{
+"id": "12",
+"who": "earth",
+"text": "Your stronger gravity bends my path into a long oval.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "13",
+"who": "earth",
+"text": "Every lap, I dive closer than Mercury is now. A full year takes about four and a half months.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "14",
+"who": "earth",
+"text": "At the close end, I get ten times more light than at the far end. Talk about brutal seasons.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "15",
+"who": "earth",
+"text": "From the ground, you're a blue-white sun nearly twice as wide as ours. The oceans boil away.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "16",
+"who": "jupiter",
+"text": "Huh. Out here, it finally feels warm.",
+"voice": "en-US-GuyNeural",
+"rate": "+10%",
+"pitch": "-10Hz"
+},
+{
+"id": "17",
+"who": "earth",
+"text": "Yep. Your icy moons could finally melt.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "18",
+"who": "betelgeuse",
+"text": "Hello... small one.",
+"voice": "en-US-GuyNeural",
+"rate": "-12%",
+"pitch": "-18Hz"
+},
+{
+"id": "19",
+"who": "earth",
+"text": "You're so huge, you reach past Mars. Mercury, Venus, Mars and I are all inside you.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "20",
+"who": "earth",
+"text": "You also weigh about eighteen Suns. Your pull drags even Neptune in.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "21",
+"who": "neptune",
+"text": "Bro, I'm thirty times farther out than Earth!",
+"voice": "en-US-SteffanNeural",
+"rate": "+8%",
+"pitch": "+2Hz"
+},
+{
+"id": "22",
+"who": "earth",
+"text": "Doesn't matter. Before you fall, you see a red sun twenty-five times wider than ours.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "23",
+"who": "sun",
+"text": "So, still want a replacement?",
+"voice": "en-US-BrianNeural",
+"rate": "-4%"
+},
+{
+"id": "24",
+"who": "earth",
+"text": "Nope. One was too light. One was too heavy and bright. One was way too big.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "25",
+"who": "earth",
+"text": "You are just right. Never leave again.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+2%"
+}
+]

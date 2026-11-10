@@ -1,0 +1,56 @@
+[
+ {"id":"sun","title":"THE SUN","cover":{"motif":"sun"},"facts":[
+  {"head":"The Sun is a pretty average star.","stat":"a yellow dwarf","sub":"many stars are far bigger and brighter","motif":"sun","source":"NASA"},
+  {"head":"The sunlight you see is 8 minutes old.","stat":"8 min 20 s","sub":"that's how long light takes to reach us","motif":"sun","source":"NASA"},
+  {"head":"The Sun holds almost all the mass in the solar system.","stat":"99.8%","sub":"everything else shares the last 0.2%","motif":"sun","source":"NASA"},
+  {"head":"Over a million Earths could fit inside the Sun.","stat":"about 1.3 million","sub":"Earths would fit inside it","motif":"compare","big":"Sun","small":"Earth","source":"NASA"},
+  {"head":"One day the Sun will swell into a red giant.","stat":"in ~5 billion years","sub":"it may grow past Earth's orbit","motif":"redgiant","source":"NASA"}]},
+ {"id":"moon","title":"THE MOON","cover":{"motif":"moon"},"facts":[
+  {"head":"The Moon has moonquakes.","stat":"some last 10+ minutes","sub":"recorded by Apollo seismometers","motif":"moon","source":"NASA"},
+  {"head":"We always see the same side of the Moon.","stat":"tidally locked","sub":"it spins once per orbit","motif":"moon","source":"NASA"},
+  {"head":"Footprints on the Moon could last millions of years.","stat":"no wind, no rain","sub":"nothing to wipe them away","motif":"moon","prints":true,"source":"NASA"},
+  {"head":"The Moon drifts away from Earth every year.","stat":"3.8 cm a year","sub":"about as fast as your fingernails grow","motif":"earthmoon","source":"Apollo lunar laser ranging (NASA)"},
+  {"head":"The Moon was probably made in a giant crash.","stat":"~4.5 billion years ago","sub":"a Mars-sized world likely hit young Earth","motif":"earthmoon","source":"Giant-impact hypothesis (NASA)"}]},
+ {"id":"mars","title":"MARS","cover":{"motif":"planet","color":"#e8734a"},"facts":[
+  {"head":"Mars is red because it's rusty.","stat":"iron oxide","sub":"rusty dust covers the planet","motif":"planet","color":"#e8734a","source":"NASA"},
+  {"head":"A day on Mars is just a bit longer than ours.","stat":"24 h 37 min","sub":"a Martian day is called a sol","motif":"planet","color":"#e8734a","source":"NASA"},
+  {"head":"Sunsets on Mars are blue.","stat":"blue glow","sub":"fine dust scatters blue light near the Sun","motif":"planet","color":"#e8734a","source":"NASA Curiosity"},
+  {"head":"Mars has the tallest volcano in the solar system.","stat":"Olympus Mons: ~22 km","sub":"almost 2.5 times Mount Everest","motif":"planet","color":"#e8734a","source":"NASA"},
+  {"head":"One of Mars' moons is slowly falling toward it.","stat":"~2 m closer every century","sub":"in ~50 million years Phobos may crash or become a ring","motif":"planet","color":"#e8734a","source":"NASA Phobos"}]},
+ {"id":"saturn","title":"SATURN","cover":{"motif":"planet","color":"#f0c878","ring":true},"facts":[
+  {"head":"Saturn is less dense than water.","stat":"0.69 g/cm³","sub":"water is 1.0, so in theory it would float","motif":"planet","color":"#f0c878","ring":true,"source":"NASA"},
+  {"head":"Saturn's rings are mostly ice.","stat":"dust to house-sized","sub":"chunks of ice and a little rock","motif":"planet","color":"#f0c878","ring":true,"source":"NASA"},
+  {"head":"A day on Saturn is under 11 hours.","stat":"about 10.7 hours","sub":"it spins incredibly fast for its size","motif":"planet","color":"#f0c878","ring":true,"source":"NASA"},
+  {"head":"Saturn has the most known moons of any planet.","stat":"over 270 moons","sub":"and counting","motif":"planet","color":"#f0c878","ring":true,"source":"IAU / NASA 2025"},
+  {"head":"Saturn's rings are slowly disappearing.","stat":"a few 100 million years","sub":"ring material keeps raining onto the planet","motif":"planet","color":"#f0c878","ring":true,"source":"NASA Cassini"}]},
+ {"id":"jupiter","title":"JUPITER","cover":{"motif":"planet","color":"#e8b27a","spot":true},"facts":[
+  {"head":"Jupiter is the biggest planet by far.","stat":"~1,300 Earths","sub":"could fit inside it","motif":"compare","big":"Jupiter","small":"Earth","source":"NASA"},
+  {"head":"Jupiter has a storm wider than Earth.","stat":"~1.3 Earths wide","sub":"the Great Red Spot has raged for centuries","motif":"planet","color":"#e8b27a","spot":true,"source":"NASA Juno"},
+  {"head":"A day on Jupiter lasts under 10 hours.","stat":"about 9.9 hours","sub":"the fastest spin of any planet","motif":"planet","color":"#e8b27a","spot":true,"source":"NASA"},
+  {"head":"Jupiter has rings too.","stat":"faint, dusty rings","sub":"discovered by Voyager 1 in 1979","motif":"planet","color":"#e8b27a","ring":true,"source":"NASA"},
+  {"head":"Jupiter's moon Europa likely hides an ocean.","stat":"maybe 2× Earth's ocean water","sub":"under a shell of ice","motif":"planet","color":"#d9e4ee","source":"NASA Europa Clipper"}]},
+ {"id":"earth","title":"EARTH","cover":{"motif":"earth"},"facts":[
+  {"head":"Earth is the densest planet in the solar system.","stat":"5.5 g/cm³","sub":"thanks to its big iron core","motif":"earth","source":"NASA"},
+  {"head":"Earth is closest to the Sun in January.","stat":"around January 3","sub":"seasons come from tilt, not distance","motif":"earth","source":"NASA"},
+  {"head":"Earth's core is about as hot as the Sun's surface.","stat":"~5,400 °C","sub":"the Sun's surface is ~5,500 °C","motif":"earth","core":true,"source":"USGS / ESRF 2013"},
+  {"head":"Earth's days are slowly getting longer.","stat":"~2 ms per century","sub":"the Moon's tides are slowing our spin","motif":"earthmoon","source":"Stephenson et al. 2016"},
+  {"head":"There are more trees on Earth than stars in our galaxy.","stat":"~3 trillion trees","sub":"vs 100 to 400 billion stars","motif":"earth","source":"Crowther et al. 2015, Nature"}]},
+ {"id":"black-holes","title":"BLACK HOLES","cover":{"motif":"blackhole"},"facts":[
+  {"head":"Nothing can escape a black hole, not even light.","stat":"no escape","sub":"past the edge called the event horizon","motif":"blackhole","source":"NASA"},
+  {"head":"Black holes don't suck everything in.","stat":"same orbit","sub":"swap the Sun for an equal-mass black hole and Earth keeps orbiting","motif":"blackhole","source":"NASA"},
+  {"head":"Time slows down near a black hole.","stat":"gravity bends time","sub":"clocks tick slower close to it","motif":"blackhole","source":"NASA / Einstein's relativity"},
+  {"head":"A giant black hole sits at the center of our galaxy.","stat":"~4 million Suns","sub":"its name is Sagittarius A*","motif":"blackhole","source":"Event Horizon Telescope"},
+  {"head":"We have actually photographed black holes.","stat":"first image: 2019","sub":"M87*, then our own Sagittarius A* in 2022","motif":"blackhole","source":"Event Horizon Telescope"}]},
+ {"id":"venus","title":"VENUS","cover":{"motif":"planet","color":"#f2c46b"},"facts":[
+  {"head":"Venus is the hottest planet.","stat":"about 465 °C","sub":"hotter than Mercury, which is closer to the Sun","motif":"planet","color":"#f2c46b","source":"NASA"},
+  {"head":"A day on Venus is longer than its year.","stat":"1 day = 243 Earth days","sub":"1 year = only 225 Earth days","motif":"planet","color":"#f2c46b","source":"NASA"},
+  {"head":"Venus spins backwards.","stat":"Sun rises in the west","sub":"it turns the opposite way to most planets","motif":"planet","color":"#f2c46b","source":"NASA"},
+  {"head":"The air on Venus would crush you.","stat":"~92× Earth's pressure","sub":"like being ~900 m deep in the ocean","motif":"planet","color":"#f2c46b","source":"NASA"},
+  {"head":"It rains acid on Venus, but it never lands.","stat":"sulfuric acid rain","sub":"it evaporates before reaching the ground","motif":"planet","color":"#f2c46b","source":"NASA"}]},
+ {"id":"stars","title":"STARS","cover":{"motif":"stars"},"facts":[
+  {"head":"Stars twinkle because of our air.","stat":"moving air bends starlight","sub":"from space, they don't twinkle","motif":"stars","source":"NASA"},
+  {"head":"The starlight you see left long ago.","stat":"years to centuries","sub":"some naked-eye stars are 1,000+ light-years away","motif":"stars","source":"NASA"},
+  {"head":"There are probably more stars than grains of sand on Earth's beaches.","stat":"estimates agree","sub":"the universe is that big","motif":"stars","source":"common astronomy estimate"},
+  {"head":"A sugar cube of neutron star weighs about a billion tons.","stat":"~1 billion tonnes","sub":"about as heavy as a mountain","motif":"bignum","big":"1 cube","source":"NASA"},
+  {"head":"Many stars come in pairs.","stat":"about half of Sun-like stars","sub":"have a partner star","motif":"stars","pair":true,"source":"Raghavan et al. 2010"}]}
+]

@@ -1,0 +1,212 @@
+[
+ {
+  "id": "e01",
+  "text": "This planet has oceans, land, and a ring like Saturn.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e02",
+  "text": "It sits in just the right spot for life. So is it a new world we just found?",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e03",
+  "text": "No. It's Earth, four hundred and sixty-six million years ago.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e04",
+  "text": "So where did that ring come from, and where did it go? It starts with a rock that got too close.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e05",
+  "text": "Back then, space rocks were hitting Earth far more often than today.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e06",
+  "text": "One asteroid didn't hit us. It flew past, very close.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e07",
+  "text": "Too close. Every planet has an invisible line around it, called the Roche limit.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e08",
+  "text": "Cross it, and the planet pulls harder on your near side than your far side. Until you rip apart.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e09",
+  "text": "The asteroid shattered into countless pieces. Over time, they spread into a ring around the equator.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e10",
+  "text": "Earth looked like a small Saturn. And Saturn's rings may have started the same way, from something that got too close.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e11",
+  "text": "So what would that look like from the ground? It depends on where you stand.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e12",
+  "text": "On the equator, you'd see the ring edge-on. Just a thin bright line, straight overhead.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e13",
+  "text": "Further north, it opens into a giant arch, stretching right across the sky.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e14",
+  "text": "Near the poles, it sinks low, like a mountain made of light. Go far enough, and it drops below the horizon.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e15",
+  "text": "At night, it would still catch sunlight. So nights would be a lot brighter.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e16",
+  "text": "But rings cast shadows. In winter, a wide strip of Earth would sit in the shade, and get colder.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e17",
+  "text": "About twenty million years later, Earth fell into one of its coldest periods in half a billion years.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e18",
+  "text": "Ice sheets spread across the land. Around eighty-five percent of sea species died out.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e19",
+  "text": "Some scientists think the ring's shadow helped cause it. It's still a new idea, and not everyone agrees.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e20",
+  "text": "So how do we know the ring was there at all? Nobody took a photo.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e21",
+  "text": "Scientists mapped the craters from that time. Normally, craters land all over a planet.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e22",
+  "text": "But these twenty-one craters all sit in a band near the old equator. Exactly where a falling ring would drop its rocks.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e23",
+  "text": "That also tells us where the ring went. Bit by bit, it rained back down on Earth.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e24",
+  "text": "Because rings don't last forever. Even the rings of Saturn are falling apart.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e25",
+  "text": "In 2017, the Cassini spacecraft flew between Saturn and its rings, and saw ring material raining onto the planet.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e26",
+  "text": "In a few hundred million years, Saturn could lose its rings completely.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e27",
+  "text": "A ringed Earth today would have one more problem. Rocks in the ring would smash into any satellite that crossed it.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e28",
+  "text": "So could Earth get rings again? Only if something big crossed that line. Like the Moon.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e29",
+  "text": "If the Moon came too close, it would break into a ring around us. But don't worry. The Moon is drifting away, about four centimetres a year.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e30",
+  "text": "So tonight, look up. That plain sky once had a ring. And pieces of it may still be in the ground under your feet.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ }
+]

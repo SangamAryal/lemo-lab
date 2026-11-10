@@ -1,0 +1,11 @@
+1
+00:00:00,150 --> 00:00:03,620
+This planet has oceans, land, and a ring like Saturn.
+
+2
+00:00:03,640 --> 00:00:08,670
+It sits in just the right spot for life. So is it a new world we just found?
+
+3
+00:00:08,780 --> 00:00:13,630
+No. It's Earth, four hundred and sixty-six million years ago.

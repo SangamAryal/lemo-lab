@@ -1,0 +1,12 @@
+The Moon Is Slowly Breaking Up With Us — flat-vector explainer (1080×1920, 24 fps)
+Everything on screen is drawn in code (main.js, canvas 2D): the Earth and Moon characters, the dinosaur, the eclipse, the type.
+No images, no stock footage, no generated media. Our own character designs; style grammar inspired by flat-vector science
+channels, nothing copied. Facts: FACTS.md (NASA, AGU, Space.com, Sky & Telescope, PNAS, StarDate).
+
+Type
+  Nunito — Vernon Adams, Jacques Le Bailly and the Nunito Project Authors, SIL Open Font License 1.1 (fonts/OFL-Nunito.txt),
+  from github.com/google/fonts.
+Voice
+  Kokoro-82M (Apache 2.0) via kokoro-onnx, voice bm_george, lang en-gb. Checked with faster-whisper (MIT).
+Score and sound effects
+  Original, synthesized in music.py and mix.py (numpy/scipy). No samples.

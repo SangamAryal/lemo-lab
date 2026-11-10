@@ -1,0 +1,12 @@
+# rendered / generated media (rebuild with build.sh)
+*.mp4
+*.wav
+*.mp3
+*.log
+*.pyc
+__pycache__/
+out/
+raw/
+frames/
+node_modules/
+.venv/

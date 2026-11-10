@@ -1,0 +1,273 @@
+[
+{
+"id": "01",
+"who": "sun",
+"text": "I'm exhausted. I need a break. Can one of you cover for me?",
+"voice": "en-US-BrianNeural",
+"rate": "-4%"
+},
+{
+"id": "02",
+"who": "earth",
+"text": "Fine. We have a lot of options anyway.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "03",
+"who": "proxima",
+"text": "Hey Earth! I'm Proxima Centauri, your closest stellar neighbor.",
+"voice": "en-US-JennyNeural",
+"rate": "+8%"
+},
+{
+"id": "04",
+"who": "earth",
+"text": "Wait\u2026 you're replacing the Sun?",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "05",
+"who": "proxima",
+"text": "Yep. What's the problem?",
+"voice": "en-US-JennyNeural",
+"rate": "+8%"
+},
+{
+"id": "06",
+"who": "earth",
+"text": "You're only about 12% of the Sun's mass. You don't have enough gravity to hold us in our orbits.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%",
+"say": "You're only about twelve percent of the Sun's mass. You don't have enough gravity to hold us in our orbits."
+},
+{
+"id": "07",
+"who": "mars",
+"text": "Uh\u2026 guys? Why am I moving away?",
+"voice": "en-US-ChristopherNeural",
+"rate": "+6%"
+},
+{
+"id": "08",
+"who": "jupiter",
+"text": "WAIT. I'M MOVING TOO!",
+"voice": "en-US-GuyNeural",
+"rate": "+14%",
+"pitch": "-6Hz",
+"say": "Wait. I'm moving too!"
+},
+{
+"id": "09",
+"who": "earth",
+"text": "Every planet is escaping. Our old orbits are gone.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "10",
+"who": "earth",
+"text": "And you're so dim, I'm losing heat fast. My days turn dark and freezing.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "11",
+"who": "earth",
+"text": "The oceans freeze from the top down, and most life on the surface won't make it.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "12",
+"who": "earth",
+"text": "Yeah\u2026 you're a little underqualified.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "13",
+"who": "siriusa",
+"text": "Move aside. I'm Sirius A. More than twice the Sun's mass, and about 25 times brighter.",
+"voice": "en-US-EricNeural",
+"rate": "+4%",
+"pitch": "-4Hz",
+"say": "Move aside. I'm Sirius A. More than twice the Sun's mass, and about twenty-five times brighter."
+},
+{
+"id": "14",
+"who": "earth",
+"text": "Finally! Someone who can hold us together.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "15",
+"who": "siriusa",
+"text": "Hold on tight.",
+"voice": "en-US-EricNeural",
+"rate": "+4%",
+"pitch": "-4Hz"
+},
+{
+"id": "16",
+"who": "earth",
+"text": "Because you're heavier, my orbit stretches into a long oval. My year shrinks to about four and a half months.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "17",
+"who": "earth",
+"text": "But here's the real problem. At my closest point, I'm only a third of my usual distance from you.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "18",
+"who": "earth",
+"text": "And you're so bright, I get hundreds of times more energy than the Sun gives me today.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "19",
+"who": "earth",
+"text": "THE OCEANS ARE BOILING! WE'RE COOKED!",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+14%",
+"say": "The oceans are boiling! We're cooked!",
+"pitch": "+4Hz"
+},
+{
+"id": "20",
+"who": "jupiter",
+"text": "Wait\u2026 does that mean my icy moons could get warmer?",
+"voice": "en-US-GuyNeural",
+"rate": "+10%",
+"pitch": "-10Hz"
+},
+{
+"id": "21",
+"who": "earth",
+"text": "Bro, I'm literally being roasted, and you're thinking about vacation spots?",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "22",
+"who": "betelgeuse",
+"text": "Hello, little planets. I've got this.",
+"voice": "en-US-GuyNeural",
+"rate": "-10%",
+"pitch": "-18Hz"
+},
+{
+"id": "23",
+"who": "earth",
+"text": "Wait. How big are you?",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "24",
+"who": "betelgeuse",
+"text": "My outer layers reach beyond the orbit of Mars.",
+"voice": "en-US-GuyNeural",
+"rate": "-10%",
+"pitch": "-18Hz"
+},
+{
+"id": "25",
+"who": "earth",
+"text": "HOLD UP. I'M INSIDE YOU?!",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+14%",
+"say": "Hold up. I'm inside you?!",
+"pitch": "+4Hz"
+},
+{
+"id": "26",
+"who": "mercury",
+"text": "SAME!",
+"voice": "en-US-AnaNeural",
+"rate": "+14%",
+"pitch": "+4Hz",
+"say": "Same!"
+},
+{
+"id": "27",
+"who": "venus",
+"text": "BRO, WE'RE LITERALLY INSIDE A STAR!",
+"voice": "en-US-AriaNeural",
+"rate": "+14%",
+"say": "Bro, we're literally inside a star!",
+"pitch": "+4Hz"
+},
+{
+"id": "28",
+"who": "earth",
+"text": "You're also about 18 times more massive than the Sun. But your size is the real nightmare.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%",
+"say": "You're also about eighteen times more massive than the Sun. But your size is the real nightmare."
+},
+{
+"id": "29",
+"who": "earth",
+"text": "Mercury, Venus, Mars and I are surrounded by your incredibly hot outer gas.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "30",
+"who": "jupiter",
+"text": "So\u2026 are we still a solar system?",
+"voice": "en-US-GuyNeural",
+"rate": "+10%",
+"pitch": "-10Hz"
+},
+{
+"id": "31",
+"who": "earth",
+"text": "I don't think we can call it that anymore.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "32",
+"who": "sun",
+"text": "So\u2026 how was the replacement?",
+"voice": "en-US-BrianNeural",
+"rate": "-4%"
+},
+{
+"id": "33",
+"who": "earth",
+"text": "Proxima couldn't hold us. Sirius turned us into toast. And Betelgeuse swallowed the inner planets.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "34",
+"who": "sun",
+"text": "So you missed me?",
+"voice": "en-US-BrianNeural",
+"rate": "-4%"
+},
+{
+"id": "35",
+"who": "earth",
+"text": "Bro, you're not perfect\u2026 but you're the only star I trust.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "36",
+"who": "sun",
+"text": "That's what I thought.",
+"voice": "en-US-BrianNeural",
+"rate": "-4%"
+}
+]

@@ -1,0 +1,93 @@
+[
+ {
+  "id": "b01",
+  "text": "One day, the night sky will be completely empty.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "b02",
+  "text": "Let's fast forward.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "b03",
+  "text": "A thousand years. The way you talk sounds as ancient as Old English.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "b04",
+  "text": "Ten thousand. Vega is the new North Star.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "b05",
+  "text": "A hundred thousand. Betelgeuse has exploded. Orion loses a shoulder.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "b06",
+  "text": "A million. A passing star knocks comets loose.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "b07",
+  "text": "Ten million. Africa splits, and a new ocean opens.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "b08",
+  "text": "A hundred million. Mars has rings, and Saturn's are gone. Fashion is cyclical.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "b09",
+  "text": "A billion years. The Sun gets hotter, and boils our oceans away. But that's not the strange part.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "b10",
+  "text": "Five billion. The Sun swells into a red giant. Andromeda might crash into us. Scientists call it a coin flip.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "b11",
+  "text": "Ten billion. The Sun is a fading white dwarf.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "b12",
+  "text": "And a hundred billion years from now, space has stretched so far that every other galaxy has vanished from view. Anyone looking up would think their galaxy is the entire universe.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "b13",
+  "text": "So look up tonight. You're seeing the limited edition.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ }
+]

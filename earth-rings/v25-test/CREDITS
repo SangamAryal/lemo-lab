@@ -1,0 +1,11 @@
+What If Earth Had Rings? — 2.5D look test (canvas 2D, perspective camera), 1080×1920, 24 fps
+Everything on screen is drawn in code (main.js + kit.js, canvas 2D): Earth, its ring, the Sun, the Moon, Saturn, the satellite, the backyard, the type.
+No images, no stock footage, no generated media. Our own character designs, in the Beyond Everything brand style.
+
+Type
+  Nunito — the Nunito Project Authors, SIL Open Font License 1.1 (fonts/OFL-Nunito.txt), from github.com/google/fonts.
+Voice
+  Microsoft neural voice en-GB-RyanNeural via edge-tts (online service; check Microsoft's terms before commercial use).
+  Checked with faster-whisper (MIT).
+Score and sound effects
+  Original, synthesized in music.py and mix.py (numpy/scipy). No samples.

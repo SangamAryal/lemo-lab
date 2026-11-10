@@ -1,0 +1,112 @@
+[
+ {
+  "id": "l01",
+  "text": "The Sun is the most powerful thing in our sky.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "l02",
+  "text": "It is also, technically... lazy.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "l03",
+  "text": "Take one cubic metre from the very centre of its core.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%",
+  "asr": "Take one cubic meter from the very center of its core."
+ },
+ {
+  "id": "l04",
+  "text": "It puts out about as much heat as... a compost heap.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "l05",
+  "text": "Your body makes more heat per cubic metre than that. Several times more.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%",
+  "asr": "Your body makes more heat per cubic meter than that. Several times more."
+ },
+ {
+  "id": "l06",
+  "text": "Congratulations. You are out-performing a star. Please don't put it on your CV.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "asr": "Congratulations. You are outperforming a star. Please don't put it on your CV.",
+  "rate": "+12%"
+ },
+ {
+  "id": "l07",
+  "text": "So how does a compost heap light up the solar system? It's just... very, very big.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "l08",
+  "text": "The light warming your face today was made in the core thousands of years ago.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "l09",
+  "text": "It spent all that time bumping around inside, then crossed to Earth in eight minutes, like it suddenly remembered it had somewhere to be.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "l10",
+  "text": "Even fusion is a struggle. Protons push each other away. By normal physics, they should basically never touch.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "l11",
+  "text": "They only fuse thanks to quantum tunnelling. Which is physics for: walking through the wall anyway.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "asr": "They only fuse thanks to quantum tunneling. Which is physics for walking through the wall anyway.",
+  "rate": "+12%"
+ },
+ {
+  "id": "l12",
+  "text": "Even then, the average proton waits about nine billion years for its turn.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%",
+  "asr": "Even then, the average proton weights about 9 billion years for its turn."
+ },
+ {
+  "id": "l13",
+  "text": "Here's the twist. If fusion were easy, the Sun would have burned out long before anything crawled out of the sea.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "l14",
+  "text": "Instead, it took its time. Long enough for oceans... dinosaurs... and you.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ },
+ {
+  "id": "l15",
+  "text": "So the next time someone calls you lazy, just tell them you're pacing yourself. Like a star.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+12%"
+ }
+]

@@ -1,0 +1,66 @@
+[
+ {
+  "id": "bruh",
+  "text": "Bruh.",
+  "voice": "en-US-GuyNeural",
+  "lang": "en-us",
+  "rate": "-30%",
+  "pitch": "-20Hz"
+ },
+ {
+  "id": "whoa",
+  "text": "Whoa!",
+  "voice": "en-US-BrianNeural",
+  "lang": "en-us",
+  "rate": "+0%",
+  "pitch": "+6Hz"
+ },
+ {
+  "id": "eyes",
+  "text": "Ahh, my eyes!",
+  "voice": "en-US-RogerNeural",
+  "lang": "en-us",
+  "rate": "+15%",
+  "pitch": "+8Hz"
+ },
+ {
+  "id": "brrr",
+  "text": "Brrrr.",
+  "voice": "en-US-GuyNeural",
+  "lang": "en-us",
+  "rate": "-5%",
+  "pitch": "+0Hz"
+ },
+ {
+  "id": "damage",
+  "text": "Emotional damage!",
+  "voice": "en-US-RogerNeural",
+  "lang": "en-us",
+  "rate": "+10%",
+  "pitch": "+6Hz"
+ },
+ {
+  "id": "bye",
+  "text": "Bye bye!",
+  "voice": "en-US-AndrewNeural",
+  "lang": "en-us",
+  "rate": "+25%",
+  "pitch": "+40Hz"
+ },
+ {
+  "id": "what",
+  "text": "Wait, what?",
+  "voice": "en-US-BrianNeural",
+  "lang": "en-us",
+  "rate": "+10%",
+  "pitch": "+4Hz"
+ },
+ {
+  "id": "sheesh",
+  "text": "Sheeeeesh!",
+  "voice": "en-US-BrianNeural",
+  "lang": "en-us",
+  "rate": "-10%",
+  "pitch": "+4Hz"
+ }
+]

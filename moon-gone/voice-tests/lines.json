@@ -1,0 +1,23 @@
+[
+ {
+  "id": "andrew",
+  "text": "What if the Moon suddenly disappeared from the solar system? You look up tonight, and it's just... gone. No warning. Bro really said, I'm out. So what happens to us? Are we cooked? No Moon, no signal. Their timing could fall apart. So maybe stop taking the Moon for granted. Bro's been carrying Earth this whole time.",
+  "voice": "en-US-AndrewNeural",
+  "lang": "en-us",
+  "rate": "+4%"
+ },
+ {
+  "id": "brian",
+  "text": "What if the Moon suddenly disappeared from the solar system? You look up tonight, and it's just... gone. No warning. Bro really said, I'm out. So what happens to us? Are we cooked? No Moon, no signal. Their timing could fall apart. So maybe stop taking the Moon for granted. Bro's been carrying Earth this whole time.",
+  "voice": "en-US-BrianNeural",
+  "lang": "en-us",
+  "rate": "+4%"
+ },
+ {
+  "id": "andrew-ml",
+  "text": "What if the Moon suddenly disappeared from the solar system? You look up tonight, and it's just... gone. No warning. Bro really said, I'm out. So what happens to us? Are we cooked? No Moon, no signal. Their timing could fall apart. So maybe stop taking the Moon for granted. Bro's been carrying Earth this whole time.",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "lang": "en-us",
+  "rate": "+4%"
+ }
+]

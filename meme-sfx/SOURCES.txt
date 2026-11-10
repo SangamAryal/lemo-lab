@@ -1,0 +1,15 @@
+vine-boom https://cdn.pixabay.com/download/audio/2025/08/29/audio_437b300d21.mp3 https://pixabay.com/sound-effects/film-special-effects-vine-boom-392646/
+bruh https://cdn.pixabay.com/download/audio/2022/03/10/audio_b36f2b4f3d.mp3 https://pixabay.com/sound-effects/people-bruh-sound-effect-2-37927/
+oof https://cdn.pixabay.com/download/audio/2022/03/20/audio_29459dd599.mp3 https://pixabay.com/sound-effects/people-oof-97698/
+oh-no https://cdn.pixabay.com/download/audio/2022/11/13/audio_ac782d7413.mp3 https://pixabay.com/sound-effects/people-oh-no-125748/
+whoa https://cdn.pixabay.com/download/audio/2022/03/15/audio_f7c9f11307.mp3 https://pixabay.com/sound-effects/people-whoa-selection-79329/
+brrr https://cdn.pixabay.com/download/audio/2022/03/10/audio_be25f429e5.mp3 https://pixabay.com/sound-effects/people-brr-36999/
+wait-what https://cdn.pixabay.com/download/audio/2024/03/26/audio_907efc6820.mp3 https://pixabay.com/sound-effects/people-wait-what-198328/
+airhorn https://cdn.pixabay.com/download/audio/2025/07/09/audio_ecfd3d257f.mp3 https://pixabay.com/sound-effects/film-special-effects-air-horn-sound-effect-372453/
+dun-dun-dun https://cdn.pixabay.com/download/audio/2025/09/12/audio_d054dac5dd.mp3 https://pixabay.com/sound-effects/musical-dun-dun-dunn-dunn-dunnnnnnn-403662/
+record-scratch https://cdn.pixabay.com/download/audio/2022/03/26/audio_7d318dd030.mp3 https://pixabay.com/sound-effects/film-special-effects-record-scratch-108233/
+sad-trombone https://cdn.pixabay.com/download/audio/2021/08/04/audio_c003cb2711.mp3 https://pixabay.com/sound-effects/film-special-effects-wah-wah-sad-trombone-6347/
+bonk https://cdn.pixabay.com/download/audio/2022/03/10/audio_7111d17a49.mp3 https://pixabay.com/sound-effects/film-special-effects-bonk-sound-effect-36055/
+error https://cdn.pixabay.com/download/audio/2022/03/10/audio_e4e7943871.mp3 https://pixabay.com/sound-effects/film-special-effects-windows-error-sound-effect-35894/
+
+All from Pixabay (Pixabay Content License), downloaded 2026-10-31. Trimmed/levelled copies in clips/ (see the ffmpeg cut points in the moon-gone notes). "emotional damage", "nah", "sheesh", "my eyes", "bye bye" were not on Pixabay — those stay as recreations (edge-tts) in each film's meme-vo/.

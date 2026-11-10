@@ -1,0 +1,23 @@
+[
+ {
+  "id": "e01",
+  "text": "This planet has oceans, land, and a ring like Saturn.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e02",
+  "text": "It sits in just the right spot for life. So is it a new world we just found?",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "e03",
+  "text": "No. It's Earth, four hundred and sixty-six million years ago.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ }
+]

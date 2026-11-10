@@ -1,0 +1,87 @@
+[
+ {
+  "id": "v01",
+  "text": "The Moon is breaking up with us. Slowly.",
+  "voice": "bm_george",
+  "speed": 1.01,
+  "lang": "en-gb"
+ },
+ {
+  "id": "v02",
+  "text": "Every year, it drifts three point eight centimetres further away. About as fast as your fingernails grow.",
+  "sub": "Every year, it drifts 3.8 cm further away. About as fast as your fingernails grow.",
+  "asr": "Every year it drifts 3.8 cm further away, about as fast as your fingernails grow.",
+  "voice": "bm_george",
+  "speed": 1.06,
+  "lang": "en-gb"
+ },
+ {
+  "id": "v03",
+  "text": "We know because astronauts left mirrors up there. We still bounce lasers off them.",
+  "voice": "bm_george",
+  "speed": 1.06,
+  "lang": "en-gb"
+ },
+ {
+  "id": "v04",
+  "text": "And honestly? It's our fault. Earth spins faster than the Moon circles us, so the ocean bulge it pulls on gets dragged ahead,",
+  "voice": "bm_george",
+  "speed": 1.1,
+  "lang": "en-gb"
+ },
+ {
+  "id": "v05",
+  "text": "and that bulge tugs the Moon forward, flinging it a little higher every orbit.",
+  "voice": "bm_george",
+  "speed": 1.08,
+  "lang": "en-gb"
+ },
+ {
+  "id": "v06",
+  "text": "The Moon pulls back, too. It's putting the brakes on Earth's spin.",
+  "voice": "bm_george",
+  "speed": 1.06,
+  "lang": "en-gb"
+ },
+ {
+  "id": "v07",
+  "text": "When the Moon was young, it was so close it looked more than ten times bigger in the sky, and a day lasted less than ten hours.",
+  "sub": "When the Moon was young, it was so close it looked more than 10 times bigger in the sky, and a day lasted less than 10 hours.",
+  "asr": "When the Moon was young, it was so close it looked more than 10 times bigger in the sky, and a day lasted less than 10 hours.",
+  "voice": "bm_george",
+  "speed": 1.1,
+  "lang": "en-gb"
+ },
+ {
+  "id": "v08",
+  "text": "When dinosaurs were around, a day was twenty-three and a half hours, and a year had three hundred and seventy-two of them.",
+  "sub": "When dinosaurs were around, a day was 23.5 hours, and a year had 372 of them.",
+  "asr": "When dinosaurs were around, a day was 23 and a half hours, and a year had 372 of them.",
+  "voice": "bm_george",
+  "speed": 1.1,
+  "lang": "en-gb"
+ },
+ {
+  "id": "v09",
+  "text": "In about six hundred million years, it'll look too small to cover the Sun. No more total eclipses.",
+  "sub": "In about 600 million years, it'll look too small to cover the Sun. No more total eclipses.",
+  "asr": "In about 600 million years, it'll look too small to cover the Sun. No more total eclipses.",
+  "voice": "bm_george",
+  "speed": 1.08,
+  "lang": "en-gb"
+ },
+ {
+  "id": "v10",
+  "text": "But it will never fully leave. The Sun will grow old and swallow the whole drama first.",
+  "voice": "bm_george",
+  "speed": 1.06,
+  "lang": "en-gb"
+ },
+ {
+  "id": "v11",
+  "text": "So enjoy the eclipses. You live in the short time when the Moon fits the Sun perfectly.",
+  "voice": "bm_george",
+  "speed": 1.02,
+  "lang": "en-gb"
+ }
+]

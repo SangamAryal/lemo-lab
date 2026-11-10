@@ -1,0 +1,65 @@
+[
+ {
+  "id": "d01",
+  "text": "A thousand metres down, it's always night. So how does anything live here?",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "d02",
+  "text": "Some life clings to underwater volcanoes. These shrimp crowd around vents spitting water over four hundred degrees.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "d03",
+  "text": "Almost three thousand metres. The deepest dive by any mammal, Cuvier's beaked whale. One held its breath for over three hours.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "d04",
+  "text": "At three thousand eight hundred lies the Titanic. The pressure is three hundred and eighty times the surface. Yet fangtooth fish, hagfish and dumbo octopuses live here.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "d05",
+  "text": "At eight thousand three hundred: the deepest fish ever filmed. A little snailfish.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "d06",
+  "text": "Remember Everest? Flip it over, and its peak stops here. Still not the bottom.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "d07",
+  "text": "The bottom is almost eleven kilometres down. Two men first reached it in 1960. The next was James Cameron, fifty-two years later.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "d08",
+  "text": "We've been to the bottom. But most of the deep sea, no one has ever seen.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ },
+ {
+  "id": "d09",
+  "text": "So next time you're at the beach, don't look too far down. Something might be looking back.",
+  "voice": "en-GB-RyanNeural",
+  "lang": "en-gb",
+  "rate": "+5%"
+ }
+]

@@ -1,0 +1,30 @@
+[
+ {
+  "id": "k_michael",
+  "text": "The Sun is the most powerful thing in our sky. It is also, technically... lazy. A cubic metre of its core makes about as much heat as a compost heap.",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "lang": "en-us"
+ },
+ {
+  "id": "k_fenrir",
+  "text": "The Sun is the most powerful thing in our sky. It is also, technically... lazy. A cubic metre of its core makes about as much heat as a compost heap.",
+  "voice": "am_fenrir",
+  "speed": 1.0,
+  "lang": "en-us"
+ },
+ {
+  "id": "k_george",
+  "text": "The Sun is the most powerful thing in our sky. It is also, technically... lazy. A cubic metre of its core makes about as much heat as a compost heap.",
+  "voice": "bm_george",
+  "speed": 1.0,
+  "lang": "en-gb"
+ },
+ {
+  "id": "k_lewis",
+  "text": "The Sun is the most powerful thing in our sky. It is also, technically... lazy. A cubic metre of its core makes about as much heat as a compost heap.",
+  "voice": "bm_lewis",
+  "speed": 1.0,
+  "lang": "en-gb"
+ }
+]

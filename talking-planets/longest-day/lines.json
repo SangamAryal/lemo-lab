@@ -1,0 +1,152 @@
+[
+{
+"id": "01",
+"who": "earth",
+"text": "Quick vote. Who's got the longest day?",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "02",
+"who": "jupiter",
+"text": "Me! Biggest planet, biggest day, obviously.",
+"voice": "en-US-GuyNeural",
+"rate": "+10%",
+"pitch": "-10Hz"
+},
+{
+"id": "03",
+"who": "earth",
+"text": "Bro, you spin in under ten hours.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "04",
+"who": "jupiter",
+"text": "That's called speed, it's giving efficient.",
+"voice": "en-US-GuyNeural",
+"rate": "+10%",
+"pitch": "-10Hz"
+},
+{
+"id": "05",
+"who": "earth",
+"text": "Mine's about twenty-four hours.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "06",
+"who": "mars",
+"text": "Mine's about forty minutes longer than yours, Earth. Your day is mid.",
+"voice": "en-US-ChristopherNeural",
+"rate": "+4%"
+},
+{
+"id": "07",
+"who": "mercury",
+"text": "Fifty-nine days! I'm tiny but I'm SLOW!",
+"voice": "en-US-AnaNeural",
+"rate": "+10%",
+"pitch": "+2Hz"
+},
+{
+"id": "08",
+"who": "earth",
+"text": "Wait, the tiny one is winning?",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "09",
+"who": "venus",
+"text": "Cute, two hundred forty-three days.",
+"voice": "en-US-AriaNeural",
+"rate": "+0%",
+"pitch": "-3Hz"
+},
+{
+"id": "10a",
+"who": "all",
+"text": "WHAT?!",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "10b",
+"who": "all",
+"text": "WHAT?!",
+"voice": "en-US-GuyNeural",
+"pitch": "-10Hz",
+"rate": "+10%"
+},
+{
+"id": "10c",
+"who": "all",
+"text": "WHAT?!",
+"voice": "en-US-ChristopherNeural"
+},
+{
+"id": "10d",
+"who": "all",
+"text": "WHAT?!",
+"voice": "en-US-AnaNeural",
+"pitch": "+2Hz"
+},
+{
+"id": "11",
+"who": "venus",
+"text": "And my year is only two twenty-five. My day is longer than my year.",
+"voice": "en-US-AriaNeural",
+"rate": "+0%",
+"pitch": "-3Hz"
+},
+{
+"id": "12",
+"who": "mercury",
+"text": "That's illegal.",
+"voice": "en-US-AnaNeural",
+"rate": "+10%",
+"pitch": "+2Hz"
+},
+{
+"id": "13",
+"who": "jupiter",
+"text": "No cap?",
+"voice": "en-US-GuyNeural",
+"rate": "+10%",
+"pitch": "-10Hz"
+},
+{
+"id": "14",
+"who": "venus",
+"text": "No cap! Oh, and I spin backwards.",
+"voice": "en-US-AriaNeural",
+"rate": "+0%",
+"pitch": "-3Hz"
+},
+{
+"id": "15",
+"who": "venus",
+"text": "Here, the Sun rises in the west.",
+"voice": "en-US-AriaNeural",
+"rate": "+0%",
+"pitch": "-3Hz"
+},
+{
+"id": "16",
+"who": "earth",
+"text": "Okay, Venus is the main character.",
+"voice": "en-US-AndrewMultilingualNeural",
+"rate": "+6%"
+},
+{
+"id": "17",
+"who": "venus",
+"text": "Always was.",
+"voice": "en-US-AriaNeural",
+"rate": "-6%",
+"pitch": "-4Hz"
+}
+]
