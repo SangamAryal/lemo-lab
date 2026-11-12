@@ -1,6 +1,6 @@
 #!/bin/sh
 # "What If the Sun Vanished?" — flat-vector explainer, 1080×1920. Rebuilds the film from this folder.
-#   sh build.sh [--vo]     (--vo re-cuts voices/narration.mp3, the one-take ElevenLabs narration, into the lines with prep.py)
+#   sh build.sh [--vo]     (--vo regenerates the narration: Ryan +5% per line with tools/voice.py)
 # Needs: Node 20+, ffmpeg, uv, a GPU-capable headless Chrome (LEMO_ANGLE=vulkan on Linux), and the Lemo-Opuscar library (LIB).
 set -e
 LIB=${LIB:-/home/sangam/lemo-opuscar}
@@ -16,7 +16,7 @@ PY="uv run --no-project --python $LIB/.venv/bin/python"
 SIZE="--size 1080x1920"
 cd "$LIB"
 if [ "$1" = "--vo" ]; then
-  $PY "$HERE/prep.py" "$HERE/voices/narration.mp3"
+  $PY "$HERE/tools/voice.py" "$HERE"
 fi
 node core/render/events.mjs "$HERE" $SIZE
 $PY "$HERE/music.py"

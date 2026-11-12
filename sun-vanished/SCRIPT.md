@@ -4,7 +4,7 @@
 - **Audience:** teens and a general audience.
 - **Length:** about 66 s (64.5 s of narration). Every beat answers the question the last one raised.
 - **Tone:** plain, friendly, no slang.
-- **Voice:** ElevenLabs "Jofra – Expressive & Neutral Narrator" (British, `eleven_v4`), one take for the whole script, cut into lines. Edge-tts (Ryan) can't be reached from the cloud sessions, and Jofra is the voice already tested on the Moon film.
+- **Voice:** edge-tts "Ryan" (`en-GB-RyanNeural`, rate +5%), one take per line, the house voice for Beyond Everything. Rebuild with `sh build.sh --vo`.
 
 **Why this topic:** the channel's best Shorts are "what if something big changed about our planet or sky" (the Moon, Earth's rings, Earth stopping). This is the biggest one of all, it stars the lazy Sun, and the hook is a real surprise: you wouldn't notice for eight minutes. It's different from *Alpha Centauri* (the Sun swapped for another star) and *Far Future* (the Sun dying slowly).
 

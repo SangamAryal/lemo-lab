@@ -6,7 +6,7 @@ Beyond Everything brand style. Facts: FACTS.md.
 Type
   Nunito — the Nunito Project Authors, SIL Open Font License 1.1 (fonts/OFL-Nunito.txt), from github.com/google/fonts.
 Voice
-  ElevenLabs "Jofra – Expressive & Neutral Narrator" (eleven_v4), generated on Sangam's ElevenLabs account
-  (check the plan's commercial-use terms before monetising).
+  Microsoft Edge neural voice "Ryan" (en-GB-RyanNeural, +5%), via edge-tts
+  (same voice as the earlier Beyond Everything films).
 Score and sound effects
   Original, synthesized in music.py and mix.py (numpy/scipy). No samples.
