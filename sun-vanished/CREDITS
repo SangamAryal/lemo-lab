@@ -1,0 +1,12 @@
+What If the Sun Vanished? — flat-vector explainer (1080×1920, 24 fps)
+Everything on screen is drawn in code (main.js + kit.js, canvas 2D): Earth, the Sun, the Moon, the photons, the person, the
+sunflower, the sea, the ice, the vent and its creatures, the type. No images, no stock footage, no generated media. Our own character designs, in the
+Beyond Everything brand style. Facts: FACTS.md.
+
+Type
+  Nunito — the Nunito Project Authors, SIL Open Font License 1.1 (fonts/OFL-Nunito.txt), from github.com/google/fonts.
+Voice
+  Microsoft Edge neural voice "Ryan" (en-GB-RyanNeural, +5%), via edge-tts
+  (same voice as the earlier Beyond Everything films).
+Score and sound effects
+  Original, synthesized in music.py and mix.py (numpy/scipy). No samples.
