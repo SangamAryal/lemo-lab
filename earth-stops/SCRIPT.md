@@ -17,7 +17,7 @@
 | 3 | You don't feel it, because everything moves with you. | The person, a house, a tree, clouds and the sea all carry the same little arrow. | ground |
 | 4 | So if the planet stopped in one second, all of that would keep going. | A hard cut: Earth freezes and a clock shows 0:01. **Silence for 0.3 s.** | space |
 | 5 | You, your house, the trees. Anything not stuck to solid rock gets thrown east. | Street level: the person, the house and the trees fly sideways (east arrow). Only the rock stays put. | ground |
-| 6 | The air keeps going too. A wind faster than any tornado, across most of the planet. | A wall of wind sweeps the landscape; a tornado icon is left behind with "×5". | ground |
+| 6 | The air keeps going too. A wind faster than any tornado, across most of the planet. | A wall of wind sweeps the landscape; a tornado icon is left behind with "×3" (1,600 km/h vs about 480 km/h for the strongest tornadoes, per FACTS). | ground |
 | 7 | And the oceans keep going, crashing over the land. | Beach POV: the sea rolls in sideways over the coast. | beach |
 | 8 | Now say Earth survived that. What would a still planet be like? | Calm after the storm: the sky clears, and Earth looks around, dazed. | space |
 | 9 | One sunrise a year. Six months of daylight, then six months of night. | Ground POV time-lapse: the Sun crawls across the sky as a calendar flips; then night with stars. | ground |
