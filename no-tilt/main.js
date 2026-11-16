@@ -34,7 +34,7 @@ function space(t) {                                               // stars with 
   for (const [i, s] of STAR2.entries()) { const f = i % 2 ? .9 : .45, x = ((s.x * W * 1.6 - sx * f) % (W * 1.6) + W * 1.6) % (W * 1.6) - W * .3, y = ((s.y * H * 1.4 + sy * f) % (H * 1.4) + H * 1.4) % (H * 1.4) - H * .2; if (s.k) K.sparkle(x, y, 8 + s.r * 14, P.spark, .8); else dot(x, y, 1.2 + s.r * 2.6, P.star, .4 + .4 * s.r); }
 }
 
-const hex = c => [1, 3, 5].map(i => parseInt(c.slice(i, i + 2), 16));
+const hex = c => c[0] === '#' ? [1, 3, 5].map(i => parseInt(c.slice(i, i + 2), 16)) : c.match(/[\d.]+/g).slice(0, 3).map(Number);
 const mixc = (a, b, k) => { const x = hex(a), y = hex(b); return `rgb(${x.map((v, i) => Math.round(v + (y[i] - v) * clamp(k))).join(',')})`; };
 const chip = (s, x, y, px, col) => label(s, x, y, px, col, 1, 0);
 const TILT = -.41, AX = '#ffe9a8';
@@ -138,7 +138,7 @@ function s06(t) { const end = at(7, 'But'), u = lt(t, A(6) - .3, end); setCam(v3
   world([...trees('#4fa85a'), { p: v3(-1.2, 0, 3), draw: q => personQ(q) }]);
   if (night > 0) { g.fillStyle = `rgba(10,8,60,${night * .55})`; g.fillRect(-100, -100, W + 200, H + 200); }
   const mi = Math.floor(Math.max(0, t - A(6)) / .42) % 12, fl = (Math.max(0, t - A(6)) / .42) % 1; calendar(CX, 330, .8 + .06 * (1 - Math.min(1, fl * 4)), MON[mi]);
-  const n1 = at(6, 'No', 0), n2 = at(6, 'No', 1); if (t < n1 - .1) label('12 H LIGHT  ·  12 H DARK', CX, 1330, 42, P.gold, t, at(6, '12')); stamp('NO SUMMER', P.gold, t, n1 + .1, CX, 720); stamp('NO WINTER', '#7fd3ff', t, n2 + .1, CX, 920); }
+  const n1 = at(6, 'No', 1), n2 = at(6, 'No', 2); /* k=0 is "Now" */ if (t < n1 - .1) label('12 H LIGHT  ·  12 H DARK', CX, 1330, 42, P.gold, t, at(6, '12')); stamp('NO SUMMER', P.gold, t, n1 + .1, CX, 720); stamp('NO WINTER', '#7fd3ff', t, n2 + .1, CX, 920); }
 // the problem: the rain belt follows the seasons
 function s07(t) { const t0 = at(7, 'But'), u = lt(t, t0 - .3, E(7) + .3); setCam(v3(0, 0, 0), 9, lerp(.3, -.2, u), .08); space(t);
   const sw = at(7, 'Seasons'), ph = Math.max(0, t - sw) * 2.1, lat = -Math.sin(ph) * 120, R = 330;
