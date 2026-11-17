@@ -1,6 +1,6 @@
 What If a Black Hole Replaced Our Sun? — flat-vector explainer (1080×1920, 24 fps)
-Everything on screen is drawn in code (main.js + kit.js, canvas 2D): Earth, the Sun, the black hole, the photons, the astronaut,
-the fish, the giant star, the type. No images, no stock footage, no generated media. Our own character designs, in the
+Everything on screen is drawn in code (main.js + kit.js + props.js, canvas 2D): Earth, the Sun, the Moon, the black hole, the
+photons, the city, the houses, the people, the crops, the cow, the fish, the type. No images, no stock footage, no generated media. Our own character designs, in the
 Beyond Everything brand style. Facts: the fact-check table in SCRIPT.md.
 
 Type

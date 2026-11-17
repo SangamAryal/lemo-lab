@@ -1,42 +1,44 @@
-# What If a Black Hole Replaced Our Sun? — script, draft 1
+# What If a Black Hole Replaced Our Sun? — script, draft 2
 
 **Brief**
 - **Audience:** teens and a general audience.
-- **Length:** about 68 s (63.6 s of narration after trimming). Every beat answers the question the last one raised.
+- **Length:** about 73 s (68.4 s of narration after trimming). Every beat answers the question the last one raised.
 - **Tone:** plain, friendly, no slang.
 - **Voice:** edge-tts "Ryan" (`en-GB-RyanNeural`, rate +5%), one take per line, made with the shared `tools/voice.py`
-  (trimmed takes, inner pauses capped at 0.3 s). Lines are 0.2 s apart in the timeline (0.35 s after line 6 and line 11).
+  (trimmed takes, inner pauses capped at 0.3 s). Lines are 0.2 s apart in the timeline (0.3 s after line 4, 0.35 s after line 12).
 
-**Why this topic:** the channel's best Shorts change something big about our sky (the Moon, the rings, the Sun
-vanishing). This one has a real surprise that most people get wrong: Earth would *not* get sucked in. The black hole
-pulls exactly as hard as the Sun from out here. What would kill us is the darkness, so the payoff is "it's the light".
-It pairs with *What If the Sun Vanished?* without repeating it: there the orbit breaks, here it doesn't.
+**Why this topic:** the channel's best Shorts change something big about our sky. The surprise most people get wrong:
+Earth would *not* be swallowed, because the black hole pulls just as hard as the Sun from out here. What would really
+hurt is the darkness, so the middle of the film follows what happens to the sky, cities, power, food, weather and people.
 
-**Title:** "What If a Black Hole Replaced Our Sun?" · **Hook (first 3 s):** the Sun collapses into a black hole, Earth
-panics, and the red "sucked in" arrow gets a **NOPE**. The hook is a conditional ("if"), and line 2 states its
-condition (the same mass) straight away.
-**First frame (no sound):** the Sun on its orbit, big text **WHAT IF A BLACK HOLE REPLACED OUR SUN?**
+**Draft 2 (Sangam's notes, 2026-11-17):** the hook and ending follow Sangam's own script ("Imagine…", "the real
+nightmare isn't being swallowed"). The fly-close / spaghettification beats are cut ("a different topic"), and the
+middle now covers the consequences on Earth, cities and people's lives.
+
+**Title:** "What If a Black Hole Replaced Our Sun?" · **Hook (first 3 s):** the Sun collapses into a black hole and
+Earth panics. The hook says "imagine" and names the condition (the same mass) in the same line.
+**First frame (no sound):** the Sun on Earth's orbit, big text **WHAT IF A BLACK HOLE REPLACED OUR SUN?**
 **Thumbnail (designed separately, thumb.js):** a smug black hole inside the Sun's dashed outline, a scared Earth on its
 orbit, "OUR SUN / A BLACK HOLE?", pill "SAME PULL. NO LIGHT."
 
 | # | Narration (spoken) | Visual cue | POV |
 |---|---|---|---|
-| 1 | If a black hole replaced our Sun right now, Earth would not get sucked in. | The sleepy Sun on Earth's dashed orbit flashes and collapses into a black hole. A red arrow drags at Earth; it fades and **NOPE** pops. "not to scale". | space |
-| 2 | As long as it had the same mass as the Sun, its pull out here would be just the same. | A balance: the Sun on one pan, the black hole on the other, level, "=". Earth below with two equal pull arrows. Tag "same mass = same pull · from out here". | space |
-| 3 | So Earth keeps circling, once a year, at about thirty kilometres a second. | Top view: Earth laps the black hole with a cyan trail. Bubble "business as usual". Tag "≈ 30 km/s · one lap a year, same as now". | space |
-| 4 | But the black hole would be tiny: the Sun's whole mass, squeezed into a ball about six kilometres wide. | The Sun gets squeezed by arrows down to a dot; a magnifier shows the hole with a "6 km" bar. Tag "≈ 6 km wide · today's Sun: 1.4 million km". | space |
-| 5 | And it would be dark. With nothing falling in, there's nothing to glow. | The black hole alone, sad. Inset card "with a meal: it glows" (a hole with a hot disk) gets crossed out. Tag "nothing to eat · nothing to glow". | space |
-| 6 | The sunlight already on its way keeps arriving for about eight minutes. Then the sky goes black. | Smiling photons stream from the hole's spot to Earth; a timer runs to "8 min 20 s"; the stream ends, the screen darkens, **LIGHTS OUT**. Tag "last light still on its way". | space |
-| 7 | Within a week, Earth's surface would be about minus eighteen degrees, on average. | Dark, greyed Earth frosting over; a thermometer drops from 15 °C to −18 °C; snow. Tag "≈ −18 °C · on average, within a week". | space |
-| 8 | Within a year, about minus seventy. The oceans freeze over, but stay liquid underneath for ages. | Ocean cutaway: an ice lid grows on top; below it, fish keep swimming. "still liquid". Tag "≈ −70 °C · within a year". | sea |
-| 9 | Could you fly over for a look? Get close, and it pulls your feet much harder than your head. | An astronaut drifts in feet first; a big red arrow on the feet ("feet: BIG pull"), a small gold one on the head. Tag "feet first · the near side gets pulled harder". | space |
-| 10 | Long before you reached the edge, that difference would stretch you thin. Scientists call it spaghettification. | The astronaut stretches long and thin; speed lines; noodles and **SPAGHETTIFICATION**. Tag "stretched thin · long before the edge". | space |
-| 11 | And the edge itself is the point of no return. Not even light gets back out. | A big hole with a dashed gold "event horizon"; one photon swings past and escapes, one spirals in. Bubble "no way back". Tag "the point of no return · not even light gets out". | space |
-| 12 | The good news: this can't happen. The Sun is far too small to ever become a black hole. | **CAN'T HAPPEN**. The Sun sips its mug next to a much bigger blue giant star. Tag "far too small · black holes come from stars ~20× heavier". | space |
-| 13 | In about five billion years, it will swell into a red giant, then shrink into a white dwarf. | The Sun swells red ("red giant"), then shrinks to a small white dwarf ("white dwarf"). Tag "≈ 5 billion years · from now". | space |
-| 14 | So the Sun's gravity isn't what keeps you alive. Its light is. | Sunbeams pour onto a loved-up Earth; a "gravity" arrow fades as **IT'S THE LIGHT** pops. Tag "what keeps you alive?". **Loops to the first frame.** | space |
+| 1 | Imagine the Sun, right now, replaced by a black hole with the same mass. | The sleepy Sun on Earth's dashed orbit flashes and collapses into a smug black hole. Earth: "same mass?!". "not to scale". | space |
+| 2 | Would Earth get swallowed? No. Its pull out here would be the same, so we'd keep orbiting just like today. | A red arrow drags Earth inward, then **NOPE**; Earth keeps lapping with a cyan trail. Tag "same mass = same pull · Earth keeps its orbit". | space |
+| 3 | The black hole itself would be tiny, about six kilometres wide, and it wouldn't even glow. | The Sun gets squeezed to a dot; a magnifier shows a "6 km" bar. **NO GLOW**. Tag "≈ 6 km wide · today's Sun: 1.4 million km". | space |
+| 4 | For about eight minutes, nothing changes. The last sunlight is still on its way. | Smiling photons stream from the hole's spot to a sunny Earth ("all good?"); a timer counts up toward 8 min 19 s. Tag "last light still on its way". | space |
+| 5 | Then the lights go out. The daytime sky turns black, and the Moon goes dark too. | A sunny park: the Sun vanishes, the sky turns black with stars, the Moon dims; a person throws up their arms. **LIGHTS OUT**. Tag "black sky at noon · and no moonlight either". | ground |
+| 6 | In cities, street lights stay on all day, and solar panels stop making power. | A city at "12:00 NOON" under a black sky: windows lit, street lights glowing, rooftop solar panels read "0 W". Tag "street lights on all day · solar panels: nothing". | city |
+| 7 | Everyone turns the heating up at once, and power grids struggle to keep up. | Houses' windows glow orange; a POWER DEMAND bar fills to red; the pylon sparks. **OVERLOAD**. Tag "everyone heats at once". | city |
+| 8 | Within a week, the average surface temperature drops to about minus eighteen degrees. | A dark, greyed Earth frosts over; a thermometer drops from 15 °C to −18 °C; snow. Tag "≈ −18 °C · on average, within a week". | space |
+| 9 | Plants stop making food. Crops die in the fields, and the animals that eat them go hungry. | Rows of crops brown and droop; a worried cow, "hungry…". Tag "no light = no food · plants need sunlight to make it". | farm |
+| 10 | The weather winds down too. Without the Sun's heat, there's little left to drive the wind and rain. | Earth's cloud swirls slow and fade, wind arrows fade, a rain cloud dries up. Tag "the Sun runs the weather · no heat → little wind or rain". | space |
+| 11 | Within a year, about minus seventy. The oceans freeze over, and the ice keeps getting thicker. | Ocean cutaway: an ice lid forms and thickens (arrow); a worried fish below. Tag "≈ −70 °C · within a year". | sea |
+| 12 | A few people might hang on underground, using nuclear and geothermal power. Deep below the ice, life at hot vents keeps going. | Cutaway: frozen surface, a warm underground room with two people, "nuclear" and "geothermal" labels; below, a smoking vent and a fish. Tag "a few might hang on · nuclear + geothermal power". | underground |
+| 13 | The good news: this can't happen. The Sun is far too small to ever become a black hole. | **CAN'T HAPPEN**. The Sun sips its mug next to a much bigger blue giant star. Tag "far too small · black holes come from stars ~20× heavier". | space |
+| 14 | So the real nightmare isn't being swallowed. It's orbiting perfectly around something that no longer keeps us alive. | A frozen grey Earth laps the black hole; "swallowed?" gets crossed out; **STILL ORBITING… IN THE DARK**. Tag "the real nightmare". **Loops to the first frame.** | space |
 
-**Timing:** 225 words, 68.1 s as built.
+**Timing:** 230 words, 72.9 s as built.
 
 ## Fact checks
 
@@ -44,23 +46,26 @@ Every spoken claim and every on-screen number has a row. "Line" is the narration
 
 | Line | Claim (as said or shown) | Basis | Hedge |
 |---|---|---|---|
-| 1 | Earth would not get sucked in | Outside a spherical mass, gravity depends only on the mass and the distance (Newton's shell theorem; the Schwarzschild solution in general relativity). A black hole of one solar mass pulls on Earth exactly as the Sun does, so Earth's orbit is unchanged. NASA, "What Is a Black Hole? (Grades 5–8)" (nasa.gov/learning-resources/for-kids-and-students/what-is-a-black-hole-grades-5-8) and NASA Science, "Black Holes" (science.nasa.gov/universe/black-holes): a black hole with the Sun's mass would not pull the planets in; they would keep orbiting at the same distance and speed. The same page notes the Sun will never become one. | Conditional ("if"); line 2 gives the condition (same mass) at once. Assumes an instant swap with no mass lost. |
-| 2 | With the same mass, its pull out here would be just the same | Same as line 1. Relativistic corrections at 1 AU are about one part in 10⁸ (GM/rc² ≈ 10⁻⁸), far too small to matter. | "as long as it had the same mass", "out here" |
-| 3 | Earth keeps circling once a year at about 30 km/s | Same mass, same distance → same orbital period (Kepler's third law). Earth's mean orbital speed is 29.8 km/s (NASA Earth Fact Sheet). | "about" |
-| 4 | The Sun's mass in a ball about 6 km wide | Schwarzschild radius r = 2GM/c² = 2.95 km for one solar mass (1.989 × 10³⁰ kg), so the event horizon is ≈ 5.9 km across. | "about six kilometres" |
-| 4 (on-screen) | Today's Sun: 1.4 million km | The Sun's diameter is ≈ 1.39 million km (NASA Sun Fact Sheet). | rounded |
-| 5 | It would be dark; with nothing falling in, nothing glows | A black hole gives off no light of its own; the glowing black holes astronomers see are lit by hot gas falling in (accretion disks). NASA Science, "Black Holes" (science.nasa.gov/universe/black-holes). Its Hawking radiation for one solar mass is ≈ 6 × 10⁻⁸ K, far colder than space, so it is effectively black. | "nothing falling in": a trickle of dust and solar-system debris is ignored |
-| 6 | The sunlight already on its way keeps arriving for about 8 minutes, then the sky goes black | Light takes ≈ 499 s (8 min 19 s) to cross 1 AU (149.6 million km ÷ 299,792 km/s). NASA Space Place. | "about eight minutes"; on-screen timer rounds to 8 min 20 s |
-| 7 | Within a week, about −18 °C on average | Scientific American (2007), "What would happen to Earth if the Sun disappeared?", David Stevenson (Caltech): "within a week, the average global surface temperature would drop below 0 degrees Fahrenheit" (−18 °C). Losing sunlight is the same in both cases. | "about", "on average" |
-| 8 | Within a year, about −70 °C | Same source: "within a year, it would dip to −100 degrees F" (−73 °C). | "about" |
-| 8 | The oceans freeze over but stay liquid underneath for ages | Same source: the ice would insulate the water below, and the oceans would not freeze solid for hundreds of thousands of years (Earth's internal heat). | "for ages", no figure |
-| 9 | Get close and it pulls your feet much harder than your head | Gravity falls off with distance, so the near end of a body is pulled harder than the far end (tidal force). Feet first, the feet are nearer. | "get close" |
-| 10 | Long before you reached the edge, that difference stretches you thin | For a stellar-mass black hole, tides become deadly well outside the event horizon (NASA Science, "Black Holes"; NASA Hubble, "Black Hole Anatomy"). For one solar mass, the tidal stretch across a 2 m body is 2GML/r³ ≈ 530 m/s² (≈ 54 g) at 1,000 km, while the horizon is at 3 km. | "long before" |
-| 10 | Scientists call it spaghettification | The standard term (used by NASA and in Stephen Hawking's *A Brief History of Time*). | — |
-| 11 | The edge is the point of no return; not even light gets back out | Definition of the event horizon (NASA Science, "Black Holes"). | — |
-| 12 | This can't happen; the Sun is far too small to ever become a black hole | Stellar black holes form when the cores of stars born with more than roughly 20 solar masses collapse (NASA Science, "Black Holes"; NASA Imagine the Universe, "Stars"). The Sun will end as a white dwarf. | "far too small" |
-| 12 (on-screen) | Black holes come from stars ~20× heavier | Same source; the threshold is uncertain (≈ 20–25 solar masses). | "~" |
-| 13 | In about 5 billion years it swells into a red giant, then shrinks into a white dwarf | NASA Science, "The Sun": the Sun is about halfway through its life; in roughly 5 billion years it becomes a red giant, then sheds its outer layers and leaves a white dwarf. | "about" |
-| 14 | The Sun's gravity isn't what keeps you alive; its light is | The conclusion of lines 1–8: with an equal-mass black hole the orbit is unchanged (1–3), but without sunlight the surface freezes (6–8). | Framed as a summary, not a new claim |
+| 1 | A black hole with the same mass replaces the Sun | A thought experiment, stated as "imagine". | "Imagine" |
+| 2 | Earth would not be swallowed; its pull out here would be the same; we'd keep orbiting just like today | Outside a spherical mass, gravity depends only on the mass and the distance (Newton's shell theorem; the Schwarzschild solution in general relativity). NASA, "What Is a Black Hole? (Grades 5–8)" (nasa.gov/learning-resources/for-kids-and-students/what-is-a-black-hole-grades-5-8) and NASA Science, "Black Holes" (science.nasa.gov/universe/black-holes): a black hole with the Sun's mass would not pull the planets in; they would keep orbiting at the same distance and speed. Relativistic corrections at 1 AU are about one part in 10⁸. | "out here"; condition (same mass) given in line 1 |
+| 3 | About 6 km wide | Schwarzschild radius r = 2GM/c² = 2.95 km for one solar mass, so the event horizon is ≈ 5.9 km across. NASA gives ≈ 3 km for the radius. | "about" |
+| 3 (on-screen) | Today's Sun: 1.4 million km | The Sun's diameter is ≈ 1.39 million km (NASA Sun Fact Sheet). | rounded |
+| 3 | It wouldn't even glow | A black hole gives off no light of its own; the black holes we see glowing are lit by hot gas falling in (NASA Science, "Black Holes"). Its Hawking radiation for one solar mass is ≈ 6 × 10⁻⁸ K, effectively black. With the Sun's gas gone, there is next to nothing to fall in. | — |
+| 4 | For about eight minutes nothing changes; the last sunlight is still on its way | Light takes ≈ 499 s (8 min 19 s) to cross 1 AU (149.6 million km ÷ 299,792 km/s). NASA Space Place. Gravity doesn't change at all (line 2). | "about"; on-screen timer stops at 8 min 19 s |
+| 5 | The daytime sky turns black | The blue daytime sky is sunlight scattered by air (Rayleigh scattering). With no sunlight there is nothing to scatter, so the sky looks like night, with stars. | — |
+| 5 | The Moon goes dark too | Moonlight is reflected sunlight; the Moon is about as far from the Sun as we are, so it goes dark at about the same time (NASA Moon facts). | "too" (about the same time) |
+| 6 | Street lights stay on all day | Most street lights switch on automatically with light sensors (photocells) or timers set for darkness. | "In cities" (general) |
+| 6 | Solar panels stop making power | Solar panels turn sunlight into electricity; with no sunlight they produce essentially nothing. (Solar made about 7 % of the world's electricity in 2024: Ember, Global Electricity Review 2025; not said on screen.) | — |
+| 7 | Everyone turns the heating up at once, and power grids struggle | A projection. Demand for heating spikes in severe cold, and grids have failed under it before (e.g. the Texas blackouts during Winter Storm Uri, February 2021; ERCOT/FERC report). | "struggle", no claim of total failure |
+| 8 | Within a week, average surface temperature about −18 °C | Scientific American (2007), "What would happen to Earth if the Sun disappeared?", David Stevenson (Caltech): "within a week, the average global surface temperature would drop below 0 degrees Fahrenheit" (−18 °C). Same physics here: no sunlight. | "about", "average" |
+| 9 | Plants stop making food; crops die; the animals that eat them go hungry | Photosynthesis needs light (Scientific American 2007, Stevenson: photosynthesis would stop). Crops and grazing animals depend on it; food chains start with plants. | — |
+| 10 | The weather winds down; without the Sun's heat, little is left to drive wind and rain | Sunlight heats the equator more than the poles; that uneven heating drives the winds, and its heat evaporates the water that falls as rain and snow (NASA Earth Observatory, "Earth's energy budget"; NOAA, "The water cycle"). Without it, both fade. | "winds down", "little left" |
+| 11 | Within a year, about −70 °C | Scientific American (2007), Stevenson: "within a year, it would dip to −100 degrees F" (−73 °C). | "about" |
+| 11 | The oceans freeze over, and the ice keeps getting thicker | Same source: the ocean surfaces would freeze, and the ice layer would keep thickening while insulating the water below, which would not freeze solid for hundreds of thousands of years. | — |
+| 12 | A few people might hang on underground, using nuclear and geothermal power | Popular Science (2013), "What would happen if the Sun went out?" (popsci.com/science/article/2013-07/if-sun-went-out-how-long-could-life-earth-survive): nuclear- or geothermal-powered habitats are the most workable option; Iceland already heats most of its homes with geothermal energy, and people could keep using volcanic heat for hundreds of years (Eric Blackman, University of Rochester). | "a few", "might" |
+| 12 | Deep below the ice, life at hot vents keeps going | Vent ecosystems run on chemical energy, not sunlight (chemosynthesis; NOAA Ocean Exploration, "What is a hydrothermal vent?"). Stevenson (Scientific American 2007) notes such life could carry on. | — |
+| 13 | This can't happen; the Sun is far too small to ever become a black hole | Stellar black holes form when the cores of stars born with more than roughly 20 solar masses collapse (NASA Science, "Black Holes"). NASA notes the Sun will end as a white dwarf instead. | "far too small" |
+| 13 (on-screen) | Black holes come from stars ~20× heavier | Same source; the threshold is uncertain (≈ 20–25 solar masses). | "~" |
+| 14 | The real nightmare: orbiting perfectly around something that no longer keeps us alive | The conclusion of lines 2 and 4–12: the orbit is unchanged, but without sunlight the surface freezes and food fails. | Framed as a summary, not a new claim |
 
-Not claimed: that we could see the black hole from Earth, any survival timeline for people, or that the black hole would grow or pull in other planets.
+Not claimed: that we could see the black hole from Earth, a survival timeline or head-count for people, how long stored food would last, or that the black hole would grow or pull in other planets.

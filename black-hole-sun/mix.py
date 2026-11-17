@@ -52,24 +52,24 @@ def powerdown(v=.6): t = tt(1.0); f = 400 * np.exp(-t / .3) + 40; return np.sin(
 for e in E:
     if e['type'] == 'scene': put(fx, whoosh(.55, .7, 250, 5000), e['t'] - .05, 1, 0)
 put(fx, hum(T['swap'] - .3, .25), .3, 1, 0); put(fx, powerdown(.7), T['swap'], 1, 0); put(fx, thud(.8), T['swap'] + .05, 1, 0)   # the Sun collapses
-put(fx, boing(.35, 300), T['sucked'] + .2, 1, .2)                                                                                 # "NOPE"
-for name, f in [('mass', 760), ('same2', 860), ('thirty', 820), ('six', 900), ('glow', 640), ('eight', 760), ('eighteen', 700), ('seventy', 680),
-                ('liquid', 860), ('harder', 760), ('point', 820), ('out', 700), ('cant', 900), ('small', 820), ('five', 800), ('white', 900), ('alive', 820)]:
+put(fx, boing(.35, 300), T['no'], 1, .2)                                                                                           # "NOPE"
+for name, f in [('mass', 760), ('same', 860), ('six', 900), ('glow', 640), ('eight', 760), ('cities', 820), ('solar', 700), ('once', 820),
+                ('eighteen', 700), ('food', 760), ('hungry', 640), ('heat', 800), ('seventy', 680), ('people', 820), ('nuclear', 880), ('vents', 760),
+                ('cant', 900), ('small', 820), ('nightmare', 640)]:
     put(fx, popf(.45, f), T[name] - .1, 1, rng.uniform(-.3, .3))
-put(fx, ping(.3, 1320), T['circling'], 1, .3)
-put(fx, whoosh(1.4, .6, 300, 3000), T['squeezed'] - .2, 1, 0); put(fx, zap(.35), T['squeezed'] + .9, 1, 0)
-put(fx, fizzle(.3), T['glow'], 1, .2)
-for k in range(6): put(fx, shimmer(.6, .25), T['sunlight'] + k * .5, 1, (-1) ** k * .3)
-for k in range(10): put(fx, tick(.25), T['eight'] + k * .2, 1, .3)
-put(fx, powerdown(.6), T['black6'] - .1, 1, 0)
-put(fx, wave(1.4, .25), T['week'], 1, 0); put(fx, crack(.5), T['freeze'], 1, -.2); put(fx, crack(.35), T['freeze'] + .35, 1, .3)
-put(fx, bubbles(2.0, .2), T['liquid'] - .3, 1, .2)
-put(fx, whoosh(1.6, .5, 200, 2500), T['fly'] - .2, 1, .4)
-put(fx, screech(1.2, .3), T['stretch'], 1, 0); put(fx, slurp(.4), T['spaghetti'] + .3, 1, 0)
-put(fx, rumble(1.6, .4), T['edge11'] - .2, 1, 0); put(fx, whoosh(.9, .5, 500, 6000), T['light11'], 1, -.3)
+put(fx, whoosh(1.4, .6, 300, 3000), T['tiny'] - .3, 1, 0); put(fx, zap(.35), T['tiny'] + .7, 1, 0)
+for k in range(6): put(fx, shimmer(.6, .25), T['sunlight'] + k * .5 - 1.5, 1, (-1) ** k * .3)
+for k in range(12): put(fx, tick(.25), T['eight'] + k * .3, 1, .3)
+put(fx, powerdown(.7), T['out'] - .1, 1, 0); put(fx, flick(.4), T['street'], 1, -.3); put(fx, flick(.4), T['street'] + .15, 1, .3)
+put(fx, hum(2.4, .35), T['grids'] - .3, 1, 0)
+for k in range(3): put(fx, zap(.4), T['struggle'] + k * .3, 1, (-1) ** k * .3)
+put(fx, wave(1.4, .25), T['week'], 1, 0)
+put(fx, fizzle(.25), T['crops'], 1, 0)
+put(fx, whoosh(1.6, .45, 300, 4000), T['wind'] - .4, 1, -.3); put(fx, rain(1.4, .25), T['weather'], 1, .3)
+put(fx, crack(.5), T['freeze'], 1, -.2); put(fx, crack(.35), T['thicker'], 1, .3)
+put(fx, bubbles(2.0, .2), T['vents'] - .3, 1, .2)
 put(fx, slurp(.25), T['good'] + .2, 1, .2)
-put(fx, roar(1.6, .25), T['swell'], 1, 0); put(fx, whoosh(1.0, .5, 800, 6000), T['shrink'], 1, 0)
-put(fx, shimmer(1.6, .5), T['light14'] + .1, 1, 0)
+put(fx, whoosh(.9, .4, 300, 2500), T['swallowed14'], 1, 0); put(fx, shimmer(1.6, .35), T['alive'] + .1, 1, 0)
 
 lines = json.load(open(os.path.join(HERE, 'lines.json')))
 vm = np.zeros(NS, np.float32)

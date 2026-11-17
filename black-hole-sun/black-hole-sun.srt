@@ -1,56 +1,56 @@
 1
-00:00:00,200 --> 00:00:04,130
-If a black hole replaced our Sun right now, Earth would not get sucked in.
+00:00:00,200 --> 00:00:04,300
+Imagine the Sun, right now, replaced by a black hole with the same mass.
 
 2
-00:00:04,130 --> 00:00:08,090
-As long as it had the same mass as the Sun, its pull out here would be just the same.
+00:00:04,300 --> 00:00:09,840
+Would Earth get swallowed? No. Its pull out here would be the same, so we'd keep orbiting just like today.
 
 3
-00:00:08,090 --> 00:00:12,470
-So Earth keeps circling, once a year, at about thirty kilometres a second.
+00:00:09,840 --> 00:00:14,840
+The black hole itself would be tiny, about six kilometres wide, and it wouldn't even glow.
 
 4
-00:00:12,470 --> 00:00:18,200
-But the black hole would be tiny: the Sun's whole mass, squeezed into a ball about six kilometres wide.
+00:00:14,840 --> 00:00:19,440
+For about eight minutes, nothing changes. The last sunlight is still on its way.
 
 5
-00:00:18,200 --> 00:00:21,940
-And it would be dark. With nothing falling in, there's nothing to glow.
+00:00:19,440 --> 00:00:24,240
+Then the lights go out. The daytime sky turns black, and the Moon goes dark too.
 
 6
-00:00:21,940 --> 00:00:27,190
-The sunlight already on its way keeps arriving for about eight minutes. Then the sky goes black.
+00:00:24,240 --> 00:00:28,810
+In cities, street lights stay on all day, and solar panels stop making power.
 
 7
-00:00:27,190 --> 00:00:31,700
-Within a week, Earth's surface would be about minus eighteen degrees, on average.
+00:00:28,810 --> 00:00:32,780
+Everyone turns the heating up at once, and power grids struggle to keep up.
 
 8
-00:00:31,700 --> 00:00:37,450
-Within a year, about minus seventy. The oceans freeze over, but stay liquid underneath for ages.
+00:00:32,780 --> 00:00:37,450
+Within a week, the average surface temperature drops to about minus eighteen degrees.
 
 9
-00:00:37,450 --> 00:00:42,280
-Could you fly over for a look? Get close, and it pulls your feet much harder than your head.
+00:00:37,450 --> 00:00:42,630
+Plants stop making food. Crops die in the fields, and the animals that eat them go hungry.
 
 10
-00:00:42,280 --> 00:00:48,030
-Long before you reached the edge, that difference would stretch you thin. Scientists call it spaghettification.
+00:00:42,630 --> 00:00:47,570
+The weather winds down too. Without the Sun's heat, there's little left to drive the wind and rain.
 
 11
-00:00:48,030 --> 00:00:52,500
-And the edge itself is the point of no return. Not even light gets back out.
+00:00:47,570 --> 00:00:52,940
+Within a year, about minus seventy. The oceans freeze over, and the ice keeps getting thicker.
 
 12
-00:00:52,500 --> 00:00:57,750
-The good news: this can't happen. The Sun is far too small to ever become a black hole.
+00:00:52,940 --> 00:01:00,360
+A few people might hang on underground, using nuclear and geothermal power. Deep below the ice, life at hot vents keeps going.
 
 13
-00:00:57,750 --> 00:01:03,130
-In about five billion years, it will swell into a red giant, then shrink into a white dwarf.
+00:01:00,360 --> 00:01:05,610
+The good news: this can't happen. The Sun is far too small to ever become a black hole.
 
 14
-00:01:03,130 --> 00:01:07,220
-So the Sun's gravity isn't what keeps you alive. Its light is.
+00:01:05,610 --> 00:01:11,960
+So the real nightmare isn't being swallowed. It's orbiting perfectly around something that no longer keeps us alive.
 

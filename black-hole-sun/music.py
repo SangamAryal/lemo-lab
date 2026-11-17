@@ -1,6 +1,6 @@
 """Score for "What If a Black Hole Replaced Our Sun?" (original, synthesized). A bouncy pad + pluck arpeggio for the
-swap and the unchanged orbit, a hollow, slow colour for the tiny dark hole, the last light and the freeze, a driving
-pulse for the trip in and spaghettification, and the bright groove back for the good news and the light."""
+swap and the unchanged orbit, a hollow, slow colour for the dark sky, the freeze, the crops and the ice, a driving
+pulse while the power grid strains, the groove back for the good news, and a hollow close on the dark orbit."""
 import os, sys, json, numpy as np, soundfile as sf
 LIB = os.environ['LIB']; sys.path.insert(0, LIB)
 from core.audio.sfx import SR, bp, lp, hp, add, limit
@@ -30,11 +30,11 @@ def every(a, b, s):
     while t < b - 1e-6: yield t; t += s
 B = 60 / 100
 # one chord per scene: (notes, energy, style)  style: 'spin' bouncy, 'chaos' driving, 'still' hollow
-CH = [([57, 60, 64, 67], .7, 'spin'), ([53, 57, 60, 64], .55, 'spin'), ([55, 59, 62, 66], .6, 'spin'),
-      ([48, 55, 60, 64], .5, 'still'), ([45, 52, 57, 60], .4, 'still'), ([46, 53, 58, 61], .5, 'still'),
-      ([44, 51, 56, 59], .35, 'still'), ([43, 50, 55, 58], .35, 'still'),
-      ([45, 52, 55, 60], .85, 'chaos'), ([46, 53, 58, 61], .9, 'chaos'), ([44, 51, 56, 59], .6, 'still'),
-      ([53, 57, 60, 65], .6, 'spin'), ([50, 57, 60, 65], .55, 'spin'), ([57, 60, 64, 69], .7, 'spin')]
+CH = [([57, 60, 64, 67], .7, 'spin'), ([53, 57, 60, 64], .6, 'spin'), ([48, 55, 60, 64], .5, 'still'),
+      ([50, 57, 60, 65], .5, 'spin'), ([45, 52, 57, 60], .45, 'still'), ([46, 53, 58, 61], .5, 'still'),
+      ([45, 52, 55, 60], .85, 'chaos'), ([44, 51, 56, 59], .4, 'still'), ([43, 50, 55, 58], .4, 'still'),
+      ([41, 48, 53, 57], .35, 'still'), ([44, 51, 56, 59], .35, 'still'), ([46, 53, 58, 62], .45, 'still'),
+      ([53, 57, 60, 65], .6, 'spin'), ([45, 52, 57, 60], .5, 'still')]
 s = [0] + SCN + [DUR]
 assert len(CH) == len(s) - 1, (len(CH), len(s))
 for i, (ch, en, st) in enumerate(CH):
@@ -51,7 +51,7 @@ for i, (ch, en, st) in enumerate(CH):
     else:
         for j, t in enumerate(every(a + .4, b, B * 2)): put(pluck(ch[j % len(ch)] + 12, .12 * en, 1.2, 1800), t, 1, (-1) ** j * .5)
     if i > 0: put(bell(ch[0] + 24, .3), a + .4, 1, (-1) ** i * .3)
-put(bell(84, .5), T['swap']); put(bell(81, .35), T['good'] + .1); put(bell(88, .3), T['light14'] + .1)
+put(bell(84, .5), T['swap']); put(bell(81, .35), T['good'] + .1); put(bell(76, .3), T['alive'] + .1)
 out = hp(out.T, 35).T.astype(np.float32); out = np.stack([limit(out[:, c], .9) for c in range(2)], 1)
 os.makedirs(os.path.join(HERE, 'music'), exist_ok=True); sf.write(os.path.join(HERE, 'music/score.wav'), out[:int(DUR * SR)], SR)
 print('score', DUR, 'peak', float(np.abs(out).max()))
