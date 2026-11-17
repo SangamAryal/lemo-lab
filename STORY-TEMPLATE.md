@@ -26,6 +26,7 @@ Write the questions the viewer is silently asking, one per beat. Each answer mus
 - **The characters are the brand.** Earth, the Moon and the lazy Sun react to the narration, and the joke lives in their reaction.
 - **One number per beat,** said as something the viewer can feel ("about the speed your fingernails grow").
 - **The payoff reframes the hook** (✓ "It's not lazy. It's pacing itself."), and the last line should flow back into the first so the Short loops.
+- **Narration flows, no dead air.** Make the voice with `python3 tools/voice.py FILM_DIR` (Ryan, +5%). It trims each take and caps pauses inside a line at 0.3 s; in main.js keep the gap between lines at about 0.2 s (`LINE_GAP`). Add more only on purpose, for a single dramatic beat.
 - **Accuracy:** every claim goes in FACTS.md with a source and a hedge. Avoid wording that can be read wrong, such as "takes 9 billion years to fuse a proton".
 
 ## 3. Before publishing
