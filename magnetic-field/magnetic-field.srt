@@ -1,0 +1,52 @@
+1
+00:00:00,200 --> 00:00:04,750
+If Earth's magnetic field switched off right now, your compass would stop pointing north.
+
+2
+00:00:04,750 --> 00:00:09,890
+That field comes from liquid iron swirling in Earth's core, about three thousand kilometres down.
+
+3
+00:00:09,890 --> 00:00:15,640
+It's a shield. The Sun blows a wind of charged particles at us, about four hundred kilometres a second.
+
+4
+00:00:15,640 --> 00:00:20,300
+The field bends that wind around us. Without it, the wind hits our air directly.
+
+5
+00:00:20,300 --> 00:00:24,250
+Satellites and astronauts take the first hit, from a lot more radiation.
+
+6
+00:00:24,250 --> 00:00:29,010
+Sea turtles, salmon and some birds use the field to navigate. They'd get lost.
+
+7
+00:00:29,010 --> 00:00:33,830
+But on the ground, you'd be mostly fine. The thick air above you is a second shield.
+
+8
+00:00:33,830 --> 00:00:39,080
+The real danger is slow. The solar wind would strip away our upper atmosphere, bit by bit.
+
+9
+00:00:39,080 --> 00:00:44,160
+That's what happened to Mars. Its field died billions of years ago, and it lost most of its air.
+
+10
+00:00:44,160 --> 00:00:48,820
+But that took hundreds of millions of years. And Earth's stronger gravity holds on tighter.
+
+11
+00:00:48,820 --> 00:00:53,810
+And forty-one thousand years ago, the field really did drop below a tenth of today's strength.
+
+12
+00:00:53,810 --> 00:00:58,500
+Life carried on. The magnetic poles have even swapped places hundreds of times.
+
+13
+00:00:58,500 --> 00:01:03,410
+So thank the hot iron under your feet. It keeps the lazy Sun's wind out of your hair.
+
