@@ -19,34 +19,50 @@ First, your calendar breaks. A year would have about seven hundred and thirty da
 Your body clock can't squeeze into twelve hours, so you'd sleep through one night and stay up through the next.
 
 6
-00:00:23,550 --> 00:00:29,910
-Then the faster spin flings the oceans toward the equator. Seas near the poles drain, and cities near the equator drown.
+00:00:23,550 --> 00:00:27,870
+It would feel like permanent jet lag, which is linked to poor sleep and health problems.
 
 7
-00:00:29,910 --> 00:00:32,970
-You'd weigh about one percent less at the equator, too.
+00:00:27,870 --> 00:00:34,150
+Animals run on body clocks too. Birds, bees and flowers that time their day by the Sun would be thrown off.
 
 8
-00:00:32,970 --> 00:00:37,500
-Winds would bend harder and split into more bands, a bit like Jupiter's stripes.
+00:00:34,150 --> 00:00:38,820
+Even crops grow worse when their inner clock doesn't match the day, so harvests could shrink.
 
 9
-00:00:37,500 --> 00:00:41,700
-Less heat would reach the poles, so the tropics could get hotter and the poles colder.
+00:00:38,820 --> 00:00:42,530
+And high tide would come about every six hours, not every twelve.
 
 10
-00:00:41,700 --> 00:00:46,640
-But that's if it sped up slowly. Overnight, the air and oceans would keep their old speed.
+00:00:42,530 --> 00:00:49,140
+Then the faster spin flings the oceans toward the equator. Seas near the poles drain, and cities near the equator drown.
 
 11
-00:00:46,640 --> 00:00:53,260
-At the equator, the ground would race through the air at over sixteen hundred kilometres an hour, with giant ocean surges.
+00:00:49,140 --> 00:00:52,200
+You'd weigh about one percent less at the equator, too.
 
 12
-00:00:53,260 --> 00:00:59,310
-The good news: it can't happen. Earth's spin is actually slowing down, very slowly, thanks to the Moon.
+00:00:52,200 --> 00:00:56,730
+Winds would bend harder and split into more bands, a bit like Jupiter's stripes.
 
 13
-00:00:59,310 --> 00:01:06,220
+00:00:56,730 --> 00:01:00,930
+Less heat would reach the poles, so the tropics could get hotter and the poles colder.
+
+14
+00:01:00,930 --> 00:01:05,870
+But that's if it sped up slowly. Overnight, the air and oceans would keep their old speed.
+
+15
+00:01:05,870 --> 00:01:12,490
+At the equator, the ground would race through the air at over sixteen hundred kilometres an hour, with giant ocean surges.
+
+16
+00:01:12,490 --> 00:01:18,540
+The good news: it can't happen. Earth's spin is actually slowing down, very slowly, thanks to the Moon.
+
+17
+00:01:18,540 --> 00:01:25,450
 So a twelve-hour day might sound like a productivity hack. But the planet wouldn't just change its clock. It would change everything.
 

@@ -1,5 +1,5 @@
 // "What If Earth Spun Twice as Fast?" — flat-vector explainer, vertical 1080×1920, canvas 2D, deterministic in t.
-// Beyond Everything brand style (kit.js shared with the Earth Stops, Sun Vanished and Magnetic Field films). Thirteen
+// Beyond Everything brand style (kit.js shared with the Earth Stops, Sun Vanished and Magnetic Field films). Seventeen
 // beats, one per line: Earth wakes up spinning double, the 12-hour day, "less sleep?", the 730-day calendar, the body
 // clock that can't keep up, the oceans piling up at the equator, a 1 % lighter you, Jupiter-like wind bands, hotter
 // tropics and colder poles, what a sudden spin-up would do, the 1,600 km/h wind, why it can't happen, and the ending.
@@ -19,7 +19,7 @@ const dur = await (await fetch('voices/dur.json')).json();
 
 // ───────── timeline: one scene per line; takes are trimmed by tools/voice.py, so the line gap stays small
 const IDS = lines.map(l => l.id), VO = {};
-const LINE_GAP = .2, GAP = { s09: .35, s11: .35 };                 // a beat before "but that's if…" and before the good news
+const LINE_GAP = .2, GAP = { s06: .45, s09: .35, s11: .35 };          // + a beat to watch the city drown                 // a beat before "but that's if…" and before the good news
 { let t = .25; for (const id of IDS) { VO[id] = +t.toFixed(3); t += dur[id] + (GAP[id] ?? LINE_GAP); } }
 const LAST = IDS[IDS.length - 1], DUR = +(VO[LAST] + dur[LAST] + 1.4).toFixed(2);
 const nrm = s => s.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -33,7 +33,10 @@ const T = {
   sleep: at('s03', 'sleep'), crazier: at('s03', 'crazier'),
   calendar: at('s04', 'calendar'), year: at('s04', 'year'), seven: at('s04', 'seven'), days: at('s04', 'days'),
   body: at('s05', 'body'), squeeze: at('s05', 'squeeze'), sleep5: at('s05', 'sleep'), up: at('s05', 'up'), next: at('s05', 'next'),
-  flings: at('s06', 'flings'), oceans: at('s06', 'oceans'), equator6: at('s06', 'equator'), poles6: at('s06', 'poles'), drain: at('s06', 'drain'), drown: at('s06', 'drown'),
+  flings: at('s06', 'flings'), oceans: at('s06', 'oceans'), equator6: at('s06', 'equator'), poles6: at('s06', 'poles'), drain: at('s06', 'drain'), drown: at('s06', 'drown'), cities: at('s06', 'cities'),
+  jet: at('p01', 'jet'), health: at('p01', 'health'), animals: at('a01', 'animals'), birds: at('a01', 'birds'), bees: at('a01', 'bees'), flowers: at('a01', 'flowers'), off: at('a01', 'off'),
+  crops: at('c01', 'crops'), inner: at('c01', 'inner'), harvests: at('c01', 'harvests'), shrink: at('c01', 'shrink'),
+  tide: at('t01', 'tide'), six: at('t01', 'six'), twelve2: at('t01', 'twelve'),
   weigh: at('s07', 'weigh'), percent: at('s07', 'percent'), equator7: at('s07', 'equator'),
   winds: at('s08', 'winds'), bend: at('s08', 'bend'), bands: at('s08', 'bands'), jupiter: at('s08', 'jupiter'),
   heat: at('s09', 'heat'), tropics: at('s09', 'tropics'), hotter: at('s09', 'hotter'), colder: at('s09', 'colder'),
@@ -122,6 +125,59 @@ function wave(x0, y, h, t, k) {                                    // a big surg
   g.fillStyle = P.white; for (let i = 0; i < 7; i++) { const R = mulberry(i + 3); g.beginPath(); g.arc(front - 40 - R() * 160, y - crest + R() * 60 + Math.sin(t * 6 + i) * 8, 16 + R() * 20, 0, TAU); g.fill(); }
 }
 
+function skyline(t, a = 1, lit = 0) {                              // a city block with windows
+  const R = mulberry(17); g.save(); g.globalAlpha *= a;
+  for (const [x, w, h, c] of [[-20, 170, 520, '#8aa4d8'], [140, 130, 760, '#6f8cc8'], [260, 190, 600, '#9bb4e2'], [440, 150, 880, '#7d97d0'], [580, 200, 650, '#8aa4d8'], [770, 140, 820, '#6f8cc8'], [900, 200, 560, '#9bb4e2']]) {
+    g.fillStyle = c; g.fillRect(x, 1500 - h, w, h);
+    g.fillStyle = 'rgba(255,255,255,.12)'; g.fillRect(x + w * .7, 1500 - h, w * .3, h);
+    for (let yy = 1500 - h + 40; yy < 1480; yy += 70) for (let xx = x + 20; xx < x + w - 30; xx += 46) { g.fillStyle = R() < .5 ? '#ffe58a' : '#c8d8ff'; g.fillRect(xx, yy, 24, 34); }
+  }
+  g.restore();
+}
+function cityDrown(t, w, a = 1) {                                  // water rising through a city, a person on a rooftop, a floating car
+  if (a <= 0) return; g.save(); g.globalAlpha *= a;
+  sky('#5f6f9a', '#a9b8d8'); skyline(t);
+  const lvl = lerp(1560, 1020, eo(w));
+  stander(510, 1500 - 880, .42, t, { mood: 'scared', arms: 'flail' });
+  g.fillStyle = 'rgba(42,99,184,.92)'; g.beginPath(); g.moveTo(0, H); for (let x = 0; x <= W; x += 20) g.lineTo(x, lvl + Math.sin(x * .02 + t * 4) * 14); g.lineTo(W, H); g.fill();
+  g.fillStyle = 'rgba(61,139,232,.9)'; g.beginPath(); g.moveTo(0, H); for (let x = 0; x <= W; x += 20) g.lineTo(x, lvl + 40 + Math.sin(x * .025 - t * 3) * 10); g.lineTo(W, H); g.fill();
+  g.fillStyle = P.white; for (let i = 0; i < 12; i++) { const x = (i * 97 + t * 60) % W; g.beginPath(); g.arc(x, lvl + Math.sin(x * .02 + t * 4) * 14, 10, 0, TAU); g.fill(); }
+  g.save(); g.translate(780, lvl - 10 + Math.sin(t * 3) * 10); g.rotate(Math.sin(t * 2) * .15); g.fillStyle = P.red; g.beginPath(); g.roundRect(-90, -50, 180, 60, 20); g.fill(); g.beginPath(); g.roundRect(-50, -90, 100, 50, 16); g.fill(); g.fillStyle = '#7fd3ff'; g.fillRect(-36, -80, 72, 30); g.fillStyle = P.navy; for (const sx of [-55, 55]) { g.beginPath(); g.arc(sx, 12, 22, 0, TAU); g.fill(); } g.restore();
+  g.restore();
+}
+function batteryIcon(x, y, lvl, a = 1) {
+  if (a <= 0) return; g.save(); g.globalAlpha *= a; g.translate(x, y);
+  g.fillStyle = P.white; g.beginPath(); g.roundRect(-110, -55, 220, 110, 20); g.fill(); g.fillRect(110, -22, 18, 44);
+  g.fillStyle = P.navy; g.beginPath(); g.roundRect(-98, -43, 196, 86, 12); g.fill();
+  g.fillStyle = lvl < .3 ? P.red : '#5fcf7a'; g.beginPath(); g.roundRect(-90, -35, 180 * lvl, 70, 8); g.fill(); g.restore();
+}
+function bee(x, y, s, t, mood) {
+  g.save(); g.translate(x, y); g.scale(s, s);
+  g.fillStyle = 'rgba(255,255,255,.75)'; const fl = Math.sin(t * 40) * .3; for (const sd of [-1, 1]) { g.save(); g.rotate(sd * (.5 + fl)); g.beginPath(); g.ellipse(sd * 10, -50, 26, 44, 0, 0, TAU); g.fill(); g.restore(); }
+  g.fillStyle = '#ffc73a'; g.beginPath(); g.ellipse(0, 0, 70, 50, 0, 0, TAU); g.fill();
+  g.fillStyle = P.navy; for (const bx of [-25, 10]) g.fillRect(bx, -48, 16, 96);
+  g.save(); g.translate(40, -4); K.face(30, mood, t, 0, 1.4, 0); g.restore(); g.restore();
+}
+function birdy(x, y, s, t, ph = 0) {
+  g.save(); g.translate(x, y); g.scale(s, s); const fl = Math.sin(t * 10 + ph);
+  g.fillStyle = '#ff8a5c'; g.beginPath(); g.ellipse(0, 0, 60, 34, 0, 0, TAU); g.fill();
+  g.beginPath(); g.moveTo(-10, -6); g.quadraticCurveTo(-40, -70 * fl, -90, -60 * fl); g.lineTo(20, -6); g.fill();
+  g.beginPath(); g.arc(52, -18, 24, 0, TAU); g.fill(); g.fillStyle = P.gold; g.beginPath(); g.moveTo(72, -20); g.lineTo(98, -12); g.lineTo(72, -6); g.fill();
+  g.fillStyle = P.navy; g.beginPath(); g.arc(58, -24, 5, 0, TAU); g.fill(); g.restore();
+}
+function flower(x, y, s, t, open) {
+  g.save(); g.translate(x, y); g.scale(s, s);
+  g.strokeStyle = '#3fa35e'; g.lineWidth = 14; g.beginPath(); g.moveTo(0, 0); g.lineTo(0, -220); g.stroke();
+  g.translate(0, -220); for (let i = 0; i < 8; i++) { g.save(); g.rotate(i / 8 * TAU); g.fillStyle = i % 2 ? '#ff6a9a' : '#ff8ab2'; g.beginPath(); g.ellipse(0, -30 - 30 * open, 22, 30 + 20 * open, 0, 0, TAU); g.fill(); g.restore(); }
+  g.fillStyle = P.gold; g.beginPath(); g.arc(0, 0, 32, 0, TAU); g.fill(); g.restore();
+}
+function wheat(x, y, s, t, droop) {
+  g.save(); g.translate(x, y); g.scale(s, s); g.rotate(Math.sin(t * 1.5 + x) * .04 + droop * .5);
+  g.strokeStyle = droop > .5 ? '#a8925a' : '#7fbf5a'; g.lineWidth = 8; g.beginPath(); g.moveTo(0, 0); g.quadraticCurveTo(0, -120, droop * 60, -200 + droop * 40); g.stroke();
+  g.fillStyle = droop > .5 ? '#b8a060' : '#ffd36a'; for (let i = 0; i < 5; i++) { g.beginPath(); g.ellipse(droop * 60 + (i % 2 ? 8 : -8), -200 + droop * 40 - i * 18 * (1 - droop * .5), 10, 16, 0, 0, TAU); g.fill(); }
+  g.restore();
+}
+
 // ───────── scenes
 const SC = [];
 SC[0] = (t) => {                                                    // hook: Earth wakes up spinning double
@@ -171,7 +227,46 @@ SC[4] = (t) => {                                                    // the body 
   g.save(); g.globalAlpha *= .45 + .55 * k2; card(CX, 1260, 900, 420, 1); text('NIGHT 2', CX, 1120, 54, P.gold, 1000, null, 0); bed(CX, 1400, .9, t, 'worried', { up: 1, phone: 1, look: .5 }); g.restore();
   tag(CX, 300, 'body clock ≈ 24 h', "it can't squeeze into 12", pop(t, T.squeeze - .1), P.cyan);
 };
-SC[5] = (t) => {                                                    // the oceans flow to the equator
+SC[5] = (t) => {                                                    // permanent jet lag
+  bg(t, '#0b0830', '#1d1452');
+  const k = ss(seg(t, VO.p01, T.health + .4));
+  batteryIcon(CX, 760, lerp(.9, .15, k), 1);
+  stander(CX, 1500, .8, t, { mood: k > .5 ? 'sad' : 'sleepy', arms: 'hold', look: .3 });
+  const kj = pop(t, T.jet - .1); if (kj > 0) { g.save(); g.translate(CX, 560); g.scale(kj, kj); g.rotate(-.05); text('PERMANENT JET LAG', 0, 0, 92, P.gold, 1000, P.navy, 16); g.restore(); }
+  tag(CX, 300, 'out of sync', 'linked to poor sleep and health problems', pop(t, T.health - .2), P.red);
+};
+SC[6] = (t) => {                                                    // animals run on 24-hour clocks too
+  const u = (t - VO.a01) / 2.4, day = .5 + .5 * Math.sin(u * TAU);
+  const c = (a, b) => `rgb(${a.map((v, i) => Math.round(lerp(v, b[i], day))).join(',')})`;
+  sky(c([12, 10, 44], [92, 196, 242]), c([34, 24, 84], [191, 233, 255])); ground(1420, day < .5 ? 1 : 0);
+  const lost = t > T.off - .3;
+  const kb = ss(seg(t, T.birds - .4, T.birds)); if (kb > 0) { g.save(); g.globalAlpha *= kb; birdy(300 + Math.cos(t * 2) * (lost ? 90 : 20), 620 + Math.sin(t * 2) * (lost ? 50 : 10), .95, t); g.restore(); }
+  const ke = ss(seg(t, T.bees - .4, T.bees)); if (ke > 0) { g.save(); g.globalAlpha *= ke; bee(760 + Math.sin(t * 3) * (lost ? 120 : 30), 900 + Math.cos(t * 2.5) * 40, .9, t, lost ? 'worried' : 'happy'); g.restore(); }
+  const kf = ss(seg(t, T.flowers - .4, T.flowers)); if (kf > 0) { g.save(); g.globalAlpha *= kf; for (const [x, ph] of [[420, 0], [620, 1.5], [820, 3]]) flower(x, 1440, .9, t, lost ? .5 + .5 * Math.sin(t * 5 + ph) : day); g.restore(); }
+  if (lost) { const kq = pop(t, T.off - .2); for (const [x, y] of [[300, 480], [760, 760], [620, 1100]]) { g.save(); g.translate(x, y); g.scale(kq, kq); text('?', 0, 0, 100, P.gold, 1000, P.navy, 14); g.restore(); } }
+  tag(CX, 300, 'animals have clocks too', 'birds · bees · flowers', pop(t, T.animals - .1), P.cyan);
+};
+SC[7] = (t) => {                                                    // crops grow worse when their clocks are out of step
+  sky('#7fc8f0', '#d6f0ff');
+  g.fillStyle = '#8a6a3a'; g.fillRect(0, 1250, W, H - 1250); g.fillStyle = '#a07a44'; for (let r = 0; r < 5; r++) g.fillRect(0, 1290 + r * 90, W, 26);
+  const d = ss(seg(t, T.inner - .3, T.shrink + .3));
+  for (let r = 0; r < 4; r++) for (let i = 0; i < 9; i++) wheat(60 + i * 120 + (r % 2) * 60, 1300 + r * 90, .8 + r * .12, t + r, d * (.6 + .4 * ((i + r) % 3) / 2));
+  const kh = pop(t, T.harvests - .1);
+  if (kh > 0) { g.save(); g.translate(CX, 820); g.scale(kh, kh); g.fillStyle = '#c78a4a'; g.beginPath(); g.moveTo(-170, -40); g.lineTo(170, -40); g.lineTo(130, 120); g.lineTo(-130, 120); g.fill();
+    const fill = lerp(1, .3, ss(seg(t, T.shrink - .3, T.shrink + .4))); g.fillStyle = '#ffd36a'; for (let i = 0; i < 12 * fill; i++) { g.beginPath(); g.arc(-130 + (i % 6) * 52, -50 - Math.floor(i / 6) * 40, 30, 0, TAU); g.fill(); } g.restore(); }
+  tag(CX, 340, 'harvests could shrink', "plant clocks out of step with the day", pop(t, T.shrink - .2), P.gold);
+};
+SC[8] = (t) => {                                                    // high tide every ~6 hours
+  sky('#7fc8f0', '#d6f0ff');
+  g.fillStyle = '#ffe0a3'; g.beginPath(); g.moveTo(0, 1500); g.quadraticCurveTo(500, 1300, W, 1200); g.lineTo(W, H); g.lineTo(0, H); g.fill();
+  house(900, 1210, .45); tree(720, 1250, .5, 0, t);
+  const ph = (t - VO.t01) / 1.4 * TAU, lvl = 1440 - 160 * (.5 + .5 * Math.sin(ph));
+  g.fillStyle = '#3d8be8'; g.beginPath(); g.moveTo(0, H); for (let x = 0; x <= W; x += 20) g.lineTo(x, lvl + x * .12 + Math.sin(x * .03 + t * 3) * 8); g.lineTo(W, H); g.fill();
+  dial(CX, 700, 150, t, ph, ss(seg(t, T.tide - .4, T.tide)));
+  K.arrow(120, 1300, 120, lvl > 1360 ? 1160 : 1380, P.white, 14, .8);
+  tag(CX, 340, 'high tide every ~6 h', 'instead of every ~12 h', pop(t, T.six - .1), P.cyan);
+};
+SC[9] = (t) => {                                                    // the oceans flow to the equator
   bg(t);
   const k = ss(seg(t, T.flings - .2, T.drown + .6)), ex = CX, ey = 1000, er = 300;
   waterEarth(ex, ey, er, t, k);
@@ -180,15 +275,16 @@ SC[5] = (t) => {                                                    // the ocean
   const kd = pop(t, T.drain - .1); if (kd > 0) { g.save(); g.translate(ex, ey - er - 90); g.scale(kd, kd); text('seas drain', 0, 0, 56, '#ffb35a', 1000, P.navy, 12); g.restore(); }
   const kw = pop(t, T.drown - .1); if (kw > 0) { g.save(); g.translate(ex + er + 40, ey - 70); g.scale(kw, kw); text('cities drown', 0, 0, 56, P.cyan, 1000, P.navy, 12, 'right'); g.restore(); }
   tag(CX, 340, 'water piles up', 'at the equator, kilometres deep', pop(t, T.equator6 - .1), P.cyan);
+  const kc = ss(seg(t, T.cities - .35, T.cities + .05)); if (kc > 0) { cityDrown(t, seg(t, T.cities - .2, S[10] + .4), kc); tag(CX, 1320, 'cities drown', 'near the equator', pop(t, T.drown - .1), P.cyan); }
 };
-SC[6] = (t) => {                                                    // about 1 % lighter at the equator
+SC[10] = (t) => {                                                    // about 1 % lighter at the equator
   sky(); ground(1420);
   const k = ss(seg(t, T.weigh, T.percent + .3)), kg = (70 - .7 * k).toFixed(1);
   scale(CX, 1400, 1.3, `${kg} kg`, t);
   stander(CX, 1350, .72, t, { mood: k > .5 ? 'happy' : 'keen', arms: k > .5 ? 'up' : 'down', lookY: .6 });
   tag(CX, 360, '≈ 1% lighter', 'at the equator · the spin pulls you out', pop(t, T.percent - .1), P.cyan);
 };
-SC[7] = (t) => {                                                    // winds bend harder and split into bands, like Jupiter
+SC[11] = (t) => {                                                    // winds bend harder and split into bands, like Jupiter
   bg(t);
   const kb = ss(seg(t, T.bands - .4, T.bands + .4));
   K.earth(CX - 80, 1050, 280, t, 'worried', { rot: t * .5, look: .6 });
@@ -198,7 +294,7 @@ SC[7] = (t) => {                                                    // winds ben
   if (kw > 0) for (let i = 0; i < 4; i++) { const y0 = 850 + i * 130; g.save(); g.globalAlpha *= kw; g.strokeStyle = P.white; g.lineWidth = 10; g.lineCap = 'round'; g.beginPath(); g.moveTo(CX - 330, y0); g.quadraticCurveTo(CX - 80, y0 - 60 + i * 30, CX + 170, y0 + (i < 2 ? -80 : 80)); g.stroke(); g.restore(); }
   tag(CX, 340, 'more wind bands', 'a faster spin bends winds harder', pop(t, T.bands - .1), P.white);
 };
-SC[8] = (t) => {                                                    // hotter tropics, colder poles
+SC[12] = (t) => {                                                    // hotter tropics, colder poles
   bg(t);
   const k = ss(seg(t, T.tropics - .3, T.colder + .4)), ex = CX, ey = 1050, er = 300;
   K.earth(ex, ey, er, t, 'worried', { look: 0 });
@@ -211,7 +307,7 @@ SC[8] = (t) => {                                                    // hotter tr
   thermo(930, 1180, lerp(.5, .1, ss(seg(t, T.colder - .3, T.colder + .3))), '#3fa8ff', k);
   tag(CX, 340, 'less heat to the poles', 'tropics hotter · poles colder', pop(t, T.tropics - .2), '#ffb35a');
 };
-SC[9] = (t) => {                                                    // overnight: the air and oceans keep their old speed
+SC[13] = (t) => {                                                    // overnight: the air and oceans keep their old speed
   bg(t);
   const ko = ss(seg(t, T.overnight - .3, T.overnight + .2)), rot = t * .25 + Math.max(0, t - T.overnight) * 1.4;
   const lag = (t * .25) * 300;
@@ -221,7 +317,7 @@ SC[9] = (t) => {                                                    // overnight
   const kl = pop(t, T.old - .1); if (kl > 0) { g.save(); g.translate(CX, 690); g.scale(kl, kl); card(0, 0, 520, 100, 1); text('air: old speed', 0, 18, 52, P.cyan, 1000, null, 0); g.restore(); }
   tag(CX, 340, t < T.overnight - .3 ? 'slow spin-up: fine' : 'overnight?', null, pop(t, t < T.overnight - .3 ? T.slowly10 - .2 : T.overnight - .1), t < T.overnight - .3 ? P.cyan : P.red);
 };
-SC[10] = (t) => {                                                   // 1,600+ km/h wind and giant surges at the equator
+SC[14] = (t) => {                                                   // 1,600+ km/h wind and giant surges at the equator
   sky('#6a7fa8', '#c7d4ea');
   const kw = ss(seg(t, T.race - .4, T.race + .2)), sh = Math.sin(t * 40) * 8 * kw;
   g.save(); g.translate(sh, 0);
@@ -233,7 +329,7 @@ SC[10] = (t) => {                                                   // 1,600+ km
   wave(0, 1450, 520, t, ss(seg(t, T.surges - .5, T.surges + 1.4)));
   tag(CX, 360, '1,600+ km/h', 'ground vs air, at the equator', pop(t, T.sixteen - .1), P.red);
 };
-SC[11] = (t) => {                                                   // the good news: it can't happen; the Moon brakes the spin
+SC[15] = (t) => {                                                   // the good news: it can't happen; the Moon brakes the spin
   bg(t);
   const kc = pop(t, T.cant - .1); if (kc > 0) { g.save(); g.translate(CX, 560); g.scale(kc, kc); g.rotate(-.05); text("CAN'T HAPPEN", 0, 0, 120, P.gold, 1000, P.navy, 18); g.restore(); }
   const ks = ss(seg(t, T.slowing - .3, T.slowing + .3));
@@ -243,7 +339,7 @@ SC[11] = (t) => {                                                   // the good 
   K.moon(mx, my, 90, t, 'smug', { tilt: .2 });
   tag(CX, 1540, 'slowing down', 'days get ~2 ms longer per century', pop(t, T.slowing - .1), P.cyan);
 };
-SC[12] = (t) => {                                                   // ending: a productivity hack? it would change everything
+SC[16] = (t) => {                                                   // ending: a productivity hack? it would change everything
   sky(); ground(1420);
   K.sunChar(200, 380, 150, t, { mood: 'sleepy', shades: 0, mug: 1, sip: .5 + .5 * Math.sin(t * 1.2) });
   K.deckchair(640, 1330, 1.05);
@@ -253,7 +349,7 @@ SC[12] = (t) => {                                                   // ending: a
 };
 
 // ───────── captions: word-pops, key words in gold (lower middle, above the Shorts UI)
-const KEY = new Set(['spinning', 'twice', 'fast', 'twelve', 'hours', 'sunrise', 'sunset', 'midnight', 'sleep', 'crazier', 'calendar', 'seven', 'hundred', 'thirty', 'days', 'body', 'clock', 'next', 'oceans', 'equator', 'drain', 'drown', 'one', 'percent', 'less', 'winds', 'bands', 'jupiters', 'hotter', 'colder', 'overnight', 'old', 'speed', 'sixteen', 'kilometres', 'surges', 'cant', 'slowing', 'moon', 'twelvehour', 'hack', 'everything']);
+const KEY = new Set(['jet', 'lag', 'health', 'animals', 'birds', 'bees', 'flowers', 'crops', 'harvests', 'shrink', 'tide', 'six', 'spinning', 'twice', 'fast', 'twelve', 'hours', 'sunrise', 'sunset', 'midnight', 'sleep', 'crazier', 'calendar', 'seven', 'hundred', 'thirty', 'days', 'body', 'clock', 'next', 'oceans', 'equator', 'drain', 'drown', 'one', 'percent', 'less', 'winds', 'bands', 'jupiters', 'hotter', 'colder', 'overnight', 'old', 'speed', 'sixteen', 'kilometres', 'surges', 'cant', 'slowing', 'moon', 'twelvehour', 'hack', 'everything']);
 const CAP = [];
 for (const [id, ws] of Object.entries(words)) {
   const toks = ws.map(w => ({ w: w[0], k: w[0], t0: Math.max(0, w[1]), t1: w[2] }));
