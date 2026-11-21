@@ -1,5 +1,5 @@
-"""House narration for Beyond Everything films: edge-tts "Ryan" (en-GB-RyanNeural, +5%), one take per line,
-with the dead air taken out so the lines flow like one read.
+"""House narration for Beyond Everything films: edge-tts "Ryan" (en-GB-RyanNeural, +5%), one take per line
+(a line may name its own "voice", "rate" and "pitch", e.g. a character speaking), with the dead air taken out so the lines flow like one read.
 
     python3 tools/voice.py FILM_DIR        (needs: pip install edge-tts numpy soundfile)
 
@@ -64,8 +64,8 @@ def tighten(y, words):
         return acc / SR
     return np.concatenate(out), [[w, remap(s), remap(e)] for w, s, e in words]
 
-async def take(text, mp3):
-    c = edge_tts.Communicate(text, VOICE, rate=RATE, boundary="WordBoundary"); b = []
+async def take(text, mp3, voice=VOICE, rate=RATE, pitch="+0Hz"):
+    c = edge_tts.Communicate(text, voice, rate=rate, pitch=pitch, boundary="WordBoundary"); b = []
     with open(mp3, "wb") as f:
         async for ch in c.stream():
             if ch["type"] == "audio": f.write(ch["data"])
@@ -77,7 +77,7 @@ async def main(D):
     lines = json.load(open(os.path.join(D, "lines.json")))
     dur, words, raw = {}, {}, 0.
     for L in lines:
-        mp3 = os.path.join(V, L["id"] + ".mp3"); b = await take(L.get("say", L["text"]), mp3)
+        mp3 = os.path.join(V, L["id"] + ".mp3"); b = await take(L.get("say", L["text"]), mp3, L.get("voice", VOICE), L.get("rate", RATE), L.get("pitch", "+0Hz"))
         wav = mp3[:-4] + ".wav"
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", mp3, "-ac", "1", "-ar", str(SR), wav], check=True)
         y, _ = sf.read(wav); raw += len(y) / SR
