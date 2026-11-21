@@ -69,7 +69,6 @@ put(fx, whoosh(1.4, .4, 200, 2000), T['gone'] - .5, 1, .4)
 put(fx, rumble(2.0, .5), T['drags'], 1, 0); put(fx, popf(.5, 700), T['three12'], 1, 0)
 put(fx, fizzle(.5), T['hotter'], 1, 0); put(fx, whoosh(1.6, .5, 1000, 7000), T['ice'] - .2, 1, 0); [put(fx, flick(.3), T['two14'] + k * .07, 1, .3) for k in range(6)]
 put(fx, hum(2.5, .3), T['zoom'] - .2, 1, 0); put(fx, ping(.3, 1760), T['moons15'], 1, 0)
-put(fx, bubbles(2.0, .25), T['ocean16'] - .3, 1, 0); put(fx, thud(.4), T['squeezed'], 1, -.3); put(fx, thud(.4), T['squeezed'] + .3, 1, .3)
 put(fx, scratch(.4), T['night17'] - .3, 1, 0); [put(fx, ping(.12, 2000 + 150 * k), T['lights'] + k * .09, 1, rng.uniform(-.6, .6)) for k in range(12)]
 put(fx, shimmer(2.0, .5), T['oursun'], 1, 0)
 [put(fx, beep(.35, 880 if k % 2 else 1175, .18), T['message'] - .2 + k * .3, 1, rng.uniform(-.4, .4)) for k in range(8)]

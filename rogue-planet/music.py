@@ -35,7 +35,7 @@ B = 60 / 92
 Dm, Bb, F, C, Gm, A7, Ebm = [50, 57, 62, 65], [46, 53, 58, 62], [53, 57, 60, 65], [48, 55, 60, 64], [43, 50, 55, 58], [45, 52, 55, 61], [51, 58, 61, 66]
 ST = [(Dm, 'wonder', .6), (Bb, 'wonder', .6), (F, 'wonder', .65), (Dm, 'tension', .7), (F, 'still', .5), (Gm, 'tension', .65),
       (Bb, 'wonder', .7), (F, 'wonder', .85), (Dm, 'tension', .85), (Gm, 'tension', .75), (C, 'still', .5), (Dm, 'dread', .8),
-      (A7, 'tension', .8), (Dm, 'dread', .7), (Ebm, 'eerie', .6), (Bb, 'eerie', .6), (Ebm, 'eerie', .7), (F, 'wonder', .7),
+      (A7, 'tension', .8), (Dm, 'dread', .7), (Ebm, 'eerie', .6), (Ebm, 'eerie', .7), (F, 'wonder', .7),
       (Dm, 'tension', .7), (Ebm, 'eerie', .7), (Gm, 'tension', .8), (Bb, 'still', .5), (Dm, 'heart', .9), (Bb, 'still', .6)]
 s = [0] + SCN + [DUR]
 assert len(ST) == len(s) - 1, (len(ST), len(s))

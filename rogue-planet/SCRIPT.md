@@ -1,8 +1,8 @@
-# What If a Rogue Planet Passed Earth? — script, draft 1
+# What If a Rogue Planet Passed Earth? — script, draft 2
 
 **Brief**
 - **Audience:** teens and a general audience.
-- **Length:** about 123 s (26 lines). Longer than our earlier films on purpose: the new style tells a story with a
+- **Length:** about 116 s (25 lines). Longer than our earlier films on purpose: the new style tells a story with a
   timeline and an ending choice, like the reference Sangam picked.
 - **Voice:** edge-tts "Ryan" (`en-GB-RyanNeural`, +5%) for the narrator, made with the shared `tools/voice.py`.
   Two character lines have their own voices (new: `voice`/`rate`/`pitch` per line in lines.json):
@@ -47,7 +47,6 @@ PLANET PASSED EARTH?**
 | 13 | reward | A little closer to the Sun, and Earth could get hotter than any climate forecast. | Huge Sun, heat haze, thermometer; HOTTER | dad, hands on head |
 | 14 | reward | A little farther, and we could slide into an ice age. Even the year could change by two weeks. | Snow; ICE AGE; a calendar flickering around 365 days; ± 2 WEEKS | gran shivering |
 | 15 | show | But the strangest part comes as it leaves. Telescopes zoom in on one of its moons. | THE STRANGEST PART; telescope view zooms ×400 onto a moon; ONE OF ITS MOONS | astronomer: think → awe |
-| 16 | reward | Out in the dark, a moon like that can stay warm inside, squeezed by its planet's tides, just like Jupiter's moon Europa hides an ocean. | IN THE DARK; a cut-away: icy shell, ocean, warm core; SQUEEZED BY TIDES; EUROPA (a real moon of Jupiter) | — |
 | 17 | **twist** | And on its night side, there are lights. | THE NIGHT SIDE; lights spread across the dark moon; LIGHTS | both astronomers: shock |
 | 18 | twist | Cities. A civilization that has drifted through the dark for millions of years. Our Sun is the first star they've ever seen up close. | Domed cities on the ice; CITIES; MILLIONS OF YEARS IN THE DARK; our Sun rises on their horizon: THEIR FIRST STAR | three moon-dwellers, lit by the Sun |
 | 19 | show | Then, a message reaches every phone on Earth, at the same time. | A phone: INCOMING, origin unknown; EVERY PHONE ON EARTH; AT THE SAME TIME | four people staring at phones: shock |
@@ -57,13 +56,14 @@ PLANET PASSED EARTH?**
 | 23–25 | show | Three days. Two. One. | 3, 2, 1 DAYS LEFT; the planet shrinks | you, tense |
 | 26 | show | Would you let them stay? What would you choose? | Two buttons: LET THEM STAY / SAY NO; WHAT WOULD YOU CHOOSE? **Loops to the first frame.** | you, deciding |
 
-**Timing:** 336 words, 123.2 s as built.
+**Timing:** 310 words, 115.6 s as built.
+
+**Draft 2 (Sangam, 2026-11-21):** cut line 16 ("a moon like that can stay warm inside… like Europa") and its cut-away scene. Once the story turns to the civilization, no more science explaining: it slows the twist down. The zoom on the moon now goes straight to "And on its night side, there are lights." (Line numbers below keep their ids; there is no s16.)
 
 ## Fact checks
 
 Lines 1–16 are real science, worked out for one concrete case: a Jupiter-mass rogue planet arriving at 26 km/s and
-passing 10 million km from Earth. Lines 17–26 are the imaginative twist (fiction, by design, as in the reference); the
-only factual claim inside it is that such a moon could keep a liquid ocean (line 16).
+passing 10 million km from Earth. Lines 15–26 are the imaginative twist (fiction, by design, as in the reference).
 
 | Line | Claim (as said or shown) | Basis | Hedge |
 |---|---|---|---|
@@ -77,7 +77,7 @@ only factual claim inside it is that such a moon could keep a liquid ocean (line
 | 12 | Earth's orbit shifts by up to 3 % | Our own n-body check (Sun, Earth, Moon, the rogue planet; scipy DOP853), 10 million km pass at 26 km/s: Earth's orbit grew or shrank by up to 3.1–3.2 % depending on the direction of the pass (≈0 for some geometries). The Moon's orbit changed by <1 %. | "up to" |
 | 13 | A little closer: hotter than any climate forecast | 3 % closer → ~6 % more sunlight → ~14 W/m² extra absorbed, ~4× the forcing of doubled CO₂; at a typical sensitivity (~3 °C per doubling) that is ~10 °C of eventual warming, above the highest IPCC scenario for 2100 (~4–6 °C). | "could" |
 | 14 | A little farther: an ice age; the year changes by two weeks | 3 % farther → ~6 % less sunlight → ~−10 °C eventually, colder than the last glacial maximum (~−6 °C). Kepler's third law: 3 % in orbit size → ~4.7 % in year length ≈ 17 days (the simulation gives ±17 days). | "could", "two weeks" (rounded down) |
-| 15, 16 | One of its moons could stay warm inside, squeezed by its planet's tides, like Europa's ocean | Planets thrown out of their systems can keep their moons (Hong et al. 2018, ApJL 852:L5). Tidal heating can keep an ocean liquid under ice far from any star: Europa does it today around Jupiter (NASA), and models find liquid water on moons of free-floating planets (Ávila et al. 2021, Int. J. Astrobiology 20:300). | "can" |
+| 15 | It has moons | Planets thrown out of their systems can keep their moons (Hong et al. 2018, ApJL 852:L5). Background only, not explained in the film: tidal heating can keep an ocean liquid under ice far from any star, as on Europa (NASA; Ávila et al. 2021, Int. J. Astrobiology 20:300). | — |
 | 17–26 | Lights, cities, a civilization, the message, the choice | **Fiction** — the imaginative twist. | — |
 
 Not claimed: that any rogue planet is heading our way (none is known), a tide height, a number of deaths, or how

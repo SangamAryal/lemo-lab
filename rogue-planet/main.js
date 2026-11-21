@@ -20,7 +20,7 @@ const dur = await (await fetch('voices/dur.json')).json();
 
 // ───────── timeline. One scene per line, except the countdown (s23–s25 share a scene)
 const IDS = lines.map(l => l.id), VO = {};
-const LINE_GAP = .2, GAP = { s01: .35, s06: .3, s10: .3, s11: .35, s14: .35, s16: .45, s17: .45, s19: .4, s20: .45, s21: .3, s22: .45, s23: .55, s24: .55, s25: .6 };
+const LINE_GAP = .2, GAP = { s01: .35, s06: .3, s10: .3, s11: .35, s14: .35, s15: .45, s17: .45, s19: .4, s20: .45, s21: .3, s22: .45, s23: .55, s24: .55, s25: .6 };
 { let t = .3; for (const id of IDS) { VO[id] = +t.toFixed(3); t += dur[id] + (GAP[id] ?? LINE_GAP); } }
 const LAST = IDS[IDS.length - 1], DUR = +(VO[LAST] + dur[LAST] + 1.6).toFixed(2);
 const nrm = s => s.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -47,7 +47,6 @@ const T = {
   closer: at('s13', 'closer'), sun13: at('s13', 'sun'), hotter: at('s13', 'hotter'), forecast: at('s13', 'forecast'),
   farther: at('s14', 'farther'), ice: at('s14', 'ice'), year14: at('s14', 'year'), two14: at('s14', 'two'), weeks: at('s14', 'weeks'),
   strangest: at('s15', 'strangest'), leaves15: at('s15', 'leaves'), telescopes: at('s15', 'telescopes'), zoom: at('s15', 'zoom'), moons15: at('s15', 'moons'),
-  dark16: at('s16', 'dark'), warm: at('s16', 'warm'), squeezed: at('s16', 'squeezed'), tides16: at('s16', 'tides'), jupiters: at('s16', 'jupiter'), europa: at('s16', 'europa'), ocean16: at('s16', 'ocean'),
   night17: at('s17', 'night'), lights: at('s17', 'lights'),
   cities: VO.s18, civ: at('s18', 'civilization'), drifted: at('s18', 'drifted'), millions18: at('s18', 'millions'), oursun: at('s18', 'sun'), first: at('s18', 'first'), close18: at('s18', 'close'),
   message: at('s19', 'message'), phone: at('s19', 'phone'), same: at('s19', 'same'),
@@ -372,24 +371,7 @@ SC[14] = (t) => {                                                   // the stran
   word('ONE OF ITS MOONS', CX, 1290, 96, P.gold, keyAt(t, T.moons15));
   bust(CX, 1920, .78, t, as('astro2', { mood: z > .6 ? 'awe' : 'think', lookY: -1, look: 0 }));
 };
-SC[15] = (t) => {                                                   // a moon like that can stay warm inside: tidal heating, like Europa
-  bg(t, '#05040f', '#100a2a');
-  const cx = CX, cy = 820, r = 330, k = cue(t, T.dark16 + .2, T.warm + .2), sq = 1 + .04 * Math.sin(t * 3) * cue(t, T.squeezed - .2, T.squeezed + .2);
-  g.save(); g.translate(cx, cy); g.scale(sq, 2 - sq);
-  g.fillStyle = '#d9ecff'; g.beginPath(); g.arc(0, 0, r, 0, TAU); g.fill();
-  g.save(); g.beginPath(); g.arc(0, 0, r, 0, TAU); g.clip(); g.strokeStyle = '#b07a5a'; g.lineWidth = 6; const RC = mulberry(6); for (let i = 0; i < 9; i++) { let x = (RC() - .5) * 2 * r, y = (RC() - .5) * 2 * r; g.beginPath(); g.moveTo(x, y); for (let j = 0; j < 5; j++) { x += (RC() - .3) * 120; y += (RC() - .5) * 90; g.lineTo(x, y); } g.stroke(); }
-  g.fillStyle = 'rgba(20,30,90,.25)'; g.beginPath(); g.arc(r * .35, r * .1, r * 1.1, 0, TAU); g.arc(-r * .15, -r * .08, r * 1.02, 0, TAU, true); g.fill('evenodd'); g.restore();
-  g.save(); g.beginPath(); g.moveTo(0, 0); g.arc(0, 0, r + 2, -.9, .5); g.closePath(); g.clip(); g.globalAlpha *= k;    // the cut-away wedge
-  g.fillStyle = '#3d8be8'; g.beginPath(); g.arc(0, 0, r * .86, 0, TAU); g.fill();
-  g.fillStyle = '#8a6a5a'; g.beginPath(); g.arc(0, 0, r * .6, 0, TAU); g.fill(); glow(0, 0, r * .55, '255,140,60', .7 * k); g.restore();
-  g.restore();
-  const ka = cue(t, T.squeezed - .2, T.squeezed + .3); for (const sd of [-1, 1]) K.arrow(cx + sd * (r + 170), cy, cx + sd * (r + 50), cy, P.gold, 18, ka * (.6 + .4 * Math.sin(t * 6)));
-  label('icy shell', cx - 250, cy - 290, 44, P.white, k, 'center'); label('ocean', cx + 160, cy - 120, 44, P.white, k); label('warm core', cx + 70, cy + 40, 40, '#ffe0b0', k);
-  word('IN THE DARK', CX, 290, 104, P.white, keyAt(t, T.dark16, T.warm - .05)); word('A HIDDEN OCEAN', CX, 290, 104, P.cyan, keyAt(t, T.warm));
-  word('SQUEEZED BY TIDES', CX, 1310, 84, P.gold, keyAt(t, T.squeezed, T.jupiters - .1));
-  const ke = keyAt(t, T.jupiters); if (ke > 0) { g.save(); g.translate(CX - 160, 1360); g.scale(ke, ke); moonBall(0, 0, 70, '#e8d9c0', '#c4a98a'); g.strokeStyle = '#a0623a'; g.lineWidth = 4; for (let i = 0; i < 5; i++) { g.beginPath(); g.moveTo(-60 + i * 20, -40); g.lineTo(-20 + i * 25, 50); g.stroke(); } g.restore(); word('EUROPA', CX + 130, 1385, 84, P.white, ke, 0, 500); label('a real moon of Jupiter', CX + 130, 1445, 38, P.cyan, ke); }
-};
-SC[16] = (t) => {                                                   // and on its night side, there are lights
+SC[15] = (t) => {                                                   // and on its night side, there are lights
   bg(t, '#020208', '#07061a');
   const cx = CX, cy = 800, r = 400, kl = cue(t, T.lights - .2, T.lights + 1.0);
   g.save(); g.beginPath(); g.arc(cx, cy, r, 0, TAU); g.clip(); g.fillStyle = '#d9ecff'; g.fillRect(cx - r, cy - r, 2 * r, 2 * r);
@@ -402,7 +384,7 @@ SC[16] = (t) => {                                                   // and on it
   bust(270, 1920, .78, t, as('astro', { mood: sk > .5 ? 'shock' : 'think', arms: sk > .5 ? 'head' : null, lookY: -1, look: .6, shake: sk }));
   bust(830, 1920, .7, t, as('astro2', { mood: sk > .5 ? 'shock' : 'awe', arms: sk > .5 ? 'mouth' : null, lookY: -1, look: -.5, seed: 2 }));
 };
-SC[17] = (t) => {                                                   // cities: a civilization that has drifted in the dark; our Sun is their first star
+SC[16] = (t) => {                                                   // cities: a civilization that has drifted in the dark; our Sun is their first star
   const ks = cue(t, T.oursun - .4, T.first + .4);
   sky(t, '#02020a', ks > 0 ? '#3a2a1a' : '#0a0a24', 1 - ks * .7);
   if (ks > 0) { glow(CX, 1180, 700 * ks, '255,210,140', .55 * ks); K.sunBody(CX, lerp(1400, 1130, ks), 70, t, { glow: ks }); }
@@ -414,7 +396,7 @@ SC[17] = (t) => {                                                   // cities: a
   word('MILLIONS OF YEARS', CX, 300, 96, P.white, keyAt(t, T.millions18, T.oursun - .1)); word('IN THE DARK', CX, 400, 84, P.cyan, keyAt(t, T.millions18 + .2, T.oursun - .1));
   word('THEIR FIRST STAR', CX, 330, 112, P.gold, keyAt(t, T.first));
 };
-SC[18] = (t) => {                                                   // a message reaches every phone on Earth at once
+SC[17] = (t) => {                                                   // a message reaches every phone on Earth at once
   sky(t, '#0d0b33', '#2a1a5e');
   skyline(1250, '#1e1a45', '#ffd36a', t, 3, .7); g.fillStyle = '#15123a'; g.fillRect(0, 1350, W, 600);
   const km = cue(t, T.message - .2, T.phone + .2), ring_ = Math.sin(t * 30) * 4 * (km > 0 ? 1 : 0);
@@ -428,7 +410,7 @@ SC[18] = (t) => {                                                   // a message
   word('EVERY PHONE ON EARTH', CX, 260, 84, P.gold, keyAt(t, T.phone));
   word('AT THE SAME TIME', CX, 1340, 84, P.white, keyAt(t, T.same));
 };
-SC[19] = (t) => {                                                   // the alien speaks: "Your star is warm. Please. Let us stay."
+SC[18] = (t) => {                                                   // the alien speaks: "Your star is warm. Please. Let us stay."
   bg(t, '#020410', '#07122a');
   g.save(); const fl = .85 + .15 * Math.sin(t * 40) * Math.sin(t * 7); g.globalAlpha *= fl; glow(CX, 820, 520, '80,220,255', .25);
   for (let y = 300; y < 1400; y += 10) { g.fillStyle = 'rgba(80,220,255,.05)'; g.fillRect(0, y, W, 4); }
@@ -438,7 +420,7 @@ SC[19] = (t) => {                                                   // the alien
   quote('“Your star is warm.', CX, 1530, 76, '#9ff0ff', t, 0, ws.slice(0, 4));
   quote('Please. Let us stay.”', CX, 1630, 76, '#9ff0ff', t, 0, ws.slice(4, 8));
 };
-SC[20] = (t) => {                                                   // their planet leaves in three days; refugees or invaders?
+SC[19] = (t) => {                                                   // their planet leaves in three days; refugees or invaders?
   sky(t, '#0d0b33', '#2a1a5e');
   const kl = cue(t, VO.s21, end('s21')); rogue(lerp(700, 860, kl), lerp(420, 300, kl), lerp(120, 70, kl), t, { lit: lerp(.9, .4, kl), ang: 2.6, moons: 1 });
   word('3 DAYS LEFT', CX, 250, 104, P.gold, keyAt(t, T.three21, T.send));
@@ -452,7 +434,7 @@ SC[20] = (t) => {                                                   // their pla
   word('REFUGEES?', 280, 1020, 84, '#5fe08a', kr, -.05, 440); word('INVADERS?', 800, 1120, 84, P.red, ki, .05, 440);
   if (t > T.nobody21 && t < T.refugees) word('NOBODY KNOWS', CX, 1050, 100, P.white, keyAt(t, T.nobody21, T.refugees));
 };
-SC[21] = (t) => {                                                   // "Mum? Are they scared too?"
+SC[20] = (t) => {                                                   // "Mum? Are they scared too?"
   sky(t, '#0d0b33', '#3a2466');
   g.fillStyle = '#241f4e'; g.fillRect(0, 0, W, H); g.save(); g.beginPath(); g.rect(240, 200, 600, 640); g.clip(); sky(t, '#0d0b33', '#3a2466'); rogue(640, 420, 110, t, { lit: .5, ang: 2.6, moons: 1 }); g.restore();
   g.fillStyle = '#4a4380'; g.fillRect(530, 200, 20, 640); g.fillRect(240, 510, 600, 20); g.strokeStyle = '#4a4380'; g.lineWidth = 24; g.strokeRect(240, 200, 600, 640);     // a window
@@ -460,7 +442,7 @@ SC[21] = (t) => {                                                   // "Mum? Are
   bust(800, 1920, .78, t, as('kid2', { mood: t > T.mum && t < end('s22') ? 'talk' : 'worried', look: -.7, lookY: -.3 }));
   const ws = wordTimes('s22', 0, 5); quote('“Mum? Are they scared too?”', CX, 1020, 70, P.white, t, 0, ws);
 };
-SC[22] = (t) => {                                                   // countdown: three days, two, one
+SC[21] = (t) => {                                                   // countdown: three days, two, one
   bg(t, '#08061c', '#1d1152');
   const k3 = keyAt(t, T.c3, T.c2), k2 = keyAt(t, T.c2, T.c1), k1 = keyAt(t, T.c1);
   const kl = cue(t, T.c3, T.c1 + 1); rogue(CX, 640, lerp(170, 60, kl), t, { lit: lerp(.7, .2, kl), ang: 2.6, moons: 1 });
@@ -468,7 +450,7 @@ SC[22] = (t) => {                                                   // countdown
   label(t < T.c2 ? 'DAYS LEFT' : t < T.c1 ? 'DAYS LEFT' : 'DAY LEFT', CX, 1360, 60, P.white, k3 + k2 + k1);
   bust(CX, 1920, .62, t, as('you', { mood: 'worried', lookY: -1, look: 0 }));
 };
-SC[23] = (t) => {                                                   // would you let them stay? what would you choose?
+SC[22] = (t) => {                                                   // would you let them stay? what would you choose?
   bg(t);
   const ka = pop(t, T.would - .1), kb = pop(t, T.would + .1);
   for (const [x, txt, col, colD, k] of [[300, 'LET THEM', '#2fbf6a', '#1f8a4c', ka], [780, 'SAY NO', '#e6334f', '#a8233a', kb]]) {
