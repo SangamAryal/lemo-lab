@@ -68,14 +68,9 @@ put(fx, rumble(1.5, .7), T['faults'] - .1, 1, 0); put(fx, crack(.5), T['slip'], 
 put(fx, whoosh(1.4, .4, 200, 2000), T['gone'] - .5, 1, .4)
 put(fx, rumble(2.0, .5), T['drags'], 1, 0); put(fx, popf(.5, 700), T['three12'], 1, 0)
 put(fx, fizzle(.5), T['hotter'], 1, 0); put(fx, whoosh(1.6, .5, 1000, 7000), T['ice'] - .2, 1, 0); [put(fx, flick(.3), T['two14'] + k * .07, 1, .3) for k in range(6)]
-put(fx, hum(2.5, .3), T['zoom'] - .2, 1, 0); put(fx, ping(.3, 1760), T['moons15'], 1, 0)
-put(fx, scratch(.4), T['night17'] - .3, 1, 0); [put(fx, ping(.12, 2000 + 150 * k), T['lights'] + k * .09, 1, rng.uniform(-.6, .6)) for k in range(12)]
-put(fx, shimmer(2.0, .5), T['oursun'], 1, 0)
-[put(fx, beep(.35, 880 if k % 2 else 1175, .18), T['message'] - .2 + k * .3, 1, rng.uniform(-.4, .4)) for k in range(8)]
-put(fx, glitch(.7, .35), VO['s20'] - .4, 1, 0); put(fx, glitch(.5, .25), T['stay20'] + .5, 1, 0)
-[put(fx, zap(.25), T['send'] + k * .25, 1, rng.uniform(-.5, .5)) for k in range(8)]; put(fx, crowd(3.0, .3), T['refugees'] - 1.0, 1, 0)
-for k in ['c3', 'c2', 'c1']: put(fx, thud(.9), T[k] - .05, 1, 0)
-put(fx, popf(.5, 700), T['would'] - .05, 1, -.3); put(fx, popf(.5, 600), T['would'] + .15, 1, .3)
+[put(fx, plop(.2), T['all15'] - .1 + k * .12, 1, (k - 1) * .4) for k in range(3)]; put(fx, thud(.5), T['never'], 1, 0)
+[put(fx, ping(.1, 1800 + 120 * k), T['billions'] + k * .07, 1, rng.uniform(-.6, .6)) for k in range(14)]; put(fx, ping(.4, 1320), T['way16'], 1, 0)
+put(fx, shimmer(1.6, .4), T['did'], 1, .3); put(fx, popf(.4, 700), T['would'], 1, 0)
 
 lines = json.load(open(os.path.join(HERE, 'lines.json')))
 vm = np.zeros(NS, np.float32)

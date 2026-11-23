@@ -18,15 +18,15 @@ const words = await (await fetch('voices/words.json')).json();
 const lines = await (await fetch('lines.json')).json();
 const dur = await (await fetch('voices/dur.json')).json();
 
-// ───────── timeline. One scene per line, except the countdown (s23–s25 share a scene)
+// ───────── timeline. One scene per line
 const IDS = lines.map(l => l.id), VO = {};
-const LINE_GAP = .2, GAP = { s01: .35, s06: .3, s10: .3, s11: .35, s14: .35, s15: .45, s17: .45, s19: .4, s20: .45, s21: .3, s22: .45, s23: .55, s24: .55, s25: .6 };
+const LINE_GAP = .2, GAP = { s01: .35, s06: .3, s10: .3, s11: .35, s14: .55, s15: .45, s16: .45 };
 { let t = .3; for (const id of IDS) { VO[id] = +t.toFixed(3); t += dur[id] + (GAP[id] ?? LINE_GAP); } }
-const LAST = IDS[IDS.length - 1], DUR = +(VO[LAST] + dur[LAST] + 1.6).toFixed(2);
+const LAST = IDS[IDS.length - 1], DUR = +(VO[LAST] + dur[LAST] + 2.4).toFixed(2);
 const nrm = s => s.toLowerCase().replace(/[^a-z0-9]/g, '');
 const at = (id, w, k = 0, e = 1) => { let n = 0; for (const x of words[id]) if (nrm(x[0]).startsWith(nrm(w)) && n++ === k) return VO[id] + Math.max(0, x[e]); throw new Error(`${w} in ${id}`); };
 const end = id => VO[id] + dur[id];
-const SAME = new Set(['s24', 's25']);
+const SAME = new Set();
 const SIDS = IDS.filter(id => !SAME.has(id));
 const S = [0, ...SIDS.slice(1).map(id => VO[id] - .2), DUR];
 const sceneAt = t => { let i = 0; while (i < S.length - 2 && t >= S[i + 1]) i++; return i; };
@@ -46,15 +46,9 @@ const T = {
   pull: at('s12', 'pull'), drags: at('s12', 'drags'), orbit: at('s12', 'orbit'), three12: at('s12', 'three'),
   closer: at('s13', 'closer'), sun13: at('s13', 'sun'), hotter: at('s13', 'hotter'), forecast: at('s13', 'forecast'),
   farther: at('s14', 'farther'), ice: at('s14', 'ice'), year14: at('s14', 'year'), two14: at('s14', 'two'), weeks: at('s14', 'weeks'),
-  strangest: at('s15', 'strangest'), leaves15: at('s15', 'leaves'), telescopes: at('s15', 'telescopes'), zoom: at('s15', 'zoom'), moons15: at('s15', 'moons'),
-  night17: at('s17', 'night'), lights: at('s17', 'lights'),
-  cities: VO.s18, civ: at('s18', 'civilization'), drifted: at('s18', 'drifted'), millions18: at('s18', 'millions'), oursun: at('s18', 'sun'), first: at('s18', 'first'), close18: at('s18', 'close'),
-  message: at('s19', 'message'), phone: at('s19', 'phone'), same: at('s19', 'same'),
-  star20: at('s20', 'star'), warm20: at('s20', 'warm'), please: at('s20', 'please'), let20: at('s20', 'let'), stay20: at('s20', 'stay'),
-  leaves21: at('s21', 'leaves'), three21: at('s21', 'three'), dark21: at('s21', 'dark'), forever: at('s21', 'forever'), send: at('s21', 'send'), millions21: at('s21', 'millions'), nobody21: at('s21', 'nobody'), refugees: at('s21', 'refugees'), invaders: at('s21', 'invaders'),
-  mum: VO.s22, scared22: at('s22', 'scared'),
-  c3: VO.s23, c2: VO.s24, c1: VO.s25,
-  would: VO.s26, stay26: at('s26', 'stay'), choose: at('s26', 'choose'),
+  all15: at('s15', 'all'), never: at('s15', 'never'), touched: at('s15', 'touched'),
+  now16: at('s16', 'now'), billions: at('s16', 'billions'), drifting16: at('s16', 'drifting'), galaxy16: at('s16', 'galaxy'), none: at('s16', 'none'), heading: at('s16', 'heading'), way16: at('s16', 'way'),
+  did: at('s17', 'did'), would: at('s17', 'would'), night17: at('s17', 'night'), watch: at('s17', 'watch'), pass17: at('s17', 'pass'),
 };
 
 // ───────── type: plain key words, no boxes (thick outline + soft shadow so they read on any background)
@@ -125,23 +119,8 @@ function galaxy(x, y, r, t, a = 1) {
     g.fillStyle = d < r * .25 ? '#ffe6c0' : (R() < .5 ? '#c9b8ff' : '#9fd8ff'); g.globalAlpha = A * (.25 + R() * .6); g.fillRect(xx, yy, 2.4, 2.4); }
   g.restore();
 }
-function sign(x, y, s, txt, col, t, sw = 0) { g.save(); g.translate(x, y); g.rotate(Math.sin(t * 3 + x) * .05 + sw); g.scale(s, s); g.fillStyle = '#8a5a3a'; g.fillRect(-8, -40, 16, 220); g.fillStyle = '#fff6e6'; g.beginPath(); g.roundRect(-160, -150, 320, 120, 14); g.fill(); g.font = '1000 54px NU'; g.textAlign = 'center'; g.fillStyle = col; g.fillText(txt, 0, -72); g.restore(); }
 function thermo(x, y, s, k, hot = 1) { g.save(); g.translate(x, y); g.scale(s, s); g.fillStyle = '#f4f4fb'; g.beginPath(); g.roundRect(-30, -300, 60, 300, 30); g.fill(); dot(0, 20, 52, '#f4f4fb'); const c = hot ? '#ff4d3a' : '#3fa8ff'; dot(0, 20, 38, c); g.fillStyle = c; const hh = 40 + 230 * k; g.beginPath(); g.roundRect(-16, 10 - hh, 32, hh, 16); g.fill(); g.restore(); }
 function suitcase(x, y, s) { g.save(); g.translate(x, y); g.scale(s, s); g.fillStyle = '#ffc73a'; g.beginPath(); g.roundRect(-60, -90, 120, 90, 12); g.fill(); g.strokeStyle = '#c9961c'; g.lineWidth = 8; g.beginPath(); g.roundRect(-22, -112, 44, 26, 8); g.stroke(); g.restore(); }
-function alien(x, y, s, t, o = {}) {                                  // a moon-dweller: tall, soft, big dark eyes, a glowing feeler
-  g.save(); g.translate(x, y); g.scale(s, s); const sw = Math.sin(t * 1.6 + (o.seed || 0)) * .04; g.rotate(sw);
-  g.fillStyle = o.col || '#5fb8c9'; g.beginPath(); g.moveTo(-70, 0); g.quadraticCurveTo(-90, -260, -40, -330); g.lineTo(40, -330); g.quadraticCurveTo(90, -260, 70, 0); g.closePath(); g.fill();
-  g.beginPath(); g.ellipse(0, -420, 95, 110, 0, 0, TAU); g.fill();
-  g.strokeStyle = o.col || '#5fb8c9'; g.lineWidth = 10; g.beginPath(); g.moveTo(0, -520); g.quadraticCurveTo(30, -590, 10, -630); g.stroke(); glow(10, -635, 40, '255,220,120', .9); dot(10, -635, 12, '#fff2b0');
-  const bl = !o.still && ((t + (o.seed || 0)) % 4.3) < .12 ? .15 : 1;
-  for (const sx of [-1, 1]) { g.fillStyle = '#0d0b26'; g.beginPath(); g.ellipse(sx * 40, -420, 30, 44 * bl, sx * -.3, 0, TAU); g.fill(); if (bl > .5) dot(sx * 40 - 8, -436, 9, 'rgba(255,255,255,.8)'); }
-  if (o.lit) { g.fillStyle = `rgba(255,220,150,${.35 * o.lit})`; g.beginPath(); g.ellipse(-40, -440, 50, 90, 0, 0, TAU); g.fill(); }
-  g.restore();
-}
-function dome(x, y, r, t, k) { g.save(); g.fillStyle = `rgba(120,200,255,${.18})`; g.strokeStyle = 'rgba(160,220,255,.6)'; g.lineWidth = 4; g.beginPath(); g.arc(x, y, r, Math.PI, TAU); g.fill(); g.stroke();
-  const R = mulberry(Math.round(x)); for (let i = 0; i < 9; i++) { const bx = x - r * .7 + R() * r * 1.4, bh = r * (.25 + R() * .45); g.fillStyle = '#1d2450'; g.fillRect(bx, y - bh, r * .14, bh); if (k > 0) { g.fillStyle = `rgba(255,214,120,${k})`; for (let yy = y - bh + 8; yy < y - 6; yy += 16) g.fillRect(bx + 5, yy, r * .05, 7); } }
-  g.restore(); }
-
 // ───────── scenes
 const SC = [];
 const cue = (t, a, b) => ss(seg(t, a, b));
@@ -356,113 +335,44 @@ SC[13] = (t) => {                                                   // a little 
     label('YEAR', 0, -145, 54, P.white, 1); const d = 365 + Math.round(Math.sin((t - T.year14) * 2.2) * 14); g.font = '1000 120px NU'; g.textAlign = 'center'; g.fillStyle = P.navy; g.fillText(d, 0, 30); g.font = '800 44px NU'; g.fillText('days', 0, 100); g.restore(); }
   word('± 2 WEEKS', CX, 760, 130, P.gold, keyAt(t, T.two14));
 };
-SC[14] = (t) => {                                                   // the strangest part: telescopes zoom in on one of its moons
-  sky(t, '#05040f', '#100a2a', 0);
-  const z = cue(t, T.zoom - .2, T.moons15 + .4), cx = CX, cy = 760, rr = 380;
-  g.save(); g.beginPath(); g.arc(cx, cy, rr, 0, TAU); g.fillStyle = '#04030c'; g.fill(); g.clip();
-  const zs = lerp(1, 5.2, eio(z)), mx = cx + 220, my = cy - 110;
-  g.translate(cx, cy); g.scale(zs, zs); g.translate(-lerp(cx, mx, eio(z)), -lerp(cy, my, eio(z)));
-  rogue(cx - 60, cy + 60, 210, t, { lit: .9, ang: 2.4 }); moonBall(mx, my, 34, '#c9d6e6', '#9aa8bf'); moonBall(cx - 300, cy + 240, 18, '#d8c9e6', '#b0a2c4');
-  g.restore();
-  g.strokeStyle = 'rgba(160,220,255,.5)'; g.lineWidth = 3; g.beginPath(); g.moveTo(cx - rr, cy); g.lineTo(cx - 40, cy); g.moveTo(cx + 40, cy); g.lineTo(cx + rr, cy); g.moveTo(cx, cy - rr); g.lineTo(cx, cy - 40); g.moveTo(cx, cy + 40); g.lineTo(cx, cy + rr); g.stroke();
-  g.strokeStyle = '#2a2850'; g.lineWidth = 30; g.beginPath(); g.arc(cx, cy, rr + 15, 0, TAU); g.stroke();
-  label('ZOOM ×' + Math.round(lerp(1, 400, z * z)), cx + rr - 20, cy + rr - 20, 34, P.cyan, 1, 'right');
-  word('THE STRANGEST PART', CX, 250, 84, P.white, keyAt(t, T.strangest, T.telescopes));
-  word('ONE OF ITS MOONS', CX, 1290, 96, P.gold, keyAt(t, T.moons15));
-  bust(CX, 1920, .78, t, as('astro2', { mood: z > .6 ? 'awe' : 'think', lookY: -1, look: 0 }));
+SC[14] = (t) => {                                                   // and all of that, from a planet that never even touched us
+  bg(t, '#060418', '#140c3a');
+  const ex = 360, ey = 1080, kp = cue(t, VO.s15 - .3, end('s15') + .8);
+  g.save(); g.strokeStyle = 'rgba(255,199,58,.55)'; g.lineWidth = 6; g.setLineDash([18, 18]); g.beginPath(); g.moveTo(1180, 1500); g.quadraticCurveTo(700, 1060, 1180, 420); g.stroke(); g.restore();
+  const q = lerp(.3, .98, eio(kp)), u = 1 - q, px = u * u * 1180 + 2 * u * q * 700 + q * q * 1180, py = u * u * 1500 + 2 * u * q * 1060 + q * q * 420;
+  rogue(px, py, lerp(120, 70, q), t, { lit: 1, ang: 3.1 });
+  earth(ex, ey, 140, t, { lon0: -30 });
+  const kg = cue(t, T.never - .3, T.never + .3);
+  if (kg > 0) { g.save(); g.globalAlpha *= kg; g.strokeStyle = P.white; g.lineWidth = 5; g.setLineDash([10, 12]); g.beginPath(); g.moveTo(ex + 160, ey - 10); g.lineTo(925, 962); g.stroke(); g.restore(); dot(940, 960, 12 * kg, P.gold); label('10 million km', 690, 1100, 46, P.white, kg); }
+  const ka = keyAt(t, T.all15 - .1);
+  [['TIDES', 220, 560, P.cyan], ['QUAKES', CX, 520, P.gold], ['ORBIT', 860, 560, P.white]].forEach(([s, x, y, c], i) => word(s, x, y, 72, c, pop(t, T.all15 - .1 + i * .12) * (1 - cue(t, T.never - .4, T.never - .1)), (i - 1) * .06));
+  word('NEVER', CX, 520, 120, P.gold, keyAt(t, T.never)); word('TOUCHED US', CX, 640, 104, P.white, keyAt(t, T.touched));
+  bust(800, 1920, .74, t, as('astro2', { mood: t > T.touched ? 'shock' : 'awe', lookY: -.6, look: .3 }));
 };
-SC[15] = (t) => {                                                   // and on its night side, there are lights
-  bg(t, '#020208', '#07061a');
-  const cx = CX, cy = 800, r = 400, kl = cue(t, T.lights - .2, T.lights + 1.0);
-  g.save(); g.beginPath(); g.arc(cx, cy, r, 0, TAU); g.clip(); g.fillStyle = '#d9ecff'; g.fillRect(cx - r, cy - r, 2 * r, 2 * r);
-  const sh = g.createLinearGradient(cx + r, cy, cx - r, cy); sh.addColorStop(0, 'rgba(6,6,24,0)'); sh.addColorStop(.25, 'rgba(6,6,24,.9)'); sh.addColorStop(1, 'rgba(4,4,18,1)'); g.fillStyle = sh; g.fillRect(cx - r, cy - r, 2 * r, 2 * r);
-  const R = mulberry(19); for (let i = 0; i < 160; i++) { const a = R() * TAU, d = Math.sqrt(R()) * r * .95, x = cx - r * .25 + Math.cos(a) * d * .75, y = cy + Math.sin(a) * d; const on = clamp(kl * 160 - i * .9); if (on <= 0 || x > cx + r * .35) continue; const cl = R() < .2 ? 7 : 3.5; glow(x, y, cl * 5, '255,200,110', .35 * on); dot(x, y, cl, `rgba(255,224,150,${on})`); }
-  g.restore();
-  word('LIGHTS', CX, 1340, 150, P.gold, keyAt(t, T.lights));
-  word('THE NIGHT SIDE', CX, 280, 84, P.white, keyAt(t, T.night17, end('s17') + .1));
-  const sk = cue(t, T.lights, T.lights + .2);
-  bust(270, 1920, .78, t, as('astro', { mood: sk > .5 ? 'shock' : 'think', arms: sk > .5 ? 'head' : null, lookY: -1, look: .6, shake: sk }));
-  bust(830, 1920, .7, t, as('astro2', { mood: sk > .5 ? 'shock' : 'awe', arms: sk > .5 ? 'mouth' : null, lookY: -1, look: -.5, seed: 2 }));
+SC[15] = (t) => {                                                   // billions may be drifting through our galaxy; none is known to be heading our way
+  bg(t, '#060418', '#140c3a');
+  galaxy(CX, 820, 470, t, 1);
+  const A = g.globalAlpha, R = mulberry(57), kb = cue(t, T.billions - .2, T.galaxy16 + .6);
+  for (let i = 0; i < 140; i++) { const q = R() * TAU, d = 40 + R() * 470, dr = (R() - .5) * .08, x = CX + Math.cos(q + t * dr) * d, y = 820 + Math.sin(q + t * dr) * d * .62, on = clamp(kb * 140 - i); if (on <= 0) continue;
+    g.save(); g.globalAlpha = A * on * (.5 + .4 * Math.sin(t * 3 + i)); dot(x, y, 5, '#b89ad0'); g.strokeStyle = P.cyan; g.lineWidth = 2; g.beginPath(); g.arc(x, y, 9, 0, TAU); g.stroke(); g.restore(); }
+  const kn = cue(t, T.none - .2, T.none + .3);
+  word('BILLIONS', CX, 300, 130, P.gold, keyAt(t, T.billions, T.none - .1)); word('DRIFTING', CX, 410, 76, P.white, keyAt(t, T.drifting16, T.none - .1));
+  word('NONE', CX, 300, 130, '#5fe08a', keyAt(t, T.none)); word('HEADING OUR WAY', CX, 410, 80, P.white, keyAt(t, T.heading));
+  tick(CX, 1370, 70, pop(t, T.way16 - .1));
+  bust(260, 1920, .78, t, as('mum', { mood: kn > .5 ? 'relief' : 'awe', lookY: -1, look: .5 }));
+  bust(820, 1920, .66, t, as('kid2', { mood: kn > .5 ? 'grin' : 'awe', lookY: -1, look: -.4 }));
 };
-SC[16] = (t) => {                                                   // cities: a civilization that has drifted in the dark; our Sun is their first star
-  const ks = cue(t, T.oursun - .4, T.first + .4);
-  sky(t, '#02020a', ks > 0 ? '#3a2a1a' : '#0a0a24', 1 - ks * .7);
-  if (ks > 0) { glow(CX, 1180, 700 * ks, '255,210,140', .55 * ks); K.sunBody(CX, lerp(1400, 1130, ks), 70, t, { glow: ks }); }
-  g.fillStyle = '#c7d6ec'; g.beginPath(); g.moveTo(0, 1250); for (let i = 0; i <= 20; i++) g.lineTo(i / 20 * W, 1250 + Math.sin(i * 1.3) * 20); g.lineTo(W, H); g.lineTo(0, H); g.fill();
-  g.fillStyle = `rgba(10,10,40,${.75 - .35 * ks})`; g.fillRect(0, 1230, W, 700);
-  const kc = cue(t, VO.s18 - .3, VO.s18 + .5); dome(250, 1300, 190, t, kc); dome(720, 1290, 260, t, kc); dome(1010, 1310, 120, t, kc);
-  alien(330, 1720, .75, t, { lit: ks }); alien(560, 1760, .6, t, { col: '#7fa8e0', seed: 2, lit: ks }); alien(780, 1730, .7, t, { col: '#8fd0b0', seed: 4, lit: ks });
-  word('CITIES', CX, 300, 140, P.gold, keyAt(t, T.cities, T.civ - .05)); word('A CIVILIZATION', CX, 300, 110, P.white, keyAt(t, T.civ, T.millions18 - .1));
-  word('MILLIONS OF YEARS', CX, 300, 96, P.white, keyAt(t, T.millions18, T.oursun - .1)); word('IN THE DARK', CX, 400, 84, P.cyan, keyAt(t, T.millions18 + .2, T.oursun - .1));
-  word('THEIR FIRST STAR', CX, 330, 112, P.gold, keyAt(t, T.first));
-};
-SC[17] = (t) => {                                                   // a message reaches every phone on Earth at once
-  sky(t, '#0d0b33', '#2a1a5e');
-  skyline(1250, '#1e1a45', '#ffd36a', t, 3, .7); g.fillStyle = '#15123a'; g.fillRect(0, 1350, W, 600);
-  const km = cue(t, T.message - .2, T.phone + .2), ring_ = Math.sin(t * 30) * 4 * (km > 0 ? 1 : 0);
-  const crowd = [['teen', 140, 1780, .8], ['gran', 340, 1830, .78], ['dad', 740, 1830, .84], ['kid2', 950, 1800, .66]];
-  crowd.forEach(([n, x, y, s], i) => person(x, y, s, t, as(n, { mood: km > .5 ? 'shock' : 'happy', arms: 'phone2', lookY: .8, seed: i, screen: km > .5 ? '#7fffd4' : '#7fd3ff' })));
-  g.save(); g.translate(CX + ring_, 780); g.scale(.6 + .4 * eo(km), .6 + .4 * eo(km)); g.globalAlpha *= km;
-  g.fillStyle = '#1b1a33'; g.beginPath(); g.roundRect(-230, -420, 460, 840, 50); g.fill(); g.fillStyle = '#071226'; g.beginPath(); g.roundRect(-205, -390, 410, 780, 34); g.fill();
-  label('INCOMING', 0, -260, 56, P.cyan, 1); label('origin: unknown', 0, -205, 34, P.white, .8);
-  g.strokeStyle = P.cyan; g.lineWidth = 6; g.beginPath(); for (let i = 0; i <= 60; i++) { const x = -170 + i * 340 / 60, y = 0 + Math.sin(i * .7 + t * 14) * 60 * Math.sin(i / 60 * Math.PI) * (.4 + .6 * Math.abs(Math.sin(t * 5 + i * .1))); i ? g.lineTo(x, y) : g.moveTo(x, y); } g.stroke();
-  g.fillStyle = '#5fe08a'; g.beginPath(); g.arc(-90, 260, 56, 0, TAU); g.fill(); g.fillStyle = P.red; g.beginPath(); g.arc(90, 260, 56, 0, TAU); g.fill(); g.restore();
-  word('EVERY PHONE ON EARTH', CX, 260, 84, P.gold, keyAt(t, T.phone));
-  word('AT THE SAME TIME', CX, 1340, 84, P.white, keyAt(t, T.same));
-};
-SC[18] = (t) => {                                                   // the alien speaks: "Your star is warm. Please. Let us stay."
-  bg(t, '#020410', '#07122a');
-  g.save(); const fl = .85 + .15 * Math.sin(t * 40) * Math.sin(t * 7); g.globalAlpha *= fl; glow(CX, 820, 520, '80,220,255', .25);
-  for (let y = 300; y < 1400; y += 10) { g.fillStyle = 'rgba(80,220,255,.05)'; g.fillRect(0, y, W, 4); }
-  alien(CX, 1420, 1.55, t, { col: '#5fd0e8', still: 1 });
-  g.restore();
-  const ws = wordTimes('s20', 0, 8);
-  quote('“Your star is warm.', CX, 1530, 76, '#9ff0ff', t, 0, ws.slice(0, 4));
-  quote('Please. Let us stay.”', CX, 1630, 76, '#9ff0ff', t, 0, ws.slice(4, 8));
-};
-SC[19] = (t) => {                                                   // their planet leaves in three days; refugees or invaders?
-  sky(t, '#0d0b33', '#2a1a5e');
-  const kl = cue(t, VO.s21, end('s21')); rogue(lerp(700, 860, kl), lerp(420, 300, kl), lerp(120, 70, kl), t, { lit: lerp(.9, .4, kl), ang: 2.6, moons: 1 });
-  word('3 DAYS LEFT', CX, 250, 104, P.gold, keyAt(t, T.three21, T.send));
-  word('MILLIONS', CX, 250, 120, P.white, keyAt(t, T.millions21, T.refugees - .2));
-  const kss = cue(t, T.send - .2, T.send + 2.5); if (kss > 0) { const R = mulberry(14); for (let i = 0; i < 70; i++) { const p = (t * (.12 + R() * .1) + R()) % 1, sx = lerp(700, 860, kl) + (R() - .5) * 60, x = lerp(sx, 100 + R() * 880, p), y = lerp(lerp(420, 300, kl), 1350, p); glow(x, y, 18, '160,240,255', .5 * kss * (1 - p * .5)); dot(x, y, 4, `rgba(220,250,255,${kss})`); } }
-  g.fillStyle = '#15123a'; g.fillRect(0, 1420, W, 500); hills(1420, '#1f1a48', 14, 3);
-  const kr = keyAt(t, T.refugees), ki = keyAt(t, T.invaders);
-  sign(270, 1350, .9, 'WELCOME', '#2f9e5a', t); sign(810, 1350, .9, 'GO HOME', '#d6334f', t, .05);
-  person(150, 1760, .62, t, as('teen', { mood: 'grin', arms: 'cheer', look: .2 })); person(370, 1780, .6, t, as('gran', { mood: 'happy', arms: 'wave', seed: 1 }));
-  person(700, 1780, .66, t, as('dad', { mood: 'angry', arms: 'hips', seed: 2, look: -.3 })); person(920, 1760, .6, t, as('astro2', { mood: 'worried', arms: 'mouth', seed: 3 }));
-  word('REFUGEES?', 280, 1020, 84, '#5fe08a', kr, -.05, 440); word('INVADERS?', 800, 1120, 84, P.red, ki, .05, 440);
-  if (t > T.nobody21 && t < T.refugees) word('NOBODY KNOWS', CX, 1050, 100, P.white, keyAt(t, T.nobody21, T.refugees));
-};
-SC[20] = (t) => {                                                   // "Mum? Are they scared too?"
-  sky(t, '#0d0b33', '#3a2466');
-  g.fillStyle = '#241f4e'; g.fillRect(0, 0, W, H); g.save(); g.beginPath(); g.rect(240, 200, 600, 640); g.clip(); sky(t, '#0d0b33', '#3a2466'); rogue(640, 420, 110, t, { lit: .5, ang: 2.6, moons: 1 }); g.restore();
-  g.fillStyle = '#4a4380'; g.fillRect(530, 200, 20, 640); g.fillRect(240, 510, 600, 20); g.strokeStyle = '#4a4380'; g.lineWidth = 24; g.strokeRect(240, 200, 600, 640);     // a window
-  bust(320, 1920, 1.0, t, as('mum', { mood: 'worried', look: .7, lookY: .2 }));
-  bust(800, 1920, .78, t, as('kid2', { mood: t > T.mum && t < end('s22') ? 'talk' : 'worried', look: -.7, lookY: -.3 }));
-  const ws = wordTimes('s22', 0, 5); quote('“Mum? Are they scared too?”', CX, 1020, 70, P.white, t, 0, ws);
-};
-SC[21] = (t) => {                                                   // countdown: three days, two, one
-  bg(t, '#08061c', '#1d1152');
-  const k3 = keyAt(t, T.c3, T.c2), k2 = keyAt(t, T.c2, T.c1), k1 = keyAt(t, T.c1);
-  const kl = cue(t, T.c3, T.c1 + 1); rogue(CX, 640, lerp(170, 60, kl), t, { lit: lerp(.7, .2, kl), ang: 2.6, moons: 1 });
-  for (const [n, k] of [['3', k3], ['2', k2], ['1', k1]]) word(n, CX, 1260, 380, n === '1' ? P.red : P.gold, k);
-  label(t < T.c2 ? 'DAYS LEFT' : t < T.c1 ? 'DAYS LEFT' : 'DAY LEFT', CX, 1360, 60, P.white, k3 + k2 + k1);
-  bust(CX, 1920, .62, t, as('you', { mood: 'worried', lookY: -1, look: 0 }));
-};
-SC[22] = (t) => {                                                   // would you let them stay? what would you choose?
-  bg(t);
-  const ka = pop(t, T.would - .1), kb = pop(t, T.would + .1);
-  for (const [x, txt, col, colD, k] of [[300, 'LET THEM', '#2fbf6a', '#1f8a4c', ka], [780, 'SAY NO', '#e6334f', '#a8233a', kb]]) {
-    if (k <= 0) continue; const pr = .5 + .5 * Math.sin(t * 5 + x); g.save(); g.translate(x, 900); g.scale(k, k);
-    glow(0, 0, 300, col === '#2fbf6a' ? '60,220,120' : '255,60,90', .25 + .15 * pr);
-    g.fillStyle = colD; g.beginPath(); g.ellipse(0, 30, 200, 80, 0, 0, TAU); g.fill(); g.fillRect(-200, -20, 400, 50);
-    g.fillStyle = col; g.beginPath(); g.ellipse(0, -20, 200, 80, 0, 0, TAU); g.fill();
-    g.restore();
-    word(txt, x, 1100, 74, P.white, k, 0, 420); if (x < CX) word('STAY', x, 1180, 74, P.white, k, 0, 420);
-  }
-  word('WHAT WOULD', CX, 320, 110, P.white, keyAt(t, T.choose - .4, DUR - LOOP)); word('YOU CHOOSE?', CX, 440, 124, P.gold, keyAt(t, T.choose - .2, DUR - LOOP));
-  person(CX, 1820, .7, t, as('you', { mood: 'think', arms: 'down', look: Math.sin(t * 1.6), lookY: .3 }));
+SC[16] = (t) => {                                                   // but if one ever did, would you stay up all night to watch it pass?
+  sky(t, '#0b0830', '#2a1a5e');
+  const kd = cue(t, T.did - .2, T.did + 1.2);                    // a new point of light, where the hook's planet will appear
+  if (kd > 0) { glow(720, 700, 70, '255,220,170', .5 * kd); dot(720, 700, 6 + 4 * kd, '#ffe6c0'); }
+  fullMoon(160, 760, 40);
+  hills(1450, '#1d3a3f', 30, 4); house(160, 1520, .85); hills(1560, '#16302f', 20, 8);
+  person(860, 1690, .62, t, as('kid2', { mood: 'grin', arms: 'pointL', lookY: -1, look: -.3 }));
+  person(560, 1680, .95, t, as('you', { mood: t > T.watch ? 'awe' : 'think', arms: t > T.night17 ? 'binoc' : 'down', lookY: -1, look: .6, held: t > T.night17 ? (c => { c.fillStyle = '#1b1a40'; c.beginPath(); c.roundRect(-70, -500, 60, 70, 14); c.roundRect(10, -500, 60, 70, 14); c.fill(); }) : undefined }));
+  const e = DUR - LOOP;
+  word('WOULD YOU', CX, 250, 104, P.white, keyAt(t, T.would, e)); word('STAY UP ALL NIGHT', CX, 360, 96, P.gold, keyAt(t, T.night17, e));
+  word('TO WATCH IT PASS?', CX, 460, 84, P.white, keyAt(t, T.watch, e));
 };
 
 // ───────── frame: a quick crossfade + push-in between scenes; the end loops into the start

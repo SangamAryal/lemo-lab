@@ -35,8 +35,7 @@ B = 60 / 92
 Dm, Bb, F, C, Gm, A7, Ebm = [50, 57, 62, 65], [46, 53, 58, 62], [53, 57, 60, 65], [48, 55, 60, 64], [43, 50, 55, 58], [45, 52, 55, 61], [51, 58, 61, 66]
 ST = [(Dm, 'wonder', .6), (Bb, 'wonder', .6), (F, 'wonder', .65), (Dm, 'tension', .7), (F, 'still', .5), (Gm, 'tension', .65),
       (Bb, 'wonder', .7), (F, 'wonder', .85), (Dm, 'tension', .85), (Gm, 'tension', .75), (C, 'still', .5), (Dm, 'dread', .8),
-      (A7, 'tension', .8), (Dm, 'dread', .7), (Ebm, 'eerie', .6), (Ebm, 'eerie', .7), (F, 'wonder', .7),
-      (Dm, 'tension', .7), (Ebm, 'eerie', .7), (Gm, 'tension', .8), (Bb, 'still', .5), (Dm, 'heart', .9), (Bb, 'still', .6)]
+      (A7, 'tension', .8), (Dm, 'dread', .7), (Bb, 'still', .6), (F, 'wonder', .7), (Bb, 'wonder', .8)]
 s = [0] + SCN + [DUR]
 assert len(ST) == len(s) - 1, (len(ST), len(s))
 for i, (ch, st, en) in enumerate(ST):
@@ -55,8 +54,8 @@ for i, (ch, st, en) in enumerate(ST):
         put(drone(ch[0] - 12, d, .5), a)
         for t in every(a + .1, b, 60 / 70): put(kick(.6), t); put(kick(.35), t + .22)
     else: put(pad(ch, d, .25 * en + .08, 800, 1.2, 1.2), a)
-for k, v in [('passed', .5), ('lights', .6), ('first', .45), ('stay26', .4)]: put(bell(74 if k != 'lights' else 81, v), T[k])
-put(boom(.7), T['but11'] - .05); put(boom(.6), T['lights'] - .05); put(boom(.5), T['c1']); put(boom(.5), T['would'] - .1)
+for k, v in [('passed', .5), ('none', .5), ('watch', .45)]: put(bell(74 if k != 'none' else 81, v), T[k])
+put(boom(.7), T['but11'] - .05); put(boom(.45), T['never'] - .05)
 out = hp(out.T, 30).T.astype(np.float32); out = np.stack([limit(out[:, c], .9) for c in range(2)], 1)
 os.makedirs(os.path.join(HERE, 'music'), exist_ok=True); sf.write(os.path.join(HERE, 'music/score.wav'), out[:int(DUR * SR)], SR)
 print('score', DUR, 'peak', float(np.abs(out).max()))

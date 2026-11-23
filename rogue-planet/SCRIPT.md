@@ -1,20 +1,18 @@
-# What If a Rogue Planet Passed Earth? — script, draft 2
+# What If a Rogue Planet Passed Earth? — script, draft 3
 
 **Brief**
 - **Audience:** teens and a general audience.
-- **Length:** about 116 s (25 lines). Longer than our earlier films on purpose: the new style tells a story with a
+- **Length:** about 89 s (17 lines). Longer than our earlier films on purpose: the new style tells a story with a
   timeline and an ending choice, like the reference Sangam picked.
 - **Voice:** edge-tts "Ryan" (`en-GB-RyanNeural`, +5%) for the narrator, made with the shared `tools/voice.py`.
-  Two character lines have their own voices (new: `voice`/`rate`/`pitch` per line in lines.json):
-  the alien (`en-US-GuyNeural`, −12 %, −18 Hz, then ring-modulated with an echo in mix.py) and the child
-  (`en-GB-MaisieNeural`).
+  (lines.json still supports per-line `voice`/`rate`/`pitch`; draft 3 has no character voices.)
 
 **The new presentation style (Sangam, 2026-11-21, reference: youtube.com/shorts/2z_eNeQIVeg "What if Earth had
 1,000 moons")**, studied from its transcript and a scene-by-scene breakdown:
-- Told to **you**, as a story with **time stamps** (Year 1 → Year 5 → Pass week → three days, two, one).
+- Told to **you**, as a story with **time stamps** (Year 1 → Year 5 → Pass week → gone).
 - **People react on screen in every beat**: astronomers, a family, a crowd, a kid and their mum.
-- **Escalation**: wonder → real consequences (tides, earthquakes, Earth's orbit) → a **bold imaginative twist**
-  (lights on its moon, a civilization) → a **moral choice** for the viewer, ending on "What would you choose?".
+- **Escalation**: wonder → real consequences (tides, earthquakes, Earth's orbit) → the big picture (it never touched us;
+  billions are out there) → a question for the viewer. Draft 3 has no imaginative twist (cut at Sangam's request).
 - **No caption boxes and no running subtitles.** Only key words appear on screen, placed in the picture
   (YEAR 1, 26 KM PER SECOND, MISS, = 300 EARTHS, TIDES SURGE, ORBIT SHIFTED…). Character lines are shown as quotes.
 - **Show → reward pacing** kept from earlier films: each scene is paid off by a surprising fact within a few seconds.
@@ -46,24 +44,22 @@ PLANET PASSED EARTH?**
 | 12 | reward | Its pull drags Earth's whole orbit, by up to three percent. | Old orbit (dashed) → new orbit (gold); ORBIT SHIFTED, UP TO 3% | astronomer: shock |
 | 13 | reward | A little closer to the Sun, and Earth could get hotter than any climate forecast. | Huge Sun, heat haze, thermometer; HOTTER | dad, hands on head |
 | 14 | reward | A little farther, and we could slide into an ice age. Even the year could change by two weeks. | Snow; ICE AGE; a calendar flickering around 365 days; ± 2 WEEKS | gran shivering |
-| 15 | show | But the strangest part comes as it leaves. Telescopes zoom in on one of its moons. | THE STRANGEST PART; telescope view zooms ×400 onto a moon; ONE OF ITS MOONS | astronomer: think → awe |
-| 17 | **twist** | And on its night side, there are lights. | THE NIGHT SIDE; lights spread across the dark moon; LIGHTS | both astronomers: shock |
-| 18 | twist | Cities. A civilization that has drifted through the dark for millions of years. Our Sun is the first star they've ever seen up close. | Domed cities on the ice; CITIES; MILLIONS OF YEARS IN THE DARK; our Sun rises on their horizon: THEIR FIRST STAR | three moon-dwellers, lit by the Sun |
-| 19 | show | Then, a message reaches every phone on Earth, at the same time. | A phone: INCOMING, origin unknown; EVERY PHONE ON EARTH; AT THE SAME TIME | four people staring at phones: shock |
-| 20 | (alien) | Your star is warm. Please. Let us stay. | A flickering hologram of the alien; the line as a quote | the alien |
-| 21 | show | Their planet leaves in three days, back into the dark forever. They could send millions of their people here. Nobody knows if they're refugees, or invaders. | 3 DAYS LEFT; lights stream toward Earth: MILLIONS; WELCOME / GO HOME signs; NOBODY KNOWS; REFUGEES? INVADERS? | a divided crowd |
-| 22 | (child) | Mum? Are they scared too? | Mum and child at the window, the planet outside; the line as a quote | kid and mum, worried |
-| 23–25 | show | Three days. Two. One. | 3, 2, 1 DAYS LEFT; the planet shrinks | you, tense |
-| 26 | show | Would you let them stay? What would you choose? | Two buttons: LET THEM STAY / SAY NO; WHAT WOULD YOU CHOOSE? **Loops to the first frame.** | you, deciding |
+| 15 | reward | And all of that, from a planet that never even touched us. | TIDES, QUAKES, ORBIT recap; the planet's dashed path past Earth with a 10 million km line: NEVER TOUCHED US | astronomer: awe → shock |
+| 16 | reward | Right now, billions of rogue planets may be drifting through our galaxy. None is known to be heading our way. | The Milky Way fills with drifting rogue planets: BILLIONS, DRIFTING; then NONE HEADING OUR WAY ✓ | mum and kid: awe → relief |
+| 17 | show | But if one ever did, would you stay up all night to watch it pass? | The hook's night garden; a new point of light where the planet will appear; WOULD YOU STAY UP ALL NIGHT TO WATCH IT PASS? **Loops to the first frame.** | you with binoculars, kid pointing |
 
-**Timing:** 310 words, 115.6 s as built.
+**Timing:** 89.5 s as built.
 
-**Draft 2 (Sangam, 2026-11-21):** cut line 16 ("a moon like that can stay warm inside… like Europa") and its cut-away scene. Once the story turns to the civilization, no more science explaining: it slows the twist down. The zoom on the moon now goes straight to "And on its night side, there are lights." (Line numbers below keep their ids; there is no s16.)
+**Draft 2 (Sangam, 2026-11-21):** cut line 16 ("a moon like that can stay warm inside… like Europa") and its cut-away scene. Once the story turns to the civilization, no more science explaining: it slows the twist down. The zoom on the moon now goes straight to "And on its night side, there are lights." 
 
 ## Fact checks
 
-Lines 1–16 are real science, worked out for one concrete case: a Jupiter-mass rogue planet arriving at 26 km/s and
-passing 10 million km from Earth. Lines 15–26 are the imaginative twist (fiction, by design, as in the reference).
+**Draft 3 (Sangam, 2026-11-23):** removed the whole aliens twist (the moon, the lights, the civilization, the message, the
+refugees-or-invaders choice and the countdown). The film now stays real science to the end and closes on a reassurance plus a
+question for the comments, then loops back into the hook. Lines 15–17 are new.
+
+All lines are real science, worked out for one concrete case: a Jupiter-mass rogue planet arriving at 26 km/s and
+passing 10 million km from Earth.
 
 | Line | Claim (as said or shown) | Basis | Hedge |
 |---|---|---|---|
@@ -77,8 +73,8 @@ passing 10 million km from Earth. Lines 15–26 are the imaginative twist (ficti
 | 12 | Earth's orbit shifts by up to 3 % | Our own n-body check (Sun, Earth, Moon, the rogue planet; scipy DOP853), 10 million km pass at 26 km/s: Earth's orbit grew or shrank by up to 3.1–3.2 % depending on the direction of the pass (≈0 for some geometries). The Moon's orbit changed by <1 %. | "up to" |
 | 13 | A little closer: hotter than any climate forecast | 3 % closer → ~6 % more sunlight → ~14 W/m² extra absorbed, ~4× the forcing of doubled CO₂; at a typical sensitivity (~3 °C per doubling) that is ~10 °C of eventual warming, above the highest IPCC scenario for 2100 (~4–6 °C). | "could" |
 | 14 | A little farther: an ice age; the year changes by two weeks | 3 % farther → ~6 % less sunlight → ~−10 °C eventually, colder than the last glacial maximum (~−6 °C). Kepler's third law: 3 % in orbit size → ~4.7 % in year length ≈ 17 days (the simulation gives ±17 days). | "could", "two weeks" (rounded down) |
-| 15 | It has moons | Planets thrown out of their systems can keep their moons (Hong et al. 2018, ApJL 852:L5). Background only, not explained in the film: tidal heating can keep an ocean liquid under ice far from any star, as on Europa (NASA; Ávila et al. 2021, Int. J. Astrobiology 20:300). | — |
-| 17–26 | Lights, cities, a civilization, the message, the choice | **Fiction** — the imaginative twist. | — |
+| 15 | It never touched us | In our scenario it passes 10 million km away; every effect above is from gravity alone. | — |
+| 16 | Billions of rogue planets may be drifting through our galaxy; none is known to be heading our way | ~20 free-floating planets per star (Sumi et al. 2023) × 100–400 billion stars gives trillions, so "billions" is a cautious floor. No known rogue planet is on course for the solar system. | "may", "known" |
 
 Not claimed: that any rogue planet is heading our way (none is known), a tide height, a number of deaths, or how
 likely such a pass is. For scale: the closest known visitor, Scholz's star, passed ~0.8 light-years away 70,000 years
