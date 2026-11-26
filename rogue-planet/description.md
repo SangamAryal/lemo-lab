@@ -3,13 +3,9 @@
 **Title:** What If a Rogue Planet Passed Earth? 🪐
 
 **Description:**
-Rogue planets are real: whole worlds with no star, drifting through the dark. Our galaxy may hold more of them than stars. So what if one the size of Jupiter came drifting in and passed Earth at 10 million km, just 26 times farther than the Moon?
+What if a planet as big as Jupiter, with no star of its own, drifted in and passed Earth just 26 times farther than the Moon? Tides surge, Earth's orbit shifts, and it never even touches us. Billions of rogue planets may be out there right now.
 
-Astronomers would spot it years ahead. In the final year it becomes the brightest thing in the night sky after the Moon, and in the week of the pass it looks bigger than the full Moon. Its pull would make tides surge, and it could drag Earth's whole orbit by up to 3%: a little closer to the Sun and we'd heat up more than any climate forecast, a little farther and we could slide into an ice age, and the year itself could change by about two weeks.
-
-And all of that from a planet that never even touches us. Right now, billions of rogue planets may be drifting through our galaxy. None is known to be heading our way, but if one ever did…
-
-Would you stay up all night to watch it pass? 👇
+Would you stay up all night to watch one pass? 👇
 
 #Shorts #Science #Space #RoguePlanet #WhatIf
 
