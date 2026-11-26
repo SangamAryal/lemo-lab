@@ -1,0 +1,12 @@
+What If a Rogue Planet Passed Earth? — flat-vector story Short (1080×1920, 24 fps)
+Everything on screen is drawn in code (main.js + kit.js + geo.js + people.js + planet.js, canvas 2D): the rogue planet,
+Earth, the Moon, the Sun, the people, the moon-dwellers, the cities, the type. No images, no stock footage, no generated
+media. Our own character designs, in the Beyond Everything brand style. Facts: the fact-check table in SCRIPT.md.
+
+Type
+  Nunito — the Nunito Project Authors, SIL Open Font License 1.1 (fonts/OFL-Nunito.txt), from github.com/google/fonts.
+Voices
+  Microsoft Edge neural voices via edge-tts: narrator "Ryan" (en-GB-RyanNeural, +5%, as in the earlier films),
+  the alien "Guy" (en-US-GuyNeural, −12%, −18 Hz, ring-modulated in mix.py), the child "Maisie" (en-GB-MaisieNeural).
+Score and sound effects
+  Original, synthesized in music.py and mix.py (numpy/scipy). No samples.
