@@ -1,0 +1,15 @@
+[
+ {"id": "v01", "text": "Our Moon is slowly breaking up with us. Mars has the opposite problem.", "speed": 1.02},
+ {"id": "v02", "text": "Its moon, Phobos, is clingy. It orbits just six thousand kilometres above the ground. Our Moon keeps sixty times more space.", "sub": "Its moon, Phobos, is clingy. It orbits just 6,000 km above the ground. Our Moon keeps 60 times more space.", "speed": 1.06},
+ {"id": "v03", "text": "It's so close, it laps Mars three times a day. From the ground, it rises in the west, and sets in the east.", "sub": "It's so close, it laps Mars 3 times a day. From the ground, it rises in the west, and sets in the east.", "speed": 1.06},
+ {"id": "v04", "text": "And it's moving in. About two metres closer, every century.", "sub": "And it's moving in. About 2 metres closer, every century.", "speed": 1.04},
+ {"id": "v05", "text": "Same physics as our Moon, just backwards. Phobos circles faster than Mars spins, so the tidal bulge it raises lags behind it, and drags it down.", "speed": 1.1},
+ {"id": "v06", "text": "Mars is basically pulling it in for a hug it won't survive.", "speed": 1.04},
+ {"id": "v07", "text": "You can already see the strain. Those long grooves? Scientists think they may be stretch marks, from Mars pulling on it.", "speed": 1.08},
+ {"id": "v08", "text": "NASA's Perseverance rover even filmed it crossing the Sun. The eclipse lasted just over forty seconds.", "sub": "NASA's Perseverance rover even filmed it crossing the Sun. The eclipse lasted just over 40 seconds.", "speed": 1.08},
+ {"id": "v09", "text": "In thirty to fifty million years, Mars will tear it apart, and the pieces could spread into a ring.", "sub": "In 30 to 50 million years, Mars will tear it apart, and the pieces could spread into a ring.", "speed": 1.06},
+ {"id": "v10", "text": "So Mars finally puts a ring on it.", "speed": 1.0},
+ {"id": "v11", "text": "Meanwhile, its other moon, Deimos, is quietly drifting away. Just like ours.", "speed": 1.06},
+ {"id": "v12", "text": "And their names? Phobos and Deimos. Fear, and Dread. Red planet. Red flags.", "speed": 1.0},
+ {"id": "v13", "text": "So which would you rather have? A moon that leaves you, or one that never lets go?", "speed": 1.02}
+]
